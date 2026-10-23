@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wayward privacy policy</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+</style></head>
+<body><main><header><img src="icon.png" alt=""><a href="index.html"><span class="brand">Wayward</span></a><nav><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a><a href="oss/">Open source</a></nav></header>
+<div class="draft">This is a draft and not yet in effect.</div><h1>Wayward Privacy Policy</h1>
+<p><strong>DRAFT for legal review. Not in effect.</strong> Placeholders in [brackets]. Last updated: [DATE].</p>
+<h2>The short version</h2>
+<p>Wayward does not send us your browsing history, the websites you visit, the videos or files you download, your cookies, or the contents of web pages. We don't run analytics, ads or tracking in the app. Support reports are optional, and you see everything in one before you send it. The AI assistant is different: when you use it, the content you choose to share is sent to OpenRouter and the AI provider you picked.</p>
+<h2>Who we are</h2>
+<p>Wayward is made by [LEGAL NAME], [CONTACT ADDRESS IF REQUIRED]. Contact: [SUPPORT EMAIL].</p>
+<h2>What stays on your phone</h2>
+<ul>
+<li><strong>Browsing.</strong> Wayward always browses privately. History, cookies and site data are kept only while the app runs and are wiped when you close it or clear browsing data.</li>
+<li><strong>Downloads.</strong> Saved inside the app by default, behind your fingerprint, face or PIN if you keep the downloads lock on. If you choose a download folder, files are saved there instead, where other apps on your phone can see them.</li>
+<li><strong>Settings, your OpenRouter key and your Premium status.</strong> Stored on your phone; the key is encrypted with Android's keystore.</li>
+</ul>
+<p>We have no servers that receive any of this.</p>
+<h2>Where Wayward connects, and why</h2>
+<table>
+<thead>
+<tr>
+<th>Connection</th>
+<th>When</th>
+<th>What is sent</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Websites you visit</td>
+<td>When you browse</td>
+<td>What any browser sends to load a page. Sites can see your IP address.</td>
+</tr>
+<tr>
+<td>DuckDuckGo</td>
+<td>Home page and address-bar searches</td>
+<td>Your search terms</td>
+</tr>
+<tr>
+<td>Encrypted DNS (Quad9 by default; Cloudflare or Mullvad if you choose, or off)</td>
+<td>While browsing</td>
+<td>The names of sites you visit, so they can be found</td>
+</tr>
+<tr>
+<td>uBlock Origin filter lists (GitHub, jsDelivr and the list publishers)</td>
+<td>Automatically, about once an hour</td>
+<td>Requests for updated block lists; no personal data</td>
+</tr>
+<tr>
+<td>Video sites, through Wayward's downloader</td>
+<td>When you open the download panel or download</td>
+<td>Requests for the video and its formats, like any download</td>
+</tr>
+<tr>
+<td>Google Play</td>
+<td>When you buy or restore Premium, and when Wayward checks your purchase</td>
+<td>Handled by Google under Google's privacy policy</td>
+</tr>
+<tr>
+<td>OpenRouter, and the AI provider you choose</td>
+<td>Only when you use the AI assistant</td>
+<td>Your messages, and a page's text and links only after you tap Share on that page</td>
+</tr>
+</tbody>
+</table>
+<p>[DIRECT BUILD ONLY, not offered to the public: a daily check of PyPI for a newer yt-dlp.]</p>
+<h2>The AI assistant</h2>
+<p>The assistant is off until you turn it on, and it uses your own OpenRouter account. Before it reads any page, Wayward asks you, shows the site and the AI provider, and lets you see exactly what would be sent. If you say no, nothing from that page is sent. OpenRouter and the AI provider process your requests under their own privacy policies and retention practices, which may differ from ours. Don't use the assistant on pages with personal or sensitive information.</p>
+<h2>Support reports</h2>
+<p>Reports are off until you create one, and nothing is sent automatically. A report contains only: the report type and area you choose, the app version and build, the browser engine version, your Android major version, a short error code with a rough time (like "today"), and any description you type. Links and file paths are removed from your description, but anything else you type is sent as written. You send the report yourself through your phone's share sheet, usually by email. That email service and our mailbox then hold the message. [RETENTION: how long we keep reports, and how to ask us to delete one.]</p>
+<h2>Purchases</h2>
+<p>Premium is bought through Google Play. Google processes the payment and tells Wayward whether you own Premium. We don't receive your payment details.</p>
+<h2>Children</h2>
+<p>Wayward is not directed at children under 13 [or the age required where you live].</p>
+<h2>Your rights</h2>
+<p>[COUNSEL: rights and request process for the regions where Wayward is offered; the app is not offered in the EU or EEA.]</p>
+<h2>Changes</h2>
+<p>We'll update this policy if what Wayward does changes, and show the date at the top.</p>
+</main></body></html>
