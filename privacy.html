@@ -20,14 +20,18 @@ code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
 <div class="draft">This is a draft and not yet in effect.</div><h1>Wayward Privacy Policy</h1>
 <p><strong>DRAFT for legal review. Not in effect.</strong> Placeholders in [brackets]. Last updated: [DATE].</p>
 <h2>The short version</h2>
-<p>Wayward does not send us your browsing history, the websites you visit, the videos or files you download, your cookies, or the contents of web pages. We don't run analytics, ads or tracking in the app. Support reports are optional, and you see everything in one before you send it. The AI assistant is different: when you use it, the content you choose to share is sent to OpenRouter and the AI provider you picked.</p>
+<p>Wayward does not send us your browsing history, the websites you visit, the videos or files you download, your cookies, or the contents of web pages. We don't run analytics, ads or tracking in the app. Feedback and support reports are optional, and you see everything in one before you send it. The AI assistant is different: when you use it, the content you choose to share is sent to the AI provider you picked.</p>
 <h2>Who we are</h2>
 <p>Wayward is made by [LEGAL NAME], [CONTACT ADDRESS IF REQUIRED]. Contact: [SUPPORT EMAIL].</p>
 <h2>What stays on your phone</h2>
 <ul>
-<li><strong>Browsing.</strong> Wayward always browses privately. History, cookies and site data are kept only while the app runs and are wiped when you close it or clear browsing data.</li>
+<li><strong>Tabs.</strong> Tabs keep their cookies, site data and history (the pages you visit in them) on your phone, in Wayward's private storage, until you clear browsing data. Open tabs are saved so they reopen next time: their addresses, Back history, scroll position, form entries and a small picture of each page, encrypted with a key kept in Android's keystore. You can turn history off, or have Wayward delete all of this whenever it closes.</li>
+<li><strong>Private tabs.</strong> A private tab keeps no history and isn't saved, and its cookies and site data are wiped when the last private tab closes, when Wayward is closed, or when you clear browsing data. You can make private tabs the default.</li>
+<li><strong>Emergency delete.</strong> The red button on the Tabs screen closes every tab and deletes all of the above at once.</li>
+<li><strong>Camera and microphone.</strong> Only when a site asks and you tap Allow (Wayward asks every time), and only for that page while it's open. The video and sound go to that site, not to us.</li>
+<li><strong>Links to other apps.</strong> When a page's link wants to open another app on your phone (like Gmail), Wayward asks first, every time. If you tap Open, that app gets the link; nothing goes to us.</li>
 <li><strong>Downloads.</strong> Saved inside the app by default, behind your fingerprint, face or PIN if you keep the downloads lock on. If you choose a download folder, files are saved there instead, where other apps on your phone can see them.</li>
-<li><strong>Settings, your OpenRouter key and your Premium status.</strong> Stored on your phone; the key is encrypted with Android's keystore.</li>
+<li><strong>Settings, your AI keys and your Premium status.</strong> Stored on your phone; each key (OpenRouter, Anthropic or OpenAI, whichever you add) is encrypted with Android's keystore.</li>
 </ul>
 <p>We have no servers that receive any of this.</p>
 <h2>Where Wayward connects, and why</h2>
@@ -47,11 +51,16 @@ code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
 </tr>
 <tr>
 <td>DuckDuckGo</td>
-<td>Home page and address-bar searches</td>
-<td>Your search terms</td>
+<td>The home page, and the AI assistant's searches</td>
+<td>DuckDuckGo's page also sends DuckDuckGo its own usage statistics (improving.duckduckgo.com), under DuckDuckGo's privacy policy</td>
 </tr>
 <tr>
-<td>Encrypted DNS (Quad9 by default; Cloudflare or Mullvad if you choose, or off)</td>
+<td>Your search engine (DuckDuckGo unless you pick Brave, Startpage, Ecosia, Google, Bing or your own)</td>
+<td>Searches from the address bar; and, while Search suggestions is on (Settings, on by default), as you type words in a regular tab's address bar</td>
+<td>Your search terms. For suggestions: what you've typed so far, a moment after you stop typing, without cookies; never from a private tab, never for an address, and not with your own engine. Under that search engine's privacy policy</td>
+</tr>
+<tr>
+<td>Encrypted DNS (Quad9 by default; Cloudflare, Mullvad or your own provider if you choose, or off)</td>
 <td>While browsing</td>
 <td>The names of sites you visit, so they can be found</td>
 </tr>
@@ -61,9 +70,34 @@ code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
 <td>Requests for updated block lists; no personal data</td>
 </tr>
 <tr>
+<td>Mozilla Remote Settings (firefox.settings.services.mozilla.com and its download servers)</td>
+<td>Automatically, in the background</td>
+<td>Requests for updated security data used by the browser engine, such as certificate revocation and blocklists; no personal data. Mozilla's servers see your IP address</td>
+</tr>
+<tr>
+<td>Mozilla connectivity check (firefox-portal-detection.com)</td>
+<td>When the app starts and when your network changes</td>
+<td>A plain request that checks whether your connection works over IPv4 and IPv6; no personal data. Mozilla sees your IP address. The browser engine also looks up a few names (example.org, cloudflare-dns.com) to check that DNS works; those are lookups only</td>
+</tr>
+<tr>
+<td>Google Safe Browsing (safebrowsing.googleapis.com)</td>
+<td>Automatically, to update lists; and when a page address matches an entry in the list on your phone</td>
+<td>List updates carry no personal data. On a match, the engine sends Google a short partial hash of the address (not the address itself) to check it. Google sees your IP address</td>
+</tr>
+<tr>
 <td>Video sites, through Wayward's downloader</td>
 <td>When you open the download panel or download</td>
 <td>Requests for the video and its formats, like any download</td>
+</tr>
+<tr>
+<td>The site an image or file comes from, through the browser engine</td>
+<td>When you long-press an image or link and choose Download, Copy image or Share image</td>
+<td>A request for that image or file, with the tab's cookies and only the page's site name (not the full page address) as the referrer, like the page's own request for it</td>
+</tr>
+<tr>
+<td>Your image search service (Google Lens unless you pick Bing Visual Search or TinEye in Settings)</td>
+<td>When you long-press an image and choose Search image</td>
+<td>The image's address, under that service's privacy policy. Not the page you were on</td>
 </tr>
 <tr>
 <td>Google Play</td>
@@ -71,23 +105,30 @@ code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
 <td>Handled by Google under Google's privacy policy</td>
 </tr>
 <tr>
-<td>OpenRouter, and the AI provider you choose</td>
+<td>The AI provider you pick: OpenRouter (and the model's maker, such as Anthropic, OpenAI or Google), Anthropic (api.anthropic.com) or OpenAI (api.openai.com)</td>
 <td>Only when you use the AI assistant</td>
-<td>Your messages, and a page's text and links only after you tap Share on that page</td>
+<td>Your messages, and a page's text, links and buttons, plus any screenshots the assistant takes of it (form fields, typed text and other sites' frames blacked out), after you tap Share on that page, or without the card for sites or settings where you chose to always share</td>
+</tr>
+<tr>
+<td>Your AI provider's model list</td>
+<td>While the AI assistant is on: when you pick a model in Settings, or send a message, about once a week for each model</td>
+<td>The model's name, to check whether it can see pictures. OpenRouter's list is public, so no key is sent; Anthropic's needs your Anthropic key; for OpenAI nothing is sent (Wayward knows its models). Never your messages or any page. The provider sees your IP address</td>
 </tr>
 </tbody>
 </table>
 <p>[DIRECT BUILD ONLY, not offered to the public: a daily check of PyPI for a newer yt-dlp.]</p>
 <h2>The AI assistant</h2>
-<p>The assistant is off until you turn it on, and it uses your own OpenRouter account. Before it reads any page, Wayward asks you, shows the site and the AI provider, and lets you see exactly what would be sent. If you say no, nothing from that page is sent. OpenRouter and the AI provider process your requests under their own privacy policies and retention practices, which may differ from ours. Don't use the assistant on pages with personal or sensitive information.</p>
-<h2>Support reports</h2>
-<p>Reports are off until you create one, and nothing is sent automatically. A report contains only: the report type and area you choose, the app version and build, the browser engine version, your Android major version, a short error code with a rough time (like "today"), and any description you type. Links and file paths are removed from your description, but anything else you type is sent as written. You send the report yourself through your phone's share sheet, usually by email. That email service and our mailbox then hold the message. [RETENTION: how long we keep reports, and how to ask us to delete one.]</p>
+<p>The assistant is off until you turn it on, and it uses your own account with the AI provider you pick: OpenRouter, Anthropic or OpenAI. Before it reads a page, Wayward asks you, shows the site and the AI provider, and lets you see exactly what would be sent. If you say no, nothing from that page is sent. You can skip that card if you want: tick "Always share this site" on it, or turn on "Always share pages" in the assistant's settings. Either is explained before it takes effect, and the settings let you undo both.</p>
+<p>What's sent from a page is its address, title, text, links and buttons, and a video's captions if the assistant reads them. When a video has no captions, the assistant can turn its speech into text on your phone, with your phone's own speech recognizer; the audio stays on the phone, and only the text goes to your AI provider, through the same sharing card. With a model that can see pictures, the assistant can also take screenshots of the page on your screen. Before a screenshot leaves your phone, Wayward blacks out every form field and anything typed in one, and frames from other sites unless the sharing card named them. Wayward's own buttons and panels are never in it. The assistant never uses private tabs.</p>
+<p>A few things are sent without that card, because the assistant needs them to know where it is: the results page when it searches DuckDuckGo for you, and the address and title of a page after it opens one, follows a link or goes back. When the assistant opens a page or searches, that site can see which site you were on (its domain only), the same as when you follow a link. Your AI provider (and, through OpenRouter, the model's maker) processes your requests under its own privacy policy and retention practices, which may differ from ours. Wayward asks OpenAI not to keep requests for later turns; OpenAI's own retention still applies. Don't use the assistant on pages with personal or sensitive information.</p>
+<h2>Feedback and support reports</h2>
+<p>Feedback (Settings &gt; Support &gt; Feedback) is off until you create it, and nothing is sent automatically. A report about a problem, or an idea you send, contains only: the type and area you choose, the app version and build, the browser engine version, your Android major version, for a problem a short error code with a rough time (like "today"), and any description you type. Links and file paths are removed from your description, but anything else you type is sent as written. You send the report yourself through your phone's share sheet, usually by email. That email service and our mailbox then hold the message. [RETENTION: how long we keep reports, and how to ask us to delete one.]</p>
 <h2>Purchases</h2>
 <p>Premium is bought through Google Play. Google processes the payment and tells Wayward whether you own Premium. We don't receive your payment details.</p>
 <h2>Children</h2>
 <p>Wayward is not directed at children under 13 [or the age required where you live].</p>
 <h2>Your rights</h2>
-<p>[COUNSEL: rights and request process for the regions where Wayward is offered; the app is not offered in the EU or EEA.]</p>
+<p>[COUNSEL: rights and request process for US users, including state privacy laws; the app is offered only in the United States.]</p>
 <h2>Changes</h2>
 <p>We'll update this policy if what Wayward does changes, and show the date at the top.</p>
 </main></body></html>
