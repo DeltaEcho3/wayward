@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Film night: Big Buck Bunny | Trail Notes</title>
+<link rel="stylesheet" href="style.css">
+<!-- The video's details, as video pages publish them (and as Wayward's download panel reads them).
+     duration = the stream's real length, 634.6 s. -->
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "VideoObject",
+ "name": "Big Buck Bunny",
+ "description": "The open movie from the Blender Foundation (2008).",
+ "thumbnailUrl": "https://deltaecho3.github.io/wayward/demo/img/film.jpg",
+ "uploadDate": "2026-10-29",
+ "duration": "PT10M35S",
+ "contentUrl": "https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"}
+</script>
+</head>
+<body>
+<header class="top">
+  <a class="home" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="22" cy="10" r="4" fill="#d9822b"/><path d="M2 27 12 12l5 7 4-5 9 13z" fill="#2f6b4f"/></svg>Trail Notes</a>
+  <nav><a href="index.html">Stories</a><a href="film.html">Film night</a></nav>
+</header>
+<main>
+  <div class="player"><video id="v" controls playsinline preload="none" poster="img/film.jpg"></video></div>
+  <div class="wrap">
+    <p class="kicker">Friday film night</p>
+    <h1>Big Buck Bunny</h1>
+    <div class="facts"><span>10:35</span><span>Animation</span><span>Open movie</span></div>
+    <p class="lede">A gentle giant of a rabbit, three troublemaking rodents and one very bad day in the forest.</p>
+    <p>This week's pick is a classic from the open-movie world. Big Buck Bunny was made by the Blender Foundation with free software, and anyone may share it. It's short, funny and perfect for a night in the tent with a phone propped against a water bottle.</p>
+    <h2>Watching offline</h2>
+    <p>No signal at camp? Save it before you leave home, pick a smaller size if your phone is nearly full, and you're set for the trip.</p>
+  </div>
+</main>
+<footer>Big Buck Bunny © Blender Foundation, <a href="https://peach.blender.org">peach.blender.org</a>, CC BY 3.0. Stream: Mux test streams. Trail Notes is a demo site for Wayward's store screenshots.</footer>
+<script>
+  // The player takes its stream from the details above.
+  const details = JSON.parse(document.querySelector('script[type="application/ld+json"]').textContent);
+  document.getElementById('v').src = details.contentUrl;
+</script>
+</body>
+</html>
