@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Change the theme, color and app icon · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Make it yours</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Change the theme, color and app icon</h1><p class="kind">How-to</p><p>Choose a light or dark theme, change the color of Wayward's buttons and highlights, or pick a home-screen icon.</p>
+<ol>
+<li>Open the <strong>⋮</strong> menu and tap <strong>Settings</strong>.</li>
+<li>Under Appearance, tap <strong>Themes and app icon</strong>. The row shows what you have now, like "Match phone, Wayward".</li>
+</ol>
+<div class="shots"><figure><img src="../img/themes-screen.webp" width="720" height="1600" loading="lazy" alt="Themes and app icon: Theme (Match phone, Light, Dark), Color (Wayward, Midnight, Ocean, Sunset, Neon, Mono), and the start of Home-screen icon"></figure></div>
+<h2 id="theme">Theme</h2>
+<ul>
+<li><strong>Match phone</strong> follows your phone's dark mode, switching when your phone does.</li>
+<li><strong>Light</strong> or <strong>Dark</strong> keeps Wayward one way.</li>
+</ul>
+<p>Wayward's dark theme is made of soft greys, not pure black. The clock and icons at the top of the screen, and the screen you see while Wayward opens, follow Wayward's choice. This only changes Wayward itself. For websites, see <a href="dark-mode.html">Turn on dark mode</a>.</p>
+<div class="shots"><figure><img src="../img/themes-dark.webp" width="720" height="1600" loading="lazy" alt="Theme Dark: the same screen in the dark theme&#x27;s clear greys, the status bar&#x27;s clock and icons light"></figure><figure><img src="../img/themes-dark-settings.webp" width="720" height="1600" loading="lazy" alt="Settings in the dark theme"></figure></div>
+<h2 id="color">Color</h2>
+<p><strong>Wayward</strong>, the blue, is free. <strong>Midnight</strong>, <strong>Ocean</strong>, <strong>Sunset</strong>, <strong>Neon</strong> and <strong>Mono</strong> come with Premium. Each one sets the color of Wayward's buttons, switches and highlights, in both light and dark.</p>
+<p><strong>Midnight</strong> is different: it's always dark, on true black, whatever <strong>Theme</strong> says.</p>
+<div class="shots"><figure><img src="../img/themes-midnight.webp" width="720" height="1600" loading="lazy" alt="Color theme Midnight: always dark, on true black"></figure><figure><img src="../img/themes-ocean.webp" width="720" height="1600" loading="lazy" alt="Color theme Ocean"></figure></div>
+<h2 id="home-screen-icon">Home-screen icon</h2>
+<p>Pick how Wayward looks on your home screen:</p>
+<ul>
+<li><strong>Wayward</strong>, the compass globe in full color on white, is free.</li>
+<li><strong>Wayward Dark</strong>, <strong>Wayward Mono</strong> and <strong>Wayward Mono Dark</strong> come with Premium.</li>
+<li><strong>Browser</strong>, also with Premium, is a plain icon, and the name under it on your home screen becomes "Browser".</li>
+</ul>
+<p>Wayward says <strong>Icon changed. Your home screen may take a moment to update.</strong> Some home screens take a little while to show the new icon. If you'd pinned shortcuts to your home screen (pages or saved tasks), you may need to add those again.</p>
+<p>On phones that theme app icons to match the wallpaper, Wayward's compass globe takes your phone's colors like other apps' icons do.</p>
+<div class="shots"><figure><img src="../img/themes-icons.webp" width="720" height="1600" loading="lazy" alt="Home-screen icon: Wayward, Wayward Dark, Wayward Mono, Wayward Mono Dark and Browser, with the note that pinned shortcuts may need adding again"></figure><figure><img src="../img/system-launcher-icon.webp" width="720" height="1600" loading="lazy" alt="The launcher icon in the phone&#x27;s list of apps: the compass globe, named Wayward"></figure></div>
+<h2 id="without-premium">Without Premium</h2>
+<p>The Premium colors and icons show a small lock. Tapping one opens the Premium page, where you can see what Premium includes: see <a href="../premium/unlock-or-restore.html">Unlock Premium, or get it back</a>.</p>
+<p>If Premium ever ends on your phone (a refund, say), the color and the icon go back to Wayward's own.</p>
+<div class="shots"><figure><img src="../img/premium-locked.webp" width="720" height="1600" loading="lazy" alt="Without Premium the Premium-only color themes and home-screen icons carry a small lock"></figure></div><h2>More in Make it yours</h2><ul class="pages"><li><a href="dark-mode.html">Turn on dark mode for Wayward and websites</a></li><li><a href="customize-bar.html">Change the bottom bar&#x27;s buttons</a></li><li><a href="customize-menu.html">Reorder or hide menu items</a></li><li><a href="customize-tabs-bar.html">Change the Tabs screen&#x27;s bar</a></li><li><a href="home-page.html">Change how the home page looks</a></li><li><a href="text-size.html">Make text bigger, or zoom any site</a></li><li><a href="languages.html">Change Wayward&#x27;s language, and the languages sites see</a></li></ul>
+</main></body></html>

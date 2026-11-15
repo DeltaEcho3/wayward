@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pin, rename or pick several tabs · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Browsing</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Pin, rename or pick several tabs</h1><p class="kind">How-to</p><p>On the Tabs screen, press and hold a tab to do more with it: pin it, rename it, or select several tabs and act on them together.</p>
+<h2 id="hold-a-tab">Hold a tab</h2>
+<p>On the Tabs screen, hold a tab's card (or its row in the list view). Its menu opens:</p>
+<ul>
+<li><strong>Add to bookmarks</strong> bookmarks its page.</li>
+<li><strong>Pin tab</strong> puts it first on the Tabs screen with a pin mark. <strong>Close all tabs (not private)</strong> and <strong>Close other tabs</strong> leave pinned tabs alone. <strong>Unpin tab</strong> undoes it.</li>
+<li><strong>Rename</strong> opens <strong>Rename tab</strong>, where you give the tab a name of its own. The name shows on the Tabs screen only, and <strong>Search your tabs</strong> finds it.</li>
+<li><strong>Lock tab</strong> hides it behind your fingerprint, face or PIN. See <a href="../privacy-security/locks.html">locks</a>.</li>
+<li><strong>Add to group</strong> puts it in a group. See <a href="tab-groups.html">tab groups</a>.</li>
+<li><strong>Move to private tab</strong> reopens its page in a private tab. See <a href="../privacy-security/private-tabs.html">private tabs</a>.</li>
+<li><strong>Move to space</strong> moves it to another space. See <a href="../privacy-security/spaces.html">spaces</a>.</li>
+<li><strong>Select tabs</strong> starts picking several tabs (below).</li>
+<li><strong>Close other tabs</strong> closes the other tabs of the same kind in the same space, apart from pinned tabs and tabs in pinned groups, with <strong>Undo</strong>.</li>
+</ul>
+<div class="shots"><figure><img src="../img/tabs-hold-menu.webp" width="720" height="1600" loading="lazy" alt="Holding a tab: Add to bookmarks, Pin tab, Rename, Lock tab, Add to group, Move to private tab, Move to space, Select tabs, Close other tabs"></figure></div>
+<div class="shots"><figure><img src="../img/tabs-pinned.webp" width="720" height="1600" loading="lazy" alt="Pinned: a pinned group comes first, then a pinned tab, each with a pin by its name"></figure></div>
+<h2 id="pick-several-tabs">Pick several tabs</h2>
+<ol>
+<li>Hold a tab and tap <strong>Select tabs</strong>.</li>
+<li>Tap more tabs to pick them. Each gets a check mark, and the top bar counts them ("2 selected"). <strong>All</strong> picks every tab shown, and the X stops picking.</li>
+<li>Use the bar at the bottom:<ul>
+<li><strong>Delete</strong> closes the picked tabs. A bar says how many were deleted, with <strong>Undo</strong>.</li>
+<li><strong>Bookmark</strong> bookmarks their pages.</li>
+<li><strong>Group</strong> adds them to a group, or a new one.</li>
+<li><strong>Move</strong> moves the picked regular tabs to another space.</li>
+<li><strong>Pin</strong> pins them, or <strong>Unpin</strong> when they're all pinned already.</li>
+</ul>
+</li>
+</ol>
+<div class="shots"><figure><img src="../img/tabs-select.webp" width="720" height="1600" loading="lazy" alt="Select tabs: X, &quot;2 selected&quot; and All on top, check marks on the cards, and Bookmark, Group, Move, Pin and Delete at the bottom"></figure></div>
+<div class="shots"><figure><img src="../img/tabs-select-deleted.webp" width="720" height="1600" loading="lazy" alt="Delete on the picked tabs: &quot;2 tabs deleted&quot; with Undo"></figure></div><h2>More in Browsing</h2><ul class="pages"><li><a href="search-tabs-home.html">Search, keep a few tabs open, and find your way home</a></li><li><a href="address-bar.html">Search or go to an address</a></li><li><a href="copy-paste-share.html">Copy, paste or share a page&#x27;s address</a></li><li><a href="scan-qr.html">Scan a QR code</a></li><li><a href="search-settings.html">Change your search engine, and search one site directly</a></li><li><a href="tabs.html">Open, find and close tabs</a></li><li><a href="tab-groups.html">Group your tabs</a></li><li><a href="home-page.html">Use the start page</a></li><li><a href="find-in-page.html">Find words on a page</a></li><li><a href="translate-page.html">Translate a page</a></li><li><a href="reader-view.html">Read an article without the clutter</a></li><li><a href="desktop-print-pdf.html">Desktop site, zoom, print and save as PDF</a></li><li><a href="long-press.html">Hold a link, picture or video for more</a></li><li><a href="page-dialogs.html">When a page asks you something</a></li><li><a href="history.html">Find a page in your history, or clear it</a></li><li><a href="bookmarks.html">Bookmarks, folders, import and export</a></li><li><a href="links-from-apps.html">Links from other apps, and link previews</a></li><li><a href="home-screen.html">The widget and home-screen shortcuts</a></li><li><a href="passwords.html">Sign in with your password manager</a></li></ul>
+</main></body></html>

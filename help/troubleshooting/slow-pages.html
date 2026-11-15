@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>When pages are slow or scrolling stutters · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Troubleshooting &amp; support</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>When pages are slow or scrolling stutters</h1><p class="kind">How-to</p><p>If pages load slowly or scrolling feels uneven, a few things in Wayward, and on your phone, make a difference.</p>
+<h2 id="keep-wayward-up-to-date">Keep Wayward up to date</h2>
+<p>Updates bring speed fixes along with everything else. See <a href="../getting-started/index.html#how-does-wayward-update">How does Wayward update?</a></p>
+<h2 id="check-javascript-speed-ups">Check JavaScript speed-ups</h2>
+<p><strong>Settings</strong> &gt; <strong>Shields &amp; Privacy</strong>, under Advanced: <strong>JavaScript speed-ups</strong> should be on, by default. Off, sites run slower (in exchange for less that an attack could use). The change takes full effect after Wayward restarts.</p>
+<div class="shots"><figure><img src="../img/shields-advanced.webp" width="720" height="1600" loading="lazy" alt="Shields &amp; Privacy, Advanced: Strict fingerprinting protection, JavaScript speed-ups, Skip AMP pages, Ask sites for English, and the footer on what Shields cover"></figure></div>
+<h2 id="go-easier-on-the-filter-lists">Go easier on the filter lists</h2>
+<p>Every filter list is more for Wayward to check on each page. If you picked <strong>Maximum</strong> under <strong>Ad blocking</strong>, or turned on many lists in <strong>Filter lists</strong>, try <strong>Standard</strong> and see whether pages feel quicker. <strong>Standard</strong> still blocks ads, trackers, malware and cookie notices.</p>
+<h2 id="don-t-clear-the-cache-to-speed-things-up">Don't clear the cache to speed things up</h2>
+<p><strong>Cached images and files</strong> in <strong>Clear browsing data</strong> are parts of pages saved on your phone so they load faster next time. Clearing them makes pages slower until they're saved again. Clear them to free space or fix a page that won't update, not for speed.</p>
+<h2 id="close-what-you-don-t-need">Close what you don't need</h2>
+<ul>
+<li>Downloads share your connection: with several running at once, pages load slower. <strong>Settings</strong> &gt; <strong>Downloads</strong> &gt; <strong>Downloads at once</strong> sets how many run together.</li>
+<li>Lots of open tabs, and video playing in the background, use your phone's memory and battery. Close tabs you're done with from the Tabs screen.</li>
+</ul>
+<h2 id="restart-wayward">Restart Wayward</h2>
+<p>Swipe Wayward away in your phone's recent apps and open it again. (If <strong>Delete everything when Wayward closes</strong> is on in <strong>Settings</strong> &gt; <strong>Tabs and History</strong>, this deletes your tabs and browsing data, as that switch says.)</p>
+<h2 id="on-your-phone">On your phone</h2>
+<ul>
+<li>Battery saver modes slow apps down to save power.</li>
+<li>When your phone is nearly full, everything gets slower. Free some space: Wayward's downloads show how much space they use at the top of <strong>Downloads</strong>.</li>
+</ul>
+<h2 id="one-site-only">One site only?</h2>
+<p>Some big sites, like endless feeds, stall while they fetch more posts; that's the site, not your phone. If one site is slow every time, try turning off <strong>Protection on this site</strong> in its shield sheet to see whether it's waiting on something Wayward blocked.</p>
+<h2 id="still-slow">Still slow?</h2>
+<p>Tell us with <strong>Settings</strong> &gt; <strong>Send feedback</strong>, <strong>Something isn't working</strong> and <strong>Browsing</strong>, and say what you were doing and what you tried. See <a href="send-feedback.html">Send feedback or report a problem</a>.</p><h2>More in Troubleshooting &amp; support</h2><ul class="pages"><li><a href="send-feedback.html">Send feedback or report a problem</a></li><li><a href="site-broken.html">Fix a site that looks broken or won&#x27;t work</a></li><li><a href="download-fails.html">When a download fails</a></li><li><a href="messages.html">What Wayward&#x27;s messages mean</a></li></ul>
+</main></body></html>

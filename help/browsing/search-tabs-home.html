@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Search, keep a few tabs open, and find your way home · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Browsing</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Search, keep a few tabs open, and find your way home</h1><p class="kind">Walkthrough</p><p>Try searching for a hike, opening several results to compare, saving the best one and returning to the start page.</p>
+<h2 id="1-start-from-the-start-page">1. Start from the start page</h2>
+<p>Open Wayward. A new tab shows the start page, with your shortcuts, the week's blocked count and your other tabs.</p>
+<div class="shots"><figure><img src="../img/home-start.webp" width="720" height="1600" loading="lazy" alt="The start page: the globe and wordmark, Downloads, Ask AI and Private tab, shortcut tiles with Add, the blocked counter, and Your tabs with All tabs"></figure></div>
+<h2 id="2-search">2. Search</h2>
+<p>Tap the address bar at the bottom (<strong>Search or type an address</strong>) and type "lake trail". Suggestions come up as you type: the first row searches for exactly what you typed (<strong>Search</strong>), and others come from your open tabs, bookmarks, history and your search engine. Tap the first one.</p>
+<div class="shots"><figure><img src="../img/address-suggestions.webp" width="720" height="1600" loading="lazy" alt="Suggestions while typing, in a tray over the field: what you typed (Search), open tabs (Switch to tab), your search engine&#x27;s suggestions, a bookmark (star), a page from history (clock), and the Search with card"></figure></div>
+<h2 id="3-open-a-few-results-without-losing-your-place">3. Open a few results without losing your place</h2>
+<p>On the results page, hold a result's link. In the menu that opens, tap <strong>Open in background tab</strong>. It loads behind the page you're on, and the number on the Tabs button goes up. Do the same for two or three more results.</p>
+<div class="shots"><figure><img src="../img/press-link.webp" width="720" height="1600" loading="lazy" alt="Holding a link: a sheet titled with the link&#x27;s text and address: Open in new tab, in a private tab, in a background tab, the copies, Share, Download, Open in app and Ask AI"></figure></div>
+<div class="shots"><figure><img src="../img/press-link-background.webp" width="720" height="1600" loading="lazy" alt="Open in background tab: the link&#x27;s page loads in a new tab behind this one, and has its picture on the Tabs screen"></figure></div>
+<h2 id="4-compare-them">4. Compare them</h2>
+<p>Tap the Tabs button (the square with the number). Each result has its own card with a picture of the page. Tap a card to read that page. Tap the Tabs button again to go back to the cards, and close the ones you don't want with their X or a sideways swipe. If you close one by mistake, tap <strong>Undo</strong>.</p>
+<div class="shots"><figure><img src="../img/tabs-grid.webp" width="720" height="1600" loading="lazy" alt="The Tabs screen: the spaces&#x27; chips, a grid of cards (picture, title, X; the tab you are on tinted), and the bar: Search, Private tabs, +, Tabs with the count, the three dots"></figure></div>
+<h2 id="5-keep-the-best-one">5. Keep the best one</h2>
+<p>On the page you like, tap the star on the bar (TalkBack: <strong>Bookmark</strong>). It's in your bookmarks now, under the <strong>⋮</strong> menu's <strong>Bookmarks</strong>.</p>
+<h2 id="6-go-home-and-back">6. Go home, and back</h2>
+<p>Tap the house on the bar (TalkBack: <strong>Home</strong>). The start page shows over the page you were on. Press Back and you're on that page again.</p>
+<p>To reload a page, pull it down from the very top and let go.</p>
+<h2 id="7-quick-moves-from-the-tabs-button">7. Quick moves from the Tabs button</h2>
+<p>Hold the Tabs button for shortcuts: <strong>New tab</strong>, <strong>New private tab</strong> and <strong>Close tab</strong>, and <strong>Switch to tabs</strong> when you're in a private tab. With more than one space, it also lists each other space to go to.</p>
+<div class="shots"><figure><img src="../img/bars-tabs-hold.webp" width="720" height="1600" loading="lazy" alt="Hold the Tabs button: quick tab actions"></figure></div>
+<h2 id="next-time">Next time</h2>
+<p>Close Wayward whenever you like. Your regular tabs are still there when you open it again, ready where you left them. To make the start page yours, see <a href="home-page.html">use the start page</a>. For more on tabs, see <a href="tabs.html">open, find and close tabs</a>.</p><h2>More in Browsing</h2><ul class="pages"><li><a href="address-bar.html">Search or go to an address</a></li><li><a href="copy-paste-share.html">Copy, paste or share a page&#x27;s address</a></li><li><a href="scan-qr.html">Scan a QR code</a></li><li><a href="search-settings.html">Change your search engine, and search one site directly</a></li><li><a href="tabs.html">Open, find and close tabs</a></li><li><a href="tab-menu.html">Pin, rename or pick several tabs</a></li><li><a href="tab-groups.html">Group your tabs</a></li><li><a href="home-page.html">Use the start page</a></li><li><a href="find-in-page.html">Find words on a page</a></li><li><a href="translate-page.html">Translate a page</a></li><li><a href="reader-view.html">Read an article without the clutter</a></li><li><a href="desktop-print-pdf.html">Desktop site, zoom, print and save as PDF</a></li><li><a href="long-press.html">Hold a link, picture or video for more</a></li><li><a href="page-dialogs.html">When a page asks you something</a></li><li><a href="history.html">Find a page in your history, or clear it</a></li><li><a href="bookmarks.html">Bookmarks, folders, import and export</a></li><li><a href="links-from-apps.html">Links from other apps, and link previews</a></li><li><a href="home-screen.html">The widget and home-screen shortcuts</a></li><li><a href="passwords.html">Sign in with your password manager</a></li></ul>
+</main></body></html>

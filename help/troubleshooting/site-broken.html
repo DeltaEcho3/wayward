@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fix a site that looks broken or won&#x27;t work · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Troubleshooting &amp; support</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Fix a site that looks broken or won&#x27;t work</h1><p class="kind">How-to</p><p>If a page is blank, a button or video doesn't work, or sign-in fails, start here. Wayward blocks a lot, and once in a while a site needs something it blocked. Try these in order; most sites work after the first two.</p>
+<h2 id="1-reload">1. Reload</h2>
+<p>Pull the page down from the top and let go, or tap <strong>Reload</strong>. A page that half loaded often just needs another go.</p>
+<h2 id="2-turn-off-protection-for-that-site">2. Turn off protection for that site</h2>
+<ol>
+<li>On the broken site, tap the blue shield in the address bar.</li>
+<li>Turn off <strong>Protection on this site</strong>. Everything on the site then loads, with no ad or tracker blocking there. Other sites stay protected.</li>
+<li>Reload the page if it doesn't change by itself.</li>
+</ol>
+<div class="shots"><figure><img src="../img/shield-sheet.webp" width="720" height="1600" loading="lazy" alt="The shield sheet: the count &quot;blocked on this page&quot;, the site, Sites blocked, Protection on this site, Block JavaScript on this site, uBlock Origin controls, Shields &amp; Privacy, Shred and Shred automatically"></figure></div>
+<p>If that fixes it, you can leave it off for that site. Turn it back on the same way. More on the shield in <a href="../privacy-security/shield-sheet.html">See what was blocked, and let a broken site through</a>.</p>
+<p>In a private tab the shield has no per-site switch. Tap <strong>uBlock Origin controls</strong> there and turn uBlock Origin off for the site in its own panel, or open the site in a regular tab.</p>
+<h2 id="3-check-javascript">3. Check JavaScript</h2>
+<p>Many sites need JavaScript to work at all. If you turned on <strong>Block JavaScript on this site</strong> (in the same shield sheet), or <strong>Block JavaScript on every site</strong> (in <strong>Settings</strong> &gt; <strong>Shields &amp; Privacy</strong>), turn it off for this site.</p>
+<h2 id="4-try-a-lighter-level-of-blocking">4. Try a lighter level of blocking</h2>
+<p>If <strong>Ad blocking</strong> in <strong>Settings</strong> &gt; <strong>Shields &amp; Privacy</strong> is on <strong>Strict</strong> or <strong>Maximum</strong>, try <strong>Standard</strong>: it breaks the fewest sites. In the same screen, <strong>Strict fingerprinting protection</strong> (under Advanced) also breaks some sites; turn it off if you turned it on.</p>
+<h2 id="5-other-things-that-can-get-in-the-way">5. Other things that can get in the way</h2>
+<ul>
+<li>The page looks wrong in the dark: turn off <strong>Dark on this site</strong> in the shield sheet. See <a href="../make-it-yours/dark-mode.html#keep-one-site-light">Keep one site light</a>.</li>
+<li>The site's phone version is missing something: tap <strong>Desktop</strong> in the menu's top row to get the version a computer gets.</li>
+<li>Signing in keeps failing: if <strong>Cookies</strong> in <strong>Settings</strong> &gt; <strong>Shields &amp; Privacy</strong> is on <strong>Block all third-party</strong>, sites that sign you in through another site can fail; try <strong>Isolate cross-site</strong>.</li>
+<li>You're signed out, or the site has forgotten you: private tabs, and spaces with their own sign-ins, keep their own cookies, so you sign in there separately.</li>
+<li>A "check you're human" box keeps coming back: turn off <strong>Protection on this site</strong> for it. Wayward doesn't solve these checks for you.</li>
+<li>The page itself won't open, and Wayward shows a message in its place instead: see <a href="messages.html#when-a-page-won-t-open">What Wayward's messages mean</a>.</li>
+</ul>
+<div class="shots"><figure><img src="../img/states-error-host.webp" width="720" height="1600" loading="lazy" alt="Error page &quot;Site not found&quot;: &quot;Check the address, or your connection.&quot;"></figure></div>
+<h2 id="6-start-the-site-fresh">6. Start the site fresh</h2>
+<p>If the site is stuck in a bad state, clear what it stored: in the shield sheet, tap <strong>Shred example.com</strong> (with your site's name), then <strong>Shred</strong>. It closes the site's tabs and deletes its cookies, sign-ins, site data, cache, permissions, history and start page shortcuts, so you'll need to sign in again. Bookmarks are kept.</p>
+<h2 id="still-broken">Still broken?</h2>
+<p>Tell us: <strong>Settings</strong> &gt; <strong>Send feedback</strong>, with <strong>Something isn't working</strong> and <strong>Browsing</strong>, and say what you tried. Web addresses are taken out of the report automatically, even a plain site name like example.com, so if we need to know the site, add it in the email itself before you send. See <a href="send-feedback.html">Send feedback or report a problem</a>.</p><h2>More in Troubleshooting &amp; support</h2><ul class="pages"><li><a href="send-feedback.html">Send feedback or report a problem</a></li><li><a href="download-fails.html">When a download fails</a></li><li><a href="slow-pages.html">When pages are slow or scrolling stutters</a></li><li><a href="messages.html">What Wayward&#x27;s messages mean</a></li></ul>
+</main></body></html>

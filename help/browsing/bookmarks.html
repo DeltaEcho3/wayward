@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bookmarks, folders, import and export · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Browsing</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Bookmarks, folders, import and export</h1><p class="kind">How-to</p><p>Bookmark a page to find it again later. Bookmarks stay on your phone, encrypted, and nothing clears them except deleting them yourself.</p>
+<h2 id="bookmark-a-page">Bookmark a page</h2>
+<p>Tap the star on the bar (TalkBack: <strong>Bookmark</strong>), or open the <strong>⋮</strong> menu and tap <strong>Bookmark</strong>. Tap it again to remove the bookmark.</p>
+<h2 id="open-your-bookmarks">Open your bookmarks</h2>
+<p>Open the <strong>⋮</strong> menu and tap <strong>Bookmarks</strong>, or hold the star on the bar. Bookmarks and folders are in one list. Tap a bookmark to open its page, or a folder to open it.</p>
+<div class="shots"><figure><img src="../img/bookmarks-screen.webp" width="720" height="1600" loading="lazy" alt="Bookmarks: folders and bookmarks in one list, each with three dots; New folder and More at the top"></figure></div>
+<p>To make a folder, tap the folder icon at the top (TalkBack: <strong>New folder</strong>) and give it a name.</p>
+<h2 id="change-move-or-delete-one">Change, move or delete one</h2>
+<p>Tap a bookmark's <strong>⋮</strong>:</p>
+<ul>
+<li><strong>Edit</strong> opens <strong>Edit bookmark</strong>, with its <strong>Name</strong> and <strong>Address</strong>.</li>
+<li><strong>Move to folder</strong> lists your folders, starting with <strong>Top level</strong> (outside any folder).</li>
+<li><strong>Delete</strong> deletes it.</li>
+</ul>
+<div class="shots"><figure><img src="../img/bookmarks-row-menu.webp" width="720" height="1600" loading="lazy" alt="A bookmark&#x27;s three dots: Edit, Move to folder and Delete"></figure></div>
+<p>A folder's <strong>⋮</strong> has <strong>Edit</strong> (to rename it), <strong>Move to folder</strong>, and <strong>Delete folder and its contents</strong>. The folder goes at once with <strong>Folder deleted</strong> and <strong>Undo</strong>, in case you didn't mean it.</p>
+<div class="shots"><figure><img src="../img/bookmarks-folder-menu.webp" width="720" height="1600" loading="lazy" alt="A folder&#x27;s three dots: Edit, Move to folder and &quot;Delete folder and its contents&quot;"></figure></div>
+<h2 id="bring-bookmarks-from-another-browser-or-save-a-copy">Bring bookmarks from another browser, or save a copy</h2>
+<p>On the Bookmarks screen, tap <strong>⋮</strong> at the top:</p>
+<ul>
+<li><strong>Export bookmarks</strong> saves every bookmark and folder to an .html file. Other browsers can import that file.</li>
+<li><strong>Import bookmarks</strong> reads a bookmarks file that another browser exported (the usual .html kind) into a new folder named "Imported" and the date. It first shows a short guide: pick the .html file your other browser saved, or tap your browser (Chrome, Samsung Internet, Firefox, Microsoft Edge, Brave, Opera, DuckDuckGo or Vivaldi) to see how to get one. <strong>Choose file</strong> then opens your phone's file picker.</li>
+</ul>
+<div class="shots"><figure><img src="../img/bookmarks-more.webp" width="720" height="1600" loading="lazy" alt="The Bookmarks screen&#x27;s three dots: Export bookmarks and Import bookmarks"></figure></div>
+<p>First export your bookmarks in the other browser (look for Export bookmarks in its settings or bookmarks menu), then import the file in Wayward. You can also import from the welcome setup's <strong>Bring your things</strong> page.</p><h2>More in Browsing</h2><ul class="pages"><li><a href="search-tabs-home.html">Search, keep a few tabs open, and find your way home</a></li><li><a href="address-bar.html">Search or go to an address</a></li><li><a href="copy-paste-share.html">Copy, paste or share a page&#x27;s address</a></li><li><a href="scan-qr.html">Scan a QR code</a></li><li><a href="search-settings.html">Change your search engine, and search one site directly</a></li><li><a href="tabs.html">Open, find and close tabs</a></li><li><a href="tab-menu.html">Pin, rename or pick several tabs</a></li><li><a href="tab-groups.html">Group your tabs</a></li><li><a href="home-page.html">Use the start page</a></li><li><a href="find-in-page.html">Find words on a page</a></li><li><a href="translate-page.html">Translate a page</a></li><li><a href="reader-view.html">Read an article without the clutter</a></li><li><a href="desktop-print-pdf.html">Desktop site, zoom, print and save as PDF</a></li><li><a href="long-press.html">Hold a link, picture or video for more</a></li><li><a href="page-dialogs.html">When a page asks you something</a></li><li><a href="history.html">Find a page in your history, or clear it</a></li><li><a href="links-from-apps.html">Links from other apps, and link previews</a></li><li><a href="home-screen.html">The widget and home-screen shortcuts</a></li><li><a href="passwords.html">Sign in with your password manager</a></li></ul>
+</main></body></html>

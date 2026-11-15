@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Find your way around the menu · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Getting started</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Find your way around the menu</h1><p class="kind">How-to</p><p>Use the menu to work with the current page or open another part of Wayward. Open it with the <strong>⋮</strong> button at the right end of the bottom bar.</p>
+<div class="shots"><figure><img src="../img/menu-sheet.webp" width="720" height="1600" loading="lazy" alt="The menu: the page&#x27;s title with Share, a row of round actions, this page&#x27;s rows, the app&#x27;s rows, Clear data and Settings"></figure></div>
+<h2 id="at-the-top">At the top</h2>
+<p>The page's name and site, with a <strong>Share</strong> button. Share sends a clean link: Wayward takes tracking tags out of the address first.</p>
+<p>Under that, a row of round buttons for the page:</p>
+<ul>
+<li><strong>Bookmark</strong> saves the page, or removes it if it's saved (the star is filled while it is).</li>
+<li><strong>Find</strong> searches for words on the page.</li>
+<li><strong>Translate</strong> translates the page on your phone. On a translated page it's lit, and a tap shows the original again.</li>
+<li><strong>Reader</strong> shows the page as plain text, easy to read. It's only there on pages that read as an article.</li>
+<li><strong>Desktop</strong> asks for the page as a computer would see it, for this tab.</li>
+<li><strong>Dark</strong> turns dark mode on or off. It's hidden until you show it: see <a href="../make-it-yours/dark-mode.html">Turn on dark mode</a>.</li>
+</ul>
+<div class="shots"><figure><img src="../img/menu-desktop-site.webp" width="720" height="1600" loading="lazy" alt="Desktop site: the page as a computer gets it"></figure></div>
+<h2 id="this-page">This page</h2>
+<ul>
+<li><strong>Lock this tab</strong> puts the tab behind your fingerprint, face or PIN. Turning it on or off asks for your unlock.</li>
+<li><strong>Add to start page</strong> adds the page as a shortcut on Wayward's start page. It asks for the shortcut's name first, then <strong>Add</strong>. Tap it again to take the shortcut off.</li>
+<li><strong>Add to home screen</strong> puts the page on your phone's home screen. Name it, and the dialog says how it will open: <strong>Opens as an app, in its own window.</strong> for a site that works as an app, or <strong>Opens this page in Wayward.</strong> Tap <strong>Add</strong>, then confirm in your phone's own dialog.</li>
+<li><strong>Save as PDF</strong> saves the page as a PDF in Downloads. You'll see <strong>Saving as PDF…</strong>, then <strong>Saved to Downloads</strong>.</li>
+<li><strong>Print</strong> opens your phone's print screen, where you can print the page or save it as a PDF somewhere else.</li>
+</ul>
+<div class="shots"><figure><img src="../img/menu-add-start.webp" width="720" height="1600" loading="lazy" alt="Add to start page: asks for the shortcut&#x27;s name first"></figure><figure><img src="../img/menu-add-home.webp" width="720" height="1600" loading="lazy" alt="Add to home screen: the name, and how it will open"></figure><figure><img src="../img/menu-print.webp" width="720" height="1600" loading="lazy" alt="Print: the page in Android&#x27;s print screen"></figure></div>
+<h2 id="the-rest-of-wayward">The rest of Wayward</h2>
+<ul>
+<li><strong>New tab</strong> and <strong>New private tab</strong>.</li>
+<li><strong>Spaces</strong> opens a picker to switch space, or make a new one.</li>
+<li><strong>History</strong> and <strong>Bookmarks</strong> open those screens.</li>
+<li><strong>Dark mode</strong> switches Wayward and websites dark together, or both light.</li>
+</ul>
+<div class="shots"><figure><img src="../img/menu-spaces.webp" width="720" height="1600" loading="lazy" alt="Spaces: the space picker from the menu"></figure></div>
+<p>At the very bottom, side by side:</p>
+<ul>
+<li><strong>Clear data</strong> opens <strong>Clear browsing data</strong>, where you pick what to clear: private tabs, tabs, history, cookies and site data, cached images and files, or site permissions. Your bookmarks, start page shortcuts, saved tasks, downloads and settings are always kept.</li>
+<li><strong>Settings</strong>.</li>
+</ul>
+<div class="shots"><figure><img src="../img/menu-clear-data.webp" width="720" height="1600" loading="lazy" alt="Clear data: what to clear and how far back"></figure></div>
+<h2 id="on-the-start-page-and-in-private-tabs">On the start page, and in private tabs</h2>
+<p>On the start page there's no page, so the menu has no header and no round buttons: just the rows that apply there, and <strong>Clear data</strong> and <strong>Settings</strong>.</p>
+<div class="shots"><figure><img src="../img/menu-start-page.webp" width="720" height="1600" loading="lazy" alt="On the start page the menu has only what applies there"></figure></div>
+<p>In a private tab, the menu takes on the private tabs' colors. <strong>Add to home screen</strong> isn't there: the shortcut would outlast the private tab.</p>
+<p><strong>Add to start page</strong> is left out in a few places: a locked tab, a tab in a locked space, when new tabs open on your search engine's page (the start page never shows then), and when the start page's own shortcuts are switched off in <strong>Settings</strong> &gt; <strong>Customize</strong>.</p>
+<h2 id="make-it-yours">Make it yours</h2>
+<p>You can move the menu's items up or down inside their group, and hide the ones you don't use. <strong>Settings</strong> always stays. See <a href="../make-it-yours/customize-menu.html">Reorder or hide menu items</a>.</p>
+<h2 id="if-something-doesn-t-work">If something doesn't work</h2>
+<ul>
+<li><strong>This phone's home screen doesn't take shortcuts</strong>: your home screen app doesn't let apps add shortcuts. Try another home screen app, or use <strong>Add to start page</strong> instead.</li>
+<li><strong>Already on your home screen: name and icon updated</strong>: the page was there already, so Wayward updated it rather than adding it twice.</li>
+<li><strong>This page couldn't be saved as a PDF</strong> or <strong>This page can't be printed right now</strong>: try again once the page has finished loading. Some pages block it.</li>
+<li><strong>Android's print service isn't available here</strong>: this copy of Android has no print screen. It happens with some phones' second copies of apps (dual apps). Use <strong>Save as PDF</strong> instead.</li>
+</ul><h2>More in Getting started</h2><ul class="pages"><li><a href="first-run.html">Set up Wayward the first time</a></li><li><a href="default-browser.html">Make Wayward your default browser</a></li><li><a href="the-bars.html">Get to know the bars</a></li><li><a href="minimum-bar.html">Use the Minimalist Address Bar</a></li><li><a href="bring-your-things.html">Bring your bookmarks and settings</a></li><li><a href="new-phone.html">Move Wayward to a new phone</a></li></ul>
+</main></body></html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clear data, Shred a site, or delete everything · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Privacy &amp; security</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Clear data, Shred a site, or delete everything</h1><p class="kind">How-to</p><p>Choose from four ways to remove browsing data. You can clear one site or everything. Bookmarks, downloads, saved tasks and your settings are never touched by any of them.</p>
+<h2 id="clear-browsing-data">Clear browsing data</h2>
+<p>Open the <strong>⋮</strong> menu and tap <strong>Clear data</strong> at the bottom (it's also in <strong>Settings</strong> and in the Tabs screen's menu). Tick what to clear:</p>
+<ul>
+<li><strong>Private tabs</strong>: closes them; their cookies and site data go with them.</li>
+<li><strong>Tabs</strong>: closes your regular tabs and deletes their saved copies.</li>
+<li><strong>History</strong>: the pages you visited.</li>
+<li><strong>Cookies and site data</strong>: signs you out of most sites.</li>
+<li><strong>Cached images and files</strong>: pages may load more slowly next time.</li>
+<li><strong>Site permissions</strong>: what you allowed or blocked for each site.</li>
+</ul>
+<p>Then tap <strong>Clear</strong>. Wayward says <strong>Browsing data cleared</strong>. <strong>Bookmarks, start page shortcuts you added, saved tasks, downloads and settings are kept.</strong></p>
+<div class="shots"><figure><img src="../img/menu-clear-data.webp" width="720" height="1600" loading="lazy" alt="Clear data: what to clear and how far back"></figure></div>
+<p>If it would close locked tabs, or private tabs behind their lock, it asks for your fingerprint, face or PIN first. It clears every space at once. To clear just part of your history, like the last hour, use the broom in <strong>History</strong> instead (see <a href="../browsing/history.html">history</a>).</p>
+<h2 id="shred-one-site">Shred one site</h2>
+<p>Tap the shield in the address bar, then "Shred" and the site's name. Wayward asks first, then closes the site's tabs and deletes its cookies, logins, site data, cache, permissions, history and start page shortcuts, and says the site was shredded. Its bookmarks are kept. In a space with its own sign-ins, the site's data goes from every space.</p>
+<p>Turn on <strong>Shred automatically</strong> on the same sheet and the site's data is shredded by itself whenever none of its pages is open any more. A private tab's data already goes when the last private tab closes.</p>
+<h2 id="emergency-delete">Emergency delete</h2>
+<p>When you need everything gone right now: open the Tabs screen, tap <strong>⋮</strong>, then <strong>Emergency delete</strong> (in red, last in the list). Wayward asks <strong>Delete everything?</strong>; tap <strong>Delete everything</strong>, or <strong>Keep</strong> to stop.</p>
+<p>It closes every tab, private ones too, and deletes all browsing data, saved tabs, the assistant's chat and the shortcuts you added to the start page. Your spaces go too, apart from Main. Bookmarks, saved tasks, downloads and settings are kept. Wayward then says <strong>Everything deleted</strong>. This can't be undone.</p>
+<p>You can also put <strong>Emergency delete</strong> on the Tabs screen's bar, in <strong>Settings</strong> &gt; <strong>Customize</strong> &gt; <strong>Tabs screen bar</strong>.</p>
+<div class="shots"><figure><img src="../img/tabs-emergency-ask.webp" width="720" height="1600" loading="lazy" alt="Emergency delete asks first: &quot;Delete everything?&quot;"></figure></div>
+<h2 id="delete-everything-whenever-wayward-closes">Delete everything whenever Wayward closes</h2>
+<p>Turn on <strong>Settings</strong> &gt; <strong>Tabs and History</strong> &gt; <strong>Delete everything when Wayward closes</strong>. Then each time you swipe Wayward away in recent apps, or Android closes it, Wayward deletes all tabs, cookies, logins, site data, cache, permissions, history, saved tabs and the shortcuts you added to the start page. Bookmarks, saved tasks, downloads and settings stay.</p>
+<p>This means you start signed out of every site each time.</p>
+<div class="shots"><figure><img src="../img/tabsset-end.webp" width="720" height="1600" loading="lazy" alt="Tabs and History, the end: History, and &quot;Delete everything when Wayward closes&quot; with what goes and what stays"></figure></div><h2>More in Privacy &amp; security</h2><ul class="pages"><li><a href="lock-it-down.html">Lock Wayward down</a></li><li><a href="shield-sheet.html">See what was blocked, and let a broken site through</a></li><li><a href="ad-blocking.html">Choose how much Wayward blocks</a></li><li><a href="block-pop-ups.html">Hide pop-ups and overlays on pages</a></li><li><a href="connection-settings.html">Secure connections, Secure DNS and the other privacy settings</a></li><li><a href="site-permissions.html">Camera, notifications and other site permissions</a></li><li><a href="private-tabs.html">Use private tabs</a></li><li><a href="spaces.html">Keep sign-ins apart with spaces</a></li><li><a href="locks.html">Lock a tab, your private tabs, a space or Downloads</a></li></ul>
+</main></body></html>

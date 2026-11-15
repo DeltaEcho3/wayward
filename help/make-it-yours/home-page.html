@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Change how the home page looks · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Make it yours</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Change how the home page looks</h1><p class="kind">How-to</p><p>Tap Home or open a new tab to see the home page. Give it your own picture, pick how many shortcuts it has, and choose what's on it.</p>
+<p>All of this is in <strong>Settings</strong> &gt; <strong>Customize</strong>, under <strong>Home page</strong>. For using the home page itself (adding, renaming and removing shortcuts, the blocked counter), see <a href="../browsing/home-page.html">Use the start page</a>.</p>
+<h2 id="normal-or-minimal">Normal or Minimal</h2>
+<p><strong>Look</strong> sets the overall style:</p>
+<ul>
+<li><strong>Normal</strong>, by default: colorful buttons and tiles.</li>
+<li><strong>Minimal</strong> is quieter: neutral greys, plain buttons, round shortcuts, and one line for the blocked count.</li>
+</ul>
+<div class="shots"><figure><img src="../img/cust-look-list.webp" width="720" height="1600" loading="lazy" alt="Look: Normal or Minimal"></figure><figure><img src="../img/home-minimal.webp" width="720" height="1600" loading="lazy" alt="The Minimal look: neutral greys, plain buttons for Downloads, Ask AI and Private tab, round shortcuts, one line for the blocked count"></figure></div>
+<h2 id="your-own-picture">Your own picture</h2>
+<ol>
+<li>Tap <strong>Wallpaper</strong> and pick a photo.</li>
+<li>The home page shows it behind everything, with its words in light or dark, whichever reads best on your picture.</li>
+<li><strong>Frosted glass</strong> softens the picture so the shortcuts stand out.</li>
+</ol>
+<p>Later, tap <strong>Wallpaper</strong> again for another photo, or tap its X to remove the wallpaper.</p>
+<p>Wayward keeps its own copy of the picture, inside the app, without the photo's location or camera details. It's only drawn on Wayward's own home page and never reaches a website.</p>
+<div class="shots"><figure><img src="../img/cust-wallpaper-set.webp" width="720" height="1600" loading="lazy" alt="With a wallpaper set the Wallpaper row has an X to remove it, and Frosted glass has its switch"></figure><figure><img src="../img/home-wallpaper.webp" width="720" height="1600" loading="lazy" alt="A wallpaper behind the start page: your own picture, the words in whichever of dark or light reads on it"></figure></div>
+<p>If the photo won't work, Wayward says <strong>That picture can't be used. Try another one.</strong> or <strong>That picture is too big. Try a smaller one.</strong></p>
+<h2 id="how-many-shortcuts">How many shortcuts</h2>
+<p><strong>Shortcuts</strong> sets how many tiles the home page has: 4, 8 (by default), 12 or 16. Shortcuts you add yourself come first, then the sites you visit most.</p>
+<div class="shots"><figure><img src="../img/cust-shortcuts-list.webp" width="720" height="1600" loading="lazy" alt="Shortcuts: 4, 8, 12 or 16 tiles"></figure></div>
+<h2 id="what-s-on-it">What's on it</h2>
+<p>With the Normal look, <strong>Show on the home page</strong> has a switch for each part:</p>
+<ul>
+<li><strong>Logo</strong>: Wayward's globe and name.</li>
+<li><strong>Downloads, Ask AI and Private tab</strong>: three quick buttons for those. With the assistant off the bar, it's <strong>Downloads and Private tab</strong>.</li>
+<li><strong>Shortcuts</strong>: the shortcuts you add yourself.</li>
+<li><strong>Most visited sites</strong>: tiles for the sites you visit most, from your history.</li>
+<li><strong>Ad blocking</strong>: how many ads and trackers Wayward blocked this week. It's the same switch as <strong>Ad and tracker counter</strong> in <strong>Settings</strong> &gt; <strong>Tabs and History</strong>.</li>
+<li><strong>Your tabs</strong>: your other open tabs, with <strong>All tabs</strong> to see them all.</li>
+</ul>
+<div class="shots"><figure><img src="../img/cust-home.webp" width="720" height="1600" loading="lazy" alt="Show on the home page: Logo, Downloads, Ask AI and Private tab, Shortcuts you add, Most visited sites, Ad blocking, Your tabs; then Bottom bar: Middle button and &quot;Show the assistant as just its stars&quot;"></figure></div>
+<h2 id="site-icons">Site icons</h2>
+<p>Further down Customize, under <strong>Start page</strong>, <strong>Site icons</strong> shows each site's own icon on its shortcut instead of a letter. Wayward asks a site for its icon when you visit it, never from a private or locked tab. Clearing your history deletes the icons.</p>
+<h2 id="if-new-tabs-open-on-your-search-engine-s-page">If new tabs open on your search engine's page</h2>
+<p>All of this is about Wayward's own home page. If <strong>Settings</strong> &gt; <strong>Tabs and History</strong> &gt; <strong>New tabs open on</strong> is set to <strong>Search engine's page</strong>, new tabs and Home show your search engine's page instead, so none of these settings change what you see.</p><h2>More in Make it yours</h2><ul class="pages"><li><a href="theme-color-icon.html">Change the theme, color and app icon</a></li><li><a href="dark-mode.html">Turn on dark mode for Wayward and websites</a></li><li><a href="customize-bar.html">Change the bottom bar&#x27;s buttons</a></li><li><a href="customize-menu.html">Reorder or hide menu items</a></li><li><a href="customize-tabs-bar.html">Change the Tabs screen&#x27;s bar</a></li><li><a href="text-size.html">Make text bigger, or zoom any site</a></li><li><a href="languages.html">Change Wayward&#x27;s language, and the languages sites see</a></li></ul>
+</main></body></html>

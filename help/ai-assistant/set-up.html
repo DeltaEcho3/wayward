@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Set up the assistant with your own key · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">AI assistant</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Set up the assistant with your own key</h1><p class="kind">Walkthrough</p><p>Use the assistant to ask about a page, summarize it, search the web or compare tabs. It can also browse and save a video for you. It's part of Premium, and it's off until you turn it on. It works with your own account at an AI provider, who bills you for what you use. This walks through setting it up.</p>
+<h2 id="1-get-premium">1. Get Premium</h2>
+<p>The assistant is part of Wayward Premium, a one-time purchase. Until you have it, the assistant's panel says <strong>Let AI browse and download for you</strong> with <strong>See Premium</strong>, and <strong>Settings</strong> &gt; <strong>AI assistant</strong> says <strong>The AI assistant is part of Wayward Premium</strong>. Tap either to see Premium.</p>
+<div class="shots"><figure><img src="../img/ai-not-set-up.webp" width="720" height="1600" loading="lazy" alt="Before it is set up the panel says &quot;Let AI browse and download for you&quot; with Set up the assistant"></figure></div>
+<div class="shots"><figure><img src="../img/ais-premium-gate.webp" width="720" height="1600" loading="lazy" alt="Without Premium, Settings &gt; AI assistant shows &quot;The AI assistant is part of Wayward Premium&quot;, and Open saved chat"></figure></div>
+<h2 id="2-turn-it-on">2. Turn it on</h2>
+<p>Open the <strong>⋮</strong> menu, then <strong>Settings</strong> &gt; <strong>AI assistant</strong>. Turn on the <strong>AI assistant</strong> switch. Wayward explains first (<strong>Turn on the AI assistant?</strong>): when you use the assistant, the page's text, links and any screenshots go to your AI provider, with typed text hidden in screenshots, and normal browsing shares nothing. Tap <strong>Turn on</strong>.</p>
+<div class="shots"><figure><img src="../img/ais-switch.webp" width="720" height="1600" loading="lazy" alt="Turning the AI assistant switch on asks &quot;Turn on the AI assistant?&quot; with Turn on"></figure></div>
+<h2 id="3-pick-a-provider-and-add-your-key">3. Pick a provider and add your key</h2>
+<p>Under <strong>AI provider</strong>, pick one: "OpenRouter" (one account for models from many makers), "Claude" (Anthropic's own), "OpenAI" or "Grok" (xAI's). You need an account there, with a little credit on it.</p>
+<p>Then add the key, in the section named after the provider:</p>
+<ul>
+<li>With OpenRouter, the easiest way is <strong>Connect OpenRouter</strong>: sign in to OpenRouter in the window that opens (<strong>Sign in to OpenRouter</strong>), and Wayward gets a key for this phone.</li>
+<li>With any of them: tap <strong>Get a key</strong>, which opens the provider's key page in a tab. Make a key there and copy it. Come back, paste it in the field under <strong>Or paste an API key</strong>, and tap <strong>Save key</strong>.</li>
+</ul>
+<div class="shots"><figure><img src="../img/ais-key-empty.webp" width="720" height="1600" loading="lazy" alt="A provider with no key yet: Get a key, and the field to paste it in"></figure></div>
+<p>Once it's saved, the section says <strong>Key saved</strong>: it's stored encrypted on your phone, and only ever sent to that provider. <strong>Set a spending limit</strong> opens the provider's page, where you can cap what the key may spend; it's a good idea, since Wayward's counts are only estimates. <strong>Disconnect</strong> deletes the key from Wayward, after asking.</p>
+<div class="shots"><figure><img src="../img/ais-provider.webp" width="720" height="1600" loading="lazy" alt="AI provider (OpenRouter, Claude, OpenAI, Grok), the saved key (Key saved, Set a spending limit, Disconnect), and Model with whether it can see screenshots"></figure></div>
+<h2 id="4-pick-a-model">4. Pick a model</h2>
+<p>Under <strong>Model</strong>, pick one of the provider's suggested models, or <strong>Custom</strong> and type any model ID that supports tools. A line below says whether the model can see screenshots; text-only models read pages but can't look at them. Changing the provider or the model starts a new conversation.</p>
+<div class="shots"><figure><img src="../img/ais-model-list.webp" width="720" height="1600" loading="lazy" alt="Model: the provider&#x27;s suggested models, and Custom for a typed one"></figure></div>
+<h2 id="5-ask-something">5. Ask something</h2>
+<p>Open any page and tap the assistant's button in the middle of the bar (TalkBack: <strong>AI assistant</strong>). The panel opens with three examples to tap, like <strong>What's this page about?</strong>. Before it reads the page, it shows you what would be shared and asks. See <a href="chat.html">ask about a page</a>.</p>
+<div class="shots"><figure><img src="../img/ai-empty-chat.webp" width="720" height="1600" loading="lazy" alt="The panel on an empty chat: its mark, name and model, the Compare tabs chip, three examples to tap, and the message box with Send"></figure></div>
+<h2 id="if-you-don-t-see-the-assistant">If you don't see the assistant</h2>
+<p>If you picked another middle button for the bar (in the welcome or in <strong>Settings</strong> &gt; <strong>Customize</strong>), the assistant is hidden everywhere. <strong>Settings</strong> &gt; <strong>AI assistant</strong> then starts with <strong>The assistant is hidden</strong>: tap it to bring the assistant back. Your chat is kept meanwhile.</p><h2>More in AI assistant</h2><ul class="pages"><li><a href="chat.html">Ask about a page</a></li><li><a href="ways-to-ask.html">Other ways to ask the assistant</a></li><li><a href="compare-tabs.html">Compare your tabs</a></li><li><a href="tasks-approvals.html">Let it do things, with your OK</a></li><li><a href="saved-tasks.html">Receipts and saved tasks</a></li><li><a href="save-chat.html">Save, open or delete a chat</a></li><li><a href="name-personality.html">Name it and set how it talks</a></li></ul>
+</main></body></html>

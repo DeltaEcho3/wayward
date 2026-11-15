@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Turn on dark mode for Wayward and websites · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Make it yours</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Turn on dark mode for Wayward and websites</h1><p class="kind">How-to</p><p>Turn on dark mode for Wayward and websites in one tap. You can keep individual sites light.</p>
+<h2 id="the-quick-way-the-menu">The quick way: the menu</h2>
+<ol>
+<li>Open the <strong>⋮</strong> menu.</li>
+<li>Tap <strong>Dark mode</strong>, the last row of the second card, with the sun and moon switch.</li>
+</ol>
+<div class="shots"><figure><img src="../img/menu-dark-off.webp" width="720" height="1600" loading="lazy" alt="Dark mode, the app card&#x27;s last row: its switch off, the sun on a white knob"></figure><figure><img src="../img/menu-dark-on.webp" width="720" height="1600" loading="lazy" alt="Dark mode on: Wayward and the page dark, the switch in Wayward&#x27;s purple with the moon"></figure></div>
+<p>Wayward goes dark, and so do websites: the page you're on loads again so it changes immediately, and your other tabs change the next time they load. Tap <strong>Dark mode</strong> again to make both light.</p>
+<p>The switch works by changing three settings at once, so Settings always shows what it did:</p>
+<ul>
+<li>On: <strong>Theme</strong> becomes <strong>Dark</strong>, <strong>Website appearance</strong> becomes <strong>Dark</strong>, and <strong>Darken sites without a dark look</strong> turns on.</li>
+<li>Off: <strong>Theme</strong> becomes <strong>Light</strong> and <strong>Website appearance</strong> becomes <strong>Light</strong>. If your color was Midnight, which is always dark, it goes back to Wayward's blue.</li>
+</ul>
+<p>The switch shows on whenever all three are dark right now. With <strong>Match phone</strong> and <strong>Same as your phone</strong>, that's whenever your phone is in dark mode.</p>
+<p>Reloading the page can lose text you'd typed into a box on it, or its translation. A locked tab, and a page in reader view, don't reload.</p>
+<h2 id="a-dark-button-in-the-menu-s-top-row">A Dark button in the menu's top row</h2>
+<p>Prefer a round button next to Bookmark, Find and the others? <strong>Settings</strong> &gt; <strong>Customize</strong>, then under <strong>Menu</strong> turn on <strong>Dark mode button</strong>. It sits after Desktop, lit in Wayward's purple with a white moon while dark mode is on.</p>
+<div class="shots"><figure><img src="../img/menu-dark-button.webp" width="720" height="1600" loading="lazy" alt="Dark mode as a round button after Desktop, shown in Customize (it starts hidden)"></figure></div>
+<h2 id="the-settings-behind-it">The settings behind it</h2>
+<ul>
+<li>Wayward itself: <strong>Settings</strong> &gt; <strong>Themes and app icon</strong> &gt; <strong>Theme</strong>: <strong>Match phone</strong>, <strong>Light</strong> or <strong>Dark</strong>. See <a href="theme-color-icon.html">Change the theme, color and app icon</a>.</li>
+<li>Websites: <strong>Settings</strong> &gt; <strong>Accessibility</strong> &gt; <strong>Website appearance</strong>: <strong>Same as your phone</strong>, <strong>Light</strong> or <strong>Dark</strong>. Many sites have both a light and a dark look, and this picks which one they show.</li>
+<li>Sites with only a light look: <strong>Darken sites without a dark look</strong> darkens them on your phone, with Dark Reader. Pictures and videos stay as they are. It only works while sites are dark, so pick <strong>Dark</strong> or <strong>Same as your phone</strong> above it.</li>
+</ul>
+<div class="shots"><figure><img src="../img/a11y-screen.webp" width="720" height="1600" loading="lazy" alt="Accessibility: Follow your phone&#x27;s text size, Zoom on every site, Website appearance (Same as your phone, Light, Dark) and Darken sites without a dark look"></figure></div>
+<h2 id="keep-one-site-light">Keep one site light</h2>
+<p>Some sites look wrong darkened. To keep one light:</p>
+<ol>
+<li>On that site, tap the blue shield in the address bar.</li>
+<li>Turn off <strong>Dark on this site</strong>. The page loads again in its light look.</li>
+</ol>
+<div class="shots"><figure><img src="../img/shield-dark-site.webp" width="720" height="1600" loading="lazy" alt="&quot;Dark on this site&quot; in the sheet, while Darken sites without a dark look is on"></figure></div>
+<p>The sites you keep light are listed in <strong>Settings</strong> &gt; <strong>Accessibility</strong>, under <strong>Darken sites without a dark look</strong>, each marked <strong>Kept light</strong>. Tap <strong>Darken</strong> next to one to darken it again.</p>
+<p><strong>Dark on this site</strong> isn't in private tabs. Set it from a regular tab, and it applies there too.</p><h2>More in Make it yours</h2><ul class="pages"><li><a href="theme-color-icon.html">Change the theme, color and app icon</a></li><li><a href="customize-bar.html">Change the bottom bar&#x27;s buttons</a></li><li><a href="customize-menu.html">Reorder or hide menu items</a></li><li><a href="customize-tabs-bar.html">Change the Tabs screen&#x27;s bar</a></li><li><a href="home-page.html">Change how the home page looks</a></li><li><a href="text-size.html">Make text bigger, or zoom any site</a></li><li><a href="languages.html">Change Wayward&#x27;s language, and the languages sites see</a></li></ul>
+</main></body></html>

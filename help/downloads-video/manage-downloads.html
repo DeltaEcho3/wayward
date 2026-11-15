@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Find, pause and delete downloads · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Downloads &amp; video</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Find, pause and delete downloads</h1><p class="kind">How-to</p><p>Open Downloads to see files that are downloading and files you've already saved. Open it from the Downloads button on the bar, the start page's <strong>Downloads</strong> button, or the Tabs screen's <strong>⋮</strong> menu. If the downloads lock is on, unlock first.</p>
+<h2 id="what-s-on-the-screen">What's on the screen</h2>
+<ul>
+<li>At the top: how much space your downloads take, like "Using 32.3 MB of 128 GB", and, if old files delete themselves, how long they're kept ("Files inside Wayward are deleted after 30 days").</li>
+<li>Filter chips by kind: <strong>All</strong>, <strong>Videos</strong>, <strong>Audio</strong>, <strong>Images</strong>, <strong>Documents</strong> (only the kinds you have).</li>
+<li>Search (<strong>Search downloads</strong>) by name or site. When nothing fits: <strong>No downloads match.</strong></li>
+<li>The gear opens <strong>Download settings</strong>, and <strong>⋮</strong> has <strong>Select downloads</strong>.</li>
+<li>Your downloads, grouped by day (<strong>Today</strong>, <strong>Yesterday</strong>, then the date). Each has an icon for its kind, its name and its size and site. A private tab's has a small mask on its icon, and one from a space other than Main ends with that space's dot and name.</li>
+</ul>
+<div class="shots"><figure><img src="../img/dl-list.webp" width="720" height="1600" loading="lazy" alt="The Downloads screen: the space used, filter chips, rows by day with an icon for the kind, the name, size and site, a private tab&#x27;s file marked, and search, settings and More in the header"></figure></div>
+<div class="shots"><figure><img src="../img/dl-filter.webp" width="720" height="1600" loading="lazy" alt="A filter chip picked: Videos shows only the videos"></figure></div>
+<div class="shots"><figure><img src="../img/dl-search.webp" width="720" height="1600" loading="lazy" alt="Search downloads by name or site"></figure></div>
+<h2 id="while-a-download-runs">While a download runs</h2>
+<p>Its icon has a ring that fills, and its line shows how far it is ("40% of about 480 MB"), its speed and the time left.</p>
+<ul>
+<li>The ring is the pause button (TalkBack: <strong>Pause download</strong>). A paused download says <strong>Paused</strong> with how far it got, and a play mark. Tap it to carry on (TalkBack: <strong>Resume download</strong>). It picks up where it stopped; if the site can't do that, Wayward says <strong>This site can't resume, so the download started again.</strong></li>
+<li>Its <strong>⋮</strong> has <strong>Source</strong> and <strong>Cancel download</strong>.</li>
+<li><strong>Waiting for one to finish</strong> means it's over your <strong>Downloads at once</strong> limit (see <a href="download-settings.html">download settings</a>). <strong>Waiting for connection</strong> means it waits for your internet to come back.</li>
+<li>A GIF being made says how far it is ("Making GIF · 40%").</li>
+</ul>
+<div class="shots"><figure><img src="../img/dl-running.webp" width="720" height="1600" loading="lazy" alt="A running download&#x27;s row: a ring around a pause mark, and a line with the percent of its size"></figure></div>
+<div class="shots"><figure><img src="../img/dl-paused.webp" width="720" height="1600" loading="lazy" alt="A paused download: &quot;Paused&quot; with its percent, a grey ring and a play mark to resume"></figure></div>
+<div class="shots"><figure><img src="../img/dl-waiting-turn.webp" width="720" height="1600" loading="lazy" alt="Past the Downloads at once limit a download says &quot;Waiting for one to finish&quot;"></figure></div>
+<p>Downloads go on in the background, even after you leave Wayward. If Android closes Wayward while one is going through the browser itself, it waits and says <strong>Continues when you open Wayward</strong>. A private tab's download carries on after you close your last private tab too, without the private tab's cookies.</p>
+<h2 id="when-a-download-fails">When a download fails</h2>
+<p>Its row says <strong>Failed</strong>, or why, and its <strong>⋮</strong> has <strong>Retry</strong>. If a site turns the downloader away, Wayward has already tried again through the browser itself, as your tab would ask, with that site's own sign-in (not in a space that keeps its sign-ins apart). For what the messages mean, see <a href="index.html#when-a-download-doesn-t-work">why a download didn't work</a>.</p>
+<div class="shots"><figure><img src="../img/dl-failed.webp" width="720" height="1600" loading="lazy" alt="A failed download says why in its row (&quot;The site refused it&quot;), and its menu has Retry"></figure></div>
+<h2 id="get-back-to-where-it-came-from">Get back to where it came from</h2>
+<p><strong>Source</strong> in a download's <strong>⋮</strong> opens the page it came from in a new tab, in the space it was downloaded in (a private tab for a private tab's download).</p>
+<div class="shots"><figure><img src="../img/dl-source.webp" width="720" height="1600" loading="lazy" alt="Source opens what the download came from in a new tab"></figure></div>
+<h2 id="delete-downloads">Delete downloads</h2>
+<ul>
+<li>One: tap its <strong>⋮</strong>, then <strong>Delete</strong>. The row goes at once with <strong>Download deleted</strong> and <strong>Undo</strong>, in case you didn't mean it.</li>
+<li>A row with nothing to do but delete (a file that's gone missing, for example) shows a red trash can instead of <strong>⋮</strong>.</li>
+<li>For a file saved in your own folder, <strong>Delete</strong> follows <strong>When you delete</strong> in the download settings, and may ask whether to delete it from your phone or just take it off the list.</li>
+</ul>
+<div class="shots"><figure><img src="../img/dl-delete-ask.webp" width="720" height="1600" loading="lazy" alt="Delete: the row goes at once, with &quot;Download deleted&quot; and Undo"></figure></div>
+<h2 id="pick-several">Pick several</h2>
+<p>Hold a download (or tap <strong>⋮</strong> &gt; <strong>Select downloads</strong>), then tap the others you want. The top shows how many are picked, with <strong>All</strong> or <strong>None</strong> and an X to stop. The bar at the bottom has what fits the ones you picked: <strong>Share</strong>, <strong>Move to folder</strong>, <strong>Move to Wayward</strong>, <strong>Delete</strong>, and <strong>Pause</strong>, <strong>Resume</strong> or <strong>Retry</strong> for running, paused or failed ones. Deleting several goes at once too, with <strong>Undo</strong>.</p>
+<div class="shots"><figure><img src="../img/dl-select.webp" width="720" height="1600" loading="lazy" alt="Selecting: a held row starts it, a tap picks more; the header counts them with All and an X, and a bar holds Share, Move to folder and Delete"></figure></div><h2>More in Downloads &amp; video</h2><ul class="pages"><li><a href="save-a-video.html">Save a video from a page</a></li><li><a href="files-images.html">Download files, pictures and PDFs</a></li><li><a href="where-downloads-go.html">Choose where downloads go</a></li><li><a href="download-settings.html">Download settings</a></li><li><a href="player.html">Watch, listen and look in Wayward</a></li><li><a href="page-video.html">Full screen, background play and picture-in-picture</a></li></ul>
+</main></body></html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Links from other apps, and link previews · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Browsing</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Links from other apps, and link previews</h1><p class="kind">How-to</p><p>When Wayward is your default browser, links from other apps open with Wayward's ad and tracker blocking. Some apps show their links in a small preview window instead. And you can share any link or text from another app to Wayward.</p>
+<h2 id="links-you-tap-in-other-apps">Links you tap in other apps</h2>
+<p>A link from another app opens in a new Wayward tab, and Wayward comes to the front. It opens in your <strong>Main</strong> space, with Main's sign-ins. To have links open in the space you're in instead, turn on <strong>Settings</strong> &gt; <strong>Spaces</strong> &gt; <strong>Other apps' links open in the space you're in</strong>.</p>
+<p>With <strong>Private by default</strong> on (<strong>Settings</strong> &gt; <strong>Tabs and History</strong>), links from other apps open in private tabs.</p>
+<p>At the first page of a tab that another app opened, Back closes that tab and takes you back to the app, as you'd expect.</p>
+<div class="shots"><figure><img src="../img/system-link-in.webp" width="720" height="1600" loading="lazy" alt="A link from another app opens in a new Wayward tab, with Wayward brought to the front"></figure></div>
+<p>If links still open in another browser, Wayward isn't your phone's browser yet. Tap the <strong>Make Wayward your browser</strong> card at the top of <strong>Settings</strong>, or the <strong>Default browser</strong> row once that card is closed, and pick Wayward.</p>
+<h2 id="link-previews">Link previews</h2>
+<p>Some apps (many chat, email and social apps) ask for a preview instead of a full browser. Wayward then opens the page in a light window over that app. Its bar has:</p>
+<ul>
+<li>an X (TalkBack: <strong>Close preview</strong>) to go back to the app,</li>
+<li>the page's title and site,</li>
+<li>the shield, with what was blocked on the page (ads and trackers are blocked in previews too),</li>
+<li>the assistant's button, which opens its panel over the preview (with Premium),</li>
+<li><strong>Share</strong>, and <strong>⋮</strong> with <strong>Open in Wayward</strong> (to carry on in a full tab), <strong>Copy link</strong> and <strong>Copy full link</strong>.</li>
+</ul>
+<div class="shots"><figure><img src="../img/preview-window.webp" width="720" height="1600" loading="lazy" alt="A link preview (Custom Tabs): the page in a light window with a bar holding close, the page&#x27;s title and site, Shields, the assistant, Share and three dots"></figure></div>
+<div class="shots"><figure><img src="../img/preview-more.webp" width="720" height="1600" loading="lazy" alt="A link preview&#x27;s three dots: Open in Wayward and Copy link"></figure></div>
+<p>Previews have the video tab too, and their own long-press menu (copy, share, download, open in app). Links to other apps, and a site asking for your camera or microphone, ask there just as they do in a tab.</p>
+<p>A preview is always a regular page that shares your regular tabs' sign-ins, also with <strong>Private by default</strong> on. <strong>Open in Wayward</strong> opens it as any app's link: in a private tab when <strong>Private by default</strong> is on.</p>
+<h2 id="share-a-link-or-text-to-wayward">Share a link or text to Wayward</h2>
+<p>In another app, tap its share button and pick Wayward:</p>
+<ul>
+<li>A link opens its page in a new tab. Back on that first page takes you back to the app.</li>
+<li>Text with no link in it opens <strong>Shared text</strong>, with <strong>Ask the assistant</strong> (it goes into the assistant's message box) and <strong>Search for it</strong>.</li>
+</ul>
+<div class="shots"><figure><img src="../img/ai-shared-text.webp" width="720" height="1600" loading="lazy" alt="Text shared from another app: the sheet &quot;Shared text&quot; with Ask the assistant and Search for it"></figure></div><h2>More in Browsing</h2><ul class="pages"><li><a href="search-tabs-home.html">Search, keep a few tabs open, and find your way home</a></li><li><a href="address-bar.html">Search or go to an address</a></li><li><a href="copy-paste-share.html">Copy, paste or share a page&#x27;s address</a></li><li><a href="scan-qr.html">Scan a QR code</a></li><li><a href="search-settings.html">Change your search engine, and search one site directly</a></li><li><a href="tabs.html">Open, find and close tabs</a></li><li><a href="tab-menu.html">Pin, rename or pick several tabs</a></li><li><a href="tab-groups.html">Group your tabs</a></li><li><a href="home-page.html">Use the start page</a></li><li><a href="find-in-page.html">Find words on a page</a></li><li><a href="translate-page.html">Translate a page</a></li><li><a href="reader-view.html">Read an article without the clutter</a></li><li><a href="desktop-print-pdf.html">Desktop site, zoom, print and save as PDF</a></li><li><a href="long-press.html">Hold a link, picture or video for more</a></li><li><a href="page-dialogs.html">When a page asks you something</a></li><li><a href="history.html">Find a page in your history, or clear it</a></li><li><a href="bookmarks.html">Bookmarks, folders, import and export</a></li><li><a href="home-screen.html">The widget and home-screen shortcuts</a></li><li><a href="passwords.html">Sign in with your password manager</a></li></ul>
+</main></body></html>

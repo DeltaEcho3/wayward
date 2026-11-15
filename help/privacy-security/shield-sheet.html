@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>See what was blocked, and let a broken site through · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Privacy &amp; security</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>See what was blocked, and let a broken site through</h1><p class="kind">How-to</p><p>Wayward uses its built-in uBlock Origin to block ads and trackers on every page: in regular tabs, private tabs and link previews. You don't need another blocker. The shield button in the address bar shows what it caught on the page you're on, and lets you change things for that one site.</p>
+<h2 id="open-the-shield-sheet">Open the shield sheet</h2>
+<p>Tap the round shield at the end of the address bar (TalkBack: <strong>Shields</strong>). The badge on its corner counts what was blocked on this page.</p>
+<p>The sheet shows:</p>
+<ul>
+<li>the count, in big digits, <strong>blocked on this page</strong>, and the site,</li>
+<li>"Sites blocked" and a number: tap it to see which sites were blocked and how often (the busiest hundred),</li>
+<li><strong>Protection on this site</strong> and <strong>Block JavaScript on this site</strong>,</li>
+<li><strong>Dark on this site</strong>, while Wayward is darkening websites,</li>
+<li>what you allowed or blocked for this site (notifications, protected video), each with <strong>Forget</strong>,</li>
+<li><strong>uBlock Origin controls</strong> and <strong>Shields &amp; Privacy</strong>,</li>
+<li>"Shred" and the site's name, and <strong>Shred automatically</strong> (see <a href="clear-data.html">clear data, Shred and Emergency delete</a>).</li>
+</ul>
+<div class="shots"><figure><img src="../img/shield-dark-site.webp" width="720" height="1600" loading="lazy" alt="&quot;Dark on this site&quot; in the sheet, while Darken sites without a dark look is on"></figure></div>
+<h2 id="a-site-looks-broken-let-it-through">A site looks broken? Let it through</h2>
+<p>If a page is blank, a button does nothing, or a sign-in won't work, blocking may be the cause:</p>
+<ol>
+<li>Tap the shield.</li>
+<li>Turn off <strong>Protection on this site</strong>. Everything on that site then loads, with no ad or tracker blocking, and the page reloads.</li>
+<li>If it works now, leave it off for that site only. Every other site stays protected.</li>
+</ol>
+<p>If it still doesn't work, turn protection back on: the problem is somewhere else. You can tell us about the site in <strong>Settings</strong> &gt; <strong>Send feedback</strong>.</p>
+<p>Other things to try:</p>
+<ul>
+<li>If you blocked JavaScript, turn off <strong>Block JavaScript on this site</strong>. Many sites need it. The page reloads.</li>
+<li>If Wayward darkens the site and it looks wrong, turn off <strong>Dark on this site</strong> to keep it light.</li>
+<li>Pick a lighter <strong>Ad blocking</strong> level in <strong>Settings</strong> &gt; <strong>Shields &amp; Privacy</strong> (see <a href="ad-blocking.html">choose how much Wayward blocks</a>).</li>
+</ul>
+<h2 id="ublock-origin-s-own-panel">uBlock Origin's own panel</h2>
+<p><strong>uBlock Origin controls</strong> opens uBlock Origin's own panel in a sheet. From there you can, for example, pick a part of the page to hide for good. It's uBlock Origin's own screen, so it looks different from the rest of Wayward.</p>
+<div class="shots"><figure><img src="../img/shield-ubo-panel.webp" width="720" height="1600" loading="lazy" alt="uBlock Origin controls: its own panel in a sheet, with the element zapper and picker"></figure></div>
+<h2 id="what-you-told-this-site">What you told this site</h2>
+<p>If a site asked to send notifications or play protected video, your answer shows on the sheet with <strong>Forget</strong>. Forget it and the site asks again next time. All your answers are listed in <strong>Settings</strong> &gt; <strong>Site permissions</strong> (see <a href="site-permissions.html">site permissions</a>).</p>
+<h2 id="in-a-private-tab">In a private tab</h2>
+<p>The sheet has no per-site switches there. It says per-site ad blocking and JavaScript are set in regular tabs, since uBlock Origin keeps them on your phone. To turn blocking off for one site in a private tab, use <strong>uBlock Origin controls</strong>.</p>
+<p>A link preview's shield shows the count too, and says ads and trackers are blocked in previews as well. Open the page in Wayward for uBlock Origin controls and shredding.</p><h2>More in Privacy &amp; security</h2><ul class="pages"><li><a href="lock-it-down.html">Lock Wayward down</a></li><li><a href="ad-blocking.html">Choose how much Wayward blocks</a></li><li><a href="block-pop-ups.html">Hide pop-ups and overlays on pages</a></li><li><a href="connection-settings.html">Secure connections, Secure DNS and the other privacy settings</a></li><li><a href="site-permissions.html">Camera, notifications and other site permissions</a></li><li><a href="private-tabs.html">Use private tabs</a></li><li><a href="spaces.html">Keep sign-ins apart with spaces</a></li><li><a href="locks.html">Lock a tab, your private tabs, a space or Downloads</a></li><li><a href="clear-data.html">Clear data, Shred a site, or delete everything</a></li></ul>
+</main></body></html>

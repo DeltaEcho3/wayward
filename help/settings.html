@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Every setting, screen by screen · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../icon.png" alt=""><a href="../index.html"><span class="brand">Wayward</span></a><nav><a href="../index.html">Home</a><a href="../help/index.html">Help</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a><a href="../support.html">Support</a><a href="../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="index.html">Help</a><form action="index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Every setting, screen by screen</h1><p>Everything in Settings, in the order you'll find it, with what each choice does and how it starts out. To open Settings, tap the <strong>⋮</strong> menu, then <strong>Settings</strong>. It's also in the Tabs screen's menu.</p>
+<p>Settings has four groups: <strong>Privacy</strong>, <strong>Browsing</strong>, <strong>Appearance</strong> and <strong>Wayward</strong>. Each row shows where it stands now. A row with an arrow opens a screen inside Wayward; a row with a box-and-arrow mark opens your phone's own settings, outside Wayward; a row with neither opens a small dialog. On a wide screen (a tablet, an open foldable, landscape), Settings keeps a readable width in the middle.</p>
+<p>To find a setting, tap the magnifier at the top of Settings and type a word or two. Wayward looks through every Settings page, by a setting's name, the line under it and its page, and each result says where it lives (for example Shields &amp; Privacy &gt; Connection). Tap one to go straight to it; its row lights up for a moment. The X clears what you typed, and Back closes the search.</p>
+<div class="shots"><figure><img src="img/settings-top.webp" width="720" height="1600" loading="lazy" alt="Settings, top: the magnifier for searching Settings, the &quot;Make Wayward your browser&quot; card with its X, then Privacy (Shields &amp; Privacy with its dot, Site permissions, Clear browsing data, Passwords and passkeys) and the start of Browsing"></figure><figure><img src="img/settings-middle.webp" width="720" height="1600" loading="lazy" alt="Settings, further down: Browsing (Search with its engine, Tabs and History, Spaces with the space you are in, Downloads with its folder, Video and audio) and Appearance (Themes and app icon, Customize, Accessibility, Languages)"></figure><figure><img src="img/settings-bottom.webp" width="720" height="1600" loading="lazy" alt="Settings, the end: Appearance, then the Wayward group with Premium, Rate Wayward (leaves Wayward), Help (How-tos and FAQs), Send feedback, Back up settings, Welcome setup and About Wayward with the version"></figure></div>
+<h2 id="at-the-top">At the top</h2>
+<p>Until Wayward is your default browser, a card says <strong>Make Wayward your browser</strong>. Tap it to make Wayward your browser, or tap its X to put it away. See <a href="getting-started/default-browser.html">Make Wayward your default browser</a>.</p>
+<h2 id="privacy">Privacy</h2>
+<h3 id="shields">Shields</h3>
+<p>The row says <strong>All on</strong> (with a green dot) when every tracking protection that can be switched off is on, or <strong>Some off</strong>, plus how many ads and trackers were blocked this week. It opens <strong>Shields &amp; Privacy</strong>.</p>
+<p>At the top, the week's count; tap it for the count day by day and the sites blocked most.</p>
+<p><strong>Blocking</strong></p>
+<ul>
+<li><strong>Ad blocking</strong>: <strong>Standard</strong> (by default) blocks ads, trackers, malware and cookie notices, and breaks the fewest sites. <strong>Strict</strong> adds phishing, link tracking, sites reaching into your home network, "open in app" banners and social widgets. <strong>Maximum</strong> adds pop-ups, chat, newsletter and notification prompts and other annoyances. <strong>Custom</strong> shows when you've picked your own mix of lists.</li>
+<li><strong>Filter lists</strong>: every uBlock Origin list, each with a switch, in sections: <strong>Ads</strong>, <strong>Privacy</strong>, <strong>Malware and phishing</strong>, <strong>Cookie notices</strong>, <strong>Social widgets</strong>, <strong>"Open in app" banners</strong>, <strong>Annoyances</strong>, <strong>Host lists</strong> and <strong>Regional</strong>. A list downloads the first time you turn it on, and they update on their own.</li>
+<li><strong>Block JavaScript on every site</strong> (off): many sites stop working without it. You can allow it again for one site from the shield in the address bar.</li>
+<li><strong>Strict tracking protection</strong> (on): the browser engine's strict mode against trackers, cryptominers and social trackers.</li>
+<li><strong>Block social trackers</strong> (on): share and like buttons that follow you from site to site.</li>
+<li><strong>Block fingerprinting</strong> (on): changes what sites can read to recognize your device.</li>
+<li><strong>Strip tracking from links</strong> (on): takes tracking tags, like the ones starting with utm_, out of addresses.</li>
+</ul>
+<p>While uBlock Origin is still starting, the first rows show as <strong>Ads &amp; trackers</strong> with <strong>Blocked by uBlock Origin. Loading its settings…</strong> for a few seconds.</p>
+<p><strong>Connection</strong></p>
+<ul>
+<li><strong>HTTPS-only</strong> (on): loads pages only over secure connections. A site without one shows a page with <strong>Open anyway (not secure)</strong>, which opens just that site, in that tab. HTTPS-only is back on as soon as that tab goes to another site, you switch tabs, or you close it.</li>
+<li><strong>Secure DNS</strong>: <strong>Quad9</strong> (by default), <strong>Cloudflare</strong>, <strong>Mullvad</strong>, <strong>Custom</strong> (your provider's <strong>DNS-over-HTTPS address</strong>) or <strong>Off</strong>. It encrypts the lookups that turn site names into addresses, so your network can't log them. It isn't a VPN.</li>
+<li><strong>WebRTC</strong>: <strong>Hide local IP</strong> (as Wayward comes), <strong>Default</strong>, <strong>Relay only</strong> or <strong>Off</strong>: what a site's video calls can learn about your network. <strong>Relay only</strong> also hides your own address, but some calls may not connect.</li>
+</ul>
+<p><strong>Privacy</strong></p>
+<ul>
+<li><strong>Cookies</strong>: <strong>Isolate cross-site</strong> (by default) keeps each site's cookies apart; <strong>Block all third-party</strong> blocks other sites' cookies altogether.</li>
+<li><strong>Global Privacy Control</strong> (on): tells sites not to sell or share your data.</li>
+<li><strong>Hide in recent apps</strong> (on): blanks Wayward's preview in your phone's app switcher. Before Android 13 it also blocks screenshots.</li>
+<li><strong>Screenshots</strong>: <strong>Not in private tabs</strong> (by default), <strong>Allowed</strong> or <strong>Blocked</strong>. Blocking stops screen recording too, and a locked tab always blocks them while it's on screen.</li>
+<li><strong>Links that open apps</strong>: <strong>Ask</strong> (by default) asks each time a page's link wants to open another app; <strong>Never</strong> keeps you in Wayward and opens the link's web page.</li>
+</ul>
+<p><strong>Advanced</strong></p>
+<ul>
+<li><strong>Strict fingerprinting protection</strong> (off): makes Wayward look like every other browser with it on. Some sites break, times show in UTC, and sites see English and a light theme. It applies to pages you load after turning it on.</li>
+<li><strong>JavaScript speed-ups</strong> (on): off makes sites slower and stops WebAssembly, in exchange for less that an attack could use. It fully takes effect after Wayward restarts.</li>
+<li><strong>Skip AMP pages</strong> (on): opens a site's own page instead of a search engine's AMP copy of it.</li>
+<li><strong>Ask sites for English</strong> (off): sites see English as the only language you read. It's on, and can't be turned off, while <strong>Strict fingerprinting protection</strong> is on.</li>
+</ul>
+<p>A note at the end says what tabs keep, and that the AI assistant's and the video downloader's connections don't go through uBlock Origin, HTTPS-only or Secure DNS.</p>
+<p>More: <a href="privacy-security/ad-blocking.html">Choose how much Wayward blocks</a>, <a href="privacy-security/block-pop-ups.html">Hide pop-ups and overlays on pages</a>, <a href="privacy-security/connection-settings.html">Secure connections, Secure DNS and the other privacy settings</a>, and <a href="privacy-security/shield-sheet.html">See what was blocked, and let a broken site through</a>.</p>
+<h3 id="site-permissions">Site permissions</h3>
+<p>The sites you've answered, under <strong>Notifications</strong> and <strong>Protected video</strong>, each <strong>Allowed</strong> or <strong>Blocked</strong> (and which space, for a space with its own sign-ins). <strong>Forget</strong> makes a site ask again next time. Until a site asks, each section says <strong>No sites yet</strong>. Camera and microphone aren't listed: sites ask for those every time, only while the page is open. Site notifications only arrive while Wayward is running, and never from private tabs. More: <a href="privacy-security/site-permissions.html">Camera, notifications and other site permissions</a>.</p>
+<h3 id="clear-browsing-data">Clear browsing data</h3>
+<p>A dialog with a checkbox for each: <strong>Private tabs</strong>, <strong>Tabs</strong>, <strong>History</strong>, <strong>Cookies and site data</strong>, <strong>Cached images and files</strong> and <strong>Site permissions</strong>. Then <strong>Clear</strong>, and Wayward says <strong>Browsing data cleared</strong>. <strong>Bookmarks, start page shortcuts you added, saved tasks, downloads and settings are kept.</strong> If it would close locked tabs, it asks for your unlock first. The same dialog is in the menu (<strong>Clear data</strong>) and the Tabs screen's menu. More: <a href="privacy-security/clear-data.html">Clear data, Shred a site, or delete everything</a>.</p>
+<h3 id="passwords-and-passkeys">Passwords and passkeys</h3>
+<p>Called <strong>Password manager</strong> on Android 13 and older. It opens your phone's own page for its password manager. Wayward fills in passwords and passkeys through your phone's password manager and never stores them itself. On Android 14 and later, a note says passkeys and security keys work once your password manager lists Wayward as a trusted browser. More: <a href="browsing/passwords.html">Sign in with your password manager</a>.</p>
+<h3 id="default-browser">Default browser</h3>
+<p>Shows once the card at the top is gone: <strong>Wayward is your phone's browser</strong>, or <strong>Choose Wayward in your phone's settings</strong>. It opens your phone's Default apps page.</p>
+<h2 id="browsing">Browsing</h2>
+<h3 id="ai-assistant">AI assistant</h3>
+<p>The row says <strong>Part of Premium</strong>, <strong>Add your key</strong>, <strong>Off</strong>, or your provider's name.</p>
+<p>Without Premium, the screen has <strong>The AI assistant is part of Wayward Premium</strong> (it opens Premium), your <strong>Saved tasks</strong> (to rename or delete them), and <strong>Open saved chat</strong>. If the assistant is off the bar, <strong>The assistant is hidden</strong> sits at the top; tap it to bring the assistant back.</p>
+<p>With Premium:</p>
+<ul>
+<li><strong>AI assistant</strong> (off): turns the assistant on, after <strong>Turn on the AI assistant?</strong> explains what it shares. <strong>Ask from the address bar</strong> (off) offers to ask it about what you type in the address bar.</li>
+<li><strong>How it acts</strong>: <strong>Ask each time</strong> (by default) asks before each step that does something on a page; <strong>OK the task once</strong> asks once, then works through the task; <strong>Always allow</strong> works on its own, after <strong>Let the assistant act without asking?</strong> explains what that means. In every mode it still asks before logins, purchases and deletions.</li>
+<li><strong>Name and personality</strong>: a <strong>Name</strong> for the assistant and <strong>How it talks</strong>.</li>
+<li><strong>Saved tasks</strong>: each with its three dots for <strong>Rename</strong>, <strong>Add to home screen</strong> and <strong>Delete</strong>.</li>
+<li><strong>Sharing pages</strong>: <strong>Always share pages</strong> (off) shares pages without the sharing card, after <strong>Share pages without asking?</strong>; it stays on with <strong>Always allow</strong>. Sites you chose to always share from the sharing card are listed, each with <strong>Remove</strong>.</li>
+<li><strong>On-phone transcription</strong>: whether this phone can turn a video's speech into text itself.</li>
+<li><strong>AI provider</strong>: <strong>OpenRouter</strong>, <strong>Claude</strong>, <strong>OpenAI</strong> or <strong>Grok</strong>.</li>
+<li>The provider's key, like <strong>OpenRouter key</strong>: <strong>Connect OpenRouter</strong> (OpenRouter only: <strong>Sign in to OpenRouter</strong> and Wayward gets a key), <strong>Get a key</strong> (opens the provider's key page), or <strong>Or paste an API key</strong> and <strong>Save key</strong>. Once saved: <strong>Key saved</strong>, <strong>Set a spending limit</strong> and <strong>Disconnect</strong>.</li>
+<li><strong>Model</strong>: one of the provider's models, or <strong>Custom</strong> with its model ID. Changing the provider or model starts a new conversation. A line says whether the model can see screenshots.</li>
+</ul>
+<p>More: <a href="ai-assistant/set-up.html">Set up the assistant with your own key</a>, <a href="ai-assistant/tasks-approvals.html">Let it do things, with your OK</a>, <a href="ai-assistant/name-personality.html">Name it and set how it talks</a>, and <a href="ai-assistant/saved-tasks.html">Receipts and saved tasks</a>.</p>
+<h3 id="search">Search</h3>
+<p>The <strong>Search</strong> row shows your search engine.</p>
+<ul>
+<li><strong>Search engine</strong>: <strong>DuckDuckGo</strong> (by default), <strong>Brave</strong>, <strong>Startpage</strong>, <strong>Ecosia</strong>, <strong>Google</strong>, <strong>Bing</strong>, or <strong>Custom</strong> with your own <strong>Search address</strong> (with %s where the search words go). It's for searches from the address bar; the AI assistant searches with DuckDuckGo.</li>
+<li><strong>Search suggestions</strong> (on): your search engine's suggestions as you type. What you type goes to it before you press Go. Never in private tabs, and not with a custom engine.</li>
+<li><strong>Image search</strong>: <strong>Google Lens</strong> (by default), <strong>Bing Visual Search</strong>, <strong>TinEye</strong>, or the <strong>AI assistant</strong>: what searching an image uses when you hold a picture.</li>
+<li><strong>Advanced (experimental)</strong>: <strong>Search shortcuts</strong> (off). Type a shortcut, a space and your search to search one site directly. <strong>Add a shortcut</strong> asks for the <strong>Shortcut</strong>, a <strong>Name</strong> and the <strong>Search address</strong>; tap one to change or delete it.</li>
+</ul>
+<p>More: <a href="browsing/search-settings.html">Change your search engine, and search one site directly</a>.</p>
+<h3 id="tabs-and-history">Tabs and History</h3>
+<p>Under <strong>Tabs</strong>:</p>
+<ul>
+<li><strong>New tabs open on</strong>: <strong>Wayward start page</strong> (by default) or <strong>Search engine's page</strong>: what new tabs and the Home button show.</li>
+<li><strong>Ad and tracker counter</strong> (on, with Wayward's start page): the week's blocked count on the start page.</li>
+<li><strong>Private by default</strong> (off): links from other apps, and the tab Wayward starts with, open as private tabs. With <strong>Lock private tabs</strong> on, Wayward then asks for your unlock as it starts.</li>
+<li><strong>Lock private tabs</strong> (on): asks for your fingerprint, face or PIN before showing private tabs, a brand-new one included. It needs a screen lock on your phone; turning it off asks for your unlock.</li>
+<li><strong>Locked tabs lock again</strong>: <strong>Right away</strong> (by default) or <strong>After 30 seconds</strong>, for locked tabs, locked spaces, private tabs and Downloads. Leaving Wayward still locks them.</li>
+<li><strong>History</strong> (on): remembers the pages you visit in tabs, on this phone only. Private tabs never add to it.</li>
+<li><strong>Delete everything when Wayward closes</strong> (off): when you swipe Wayward away, or Android closes it, it deletes all tabs, cookies, sign-ins, site data, cache, permissions, history and the shortcuts you added to the start page. Bookmarks, saved tasks, downloads and settings stay.</li>
+</ul>
+<p>More: <a href="privacy-security/private-tabs.html">Use private tabs</a>, <a href="privacy-security/locks.html">Lock a tab, your private tabs, a space or Downloads</a>, and <a href="browsing/history.html">Find a page in your history, or clear it</a>.</p>
+<h3 id="spaces">Spaces</h3>
+<p>The row shows the space you're in. The screen lists your spaces, each with its color and <strong>Own sign-ins</strong> or <strong>Shares Main's sign-ins</strong>. Tap one for <strong>Edit space</strong>: its name, color, <strong>Save history</strong>, <strong>Lock this space</strong>, and <strong>Clear this space</strong> and <strong>Delete space</strong> (each asks first). <strong>New space</strong> asks for a name, a color and <strong>Keep sign-ins separate</strong> (on to start with; it can't be changed later).</p>
+<p><strong>Other apps' links open in the space you're in</strong> (off): off, links from other apps open in Main, with Main's sign-ins. A note says what every space shares: history, bookmarks, downloads, Shields and uBlock Origin's settings.</p>
+<p>More: <a href="privacy-security/spaces.html">Keep sign-ins apart with spaces</a>.</p>
+<h3 id="downloads">Downloads</h3>
+<p>The row shows where downloads go. It opens <strong>Download settings</strong> over Settings, after your unlock if Downloads are locked.</p>
+<ul>
+<li><strong>Save downloads to</strong>: <strong>Private, in app</strong> (by default), hidden from other apps and behind the downloads lock, or <strong>A folder on your phone</strong>, which asks <strong>Save downloads to a folder?</strong> first, then shows <strong>Change folder</strong>. A private tab's downloads always stay inside Wayward.</li>
+<li><strong>Move downloads to a folder</strong>: shows while downloads are kept inside Wayward, with how many.</li>
+<li><strong>When you delete</strong>: <strong>Ask each time</strong> (by default), <strong>Delete from phone</strong> or <strong>Remove from list</strong>, for downloads in your folder.</li>
+<li><strong>Delete saved files after</strong>: <strong>Never</strong> (by default), <strong>1 day</strong>, <strong>7 days</strong> or <strong>30 days</strong>, for files kept inside Wayward. If older ones are there, it asks <strong>Delete older files now?</strong> first.</li>
+<li><strong>Downloads at once</strong>: 1 to 5, or <strong>No limit</strong>. 3 by default.</li>
+<li><strong>Ask where to save</strong> (off), <strong>Open when done</strong> (off) and <strong>Progress notifications</strong> (on).</li>
+<li>Under <strong>Lock</strong>: <strong>Lock downloads</strong> (on): asks for your fingerprint, face or PIN before showing your downloads. It needs a screen lock on your phone.</li>
+</ul>
+<p>More: <a href="downloads-video/download-settings.html">Download settings</a> and <a href="downloads-video/where-downloads-go.html">Choose where downloads go</a>.</p>
+<h3 id="video-and-audio">Video and audio</h3>
+<p>The <strong>Video and audio</strong> screen has two parts.</p>
+<ul>
+<li>Under <strong>When you leave Wayward</strong>: <strong>Background play</strong> (on) keeps a page's video or sound playing after you leave Wayward or turn the screen off, with controls in a notification. <strong>Picture-in-picture</strong> (on) keeps a fullscreen video playing in a small window you can move around. In the Google Play version, the note under each names one site whose videos always pause instead.</li>
+<li>Under <strong>Protected video</strong>: <strong>Play protected video</strong> (on): videos protected with DRM (Widevine), which your phone handles. A site asks the first time.</li>
+</ul>
+<p>More: <a href="downloads-video/page-video.html">Full screen, background play and picture-in-picture</a>.</p>
+<h2 id="appearance">Appearance</h2>
+<h3 id="themes-and-app-icon">Themes and app icon</h3>
+<p><strong>Theme</strong>, <strong>Color</strong> and <strong>Home-screen icon</strong>. See <a href="make-it-yours/theme-color-icon.html">Change the theme, color and app icon</a>.</p>
+<h3 id="customize">Customize</h3>
+<p>The row says where your address bar is. In order: <strong>Address bar</strong>, <strong>Home page</strong>, <strong>Show on the home page</strong>, <strong>Bottom bar</strong>, <strong>Tabs screen bar</strong>, <strong>Menu</strong>, <strong>Start page</strong> (<strong>Site icons</strong>), <strong>Gestures</strong> (<strong>Pull down to reload</strong>) and <strong>Reset to default</strong>. See <a href="make-it-yours/customize-bar.html">Change the bottom bar's buttons</a>, <a href="make-it-yours/home-page.html">Change how the home page looks</a>, <a href="make-it-yours/customize-menu.html">Reorder or hide menu items</a> and <a href="make-it-yours/customize-tabs-bar.html">Change the Tabs screen's bar</a>.</p>
+<h3 id="accessibility">Accessibility</h3>
+<p><strong>Text size on pages</strong>, <strong>Zoom</strong>, <strong>Website appearance</strong> and <strong>Darken sites without a dark look</strong>. See <a href="make-it-yours/text-size.html">Make text bigger, or zoom any site</a> and <a href="make-it-yours/dark-mode.html">Turn on dark mode</a>.</p>
+<h3 id="languages">Languages</h3>
+<p>The row shows Wayward's language. <strong>Wayward's language</strong>, <strong>Languages for websites</strong> and <strong>Page translation</strong>. See <a href="make-it-yours/languages.html">Change Wayward's language, and the languages sites see</a>.</p>
+<h2 id="wayward">Wayward</h2>
+<h3 id="premium">Premium</h3>
+<p><strong>AI assistant, app icons and themes</strong> until you have it, then <strong>Premium is unlocked</strong>. See <a href="premium/unlock-or-restore.html">Unlock Premium, or get it back</a>.</p>
+<h3 id="rate-wayward">Rate Wayward</h3>
+<p>Opens Wayward's page in the Play Store (in a tab, if your phone has no Play Store).</p>
+<h3 id="help">Help</h3>
+<p><strong>Help</strong> (How-tos and FAQs) opens this help on Wayward's website, in a new tab.</p>
+<h3 id="send-feedback">Send feedback</h3>
+<p>Report a problem or send an idea; you see the whole report first. See <a href="troubleshooting/send-feedback.html">Send feedback or report a problem</a>.</p>
+<h3 id="back-up-settings">Back up settings</h3>
+<p>Tap it for <strong>Save to a file</strong> or <strong>Restore</strong>. See <a href="getting-started/bring-your-things.html">Bring your bookmarks and settings</a>.</p>
+<h3 id="welcome-setup">Welcome setup</h3>
+<p>Tap it for <strong>Just the tutorial</strong> or <strong>The whole setup</strong>, then <strong>Continue</strong>. See <a href="getting-started/first-run.html#run-the-setup-again">Run the setup again</a>.</p>
+<h3 id="about-wayward">About Wayward</h3>
+<p>The row shows the version. The screen has Wayward's logo and your supporter badge if you have Premium, then:</p>
+<ul>
+<li><strong>Application version</strong>: Wayward's version and the browser engine's. Tap it to copy that and your Android version (<strong>Version copied</strong>).</li>
+<li><strong>Operating system</strong>: your Android version.</li>
+<li><strong>Legal information</strong>: <strong>Open-source licenses</strong> (the projects Wayward is built on; tap one to read its license), <strong>Wayward Terms of Use</strong>, <strong>Wayward Privacy Policy</strong> and <strong>Wayward License</strong>, each readable right there.</li>
+</ul>
+<div class="shots"><figure><img src="img/settings-wide.webp" width="720" height="324" loading="lazy" alt="On a wide screen Settings keeps a readable width, centered"></figure></div>
+</main></body></html>

@@ -15,12 +15,25 @@ code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
 .draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
 @media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
 </style></head>
-<body><main><header><img src="icon.png" alt=""><a href="index.html"><span class="brand">Wayward</span></a><nav><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a><a href="oss/">Open source</a></nav></header>
+<body><main><header><img src="icon.png" alt=""><a href="index.html"><span class="brand">Wayward</span></a><nav><a href="index.html">Home</a><a href="help/index.html">Help</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a><a href="oss/">Open source</a></nav></header>
 
 <h1>Support</h1>
-<p>In the app, go to <strong>About &amp; licenses &gt; Create support report</strong>. It shows you exactly what's in the report before you send it,
-and nothing is ever sent automatically.</p>
+<p>Most questions are answered in the <a href="help/index.html">help</a>: how-tos, walkthroughs, and what Wayward's messages mean.</p>
+<p>To report a problem or suggest something, open Wayward and go to <strong>Settings</strong> &gt; <strong>Send feedback</strong>,
+near the end of Settings. Pick what it's about and where, and add a few words if you like. You see exactly what will be sent
+before anything goes, and nothing is ever sent automatically: <strong>Send feedback…</strong> opens your phone's share menu, and
+you send it from your own email app. <a href="help/troubleshooting/send-feedback.html">More about feedback</a>.</p>
 <p>Email: <a href="mailto:trywayward@gmail.com">trywayward@gmail.com</a></p>
 
 </main></body></html>

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What Wayward&#x27;s messages mean · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Troubleshooting &amp; support</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>What Wayward&#x27;s messages mean</h1><p class="kind">How-to</p><p>Find the message you saw to learn what it means and what you can do next. Messages are grouped by where you meet them; use your browser's find, or the help's search, to look one up.</p>
+<h2 id="when-a-page-won-t-open">When a page won't open</h2>
+<p>Instead of the page, Wayward shows what went wrong, with the address under it. The bars stay, so you can go back or try another address.</p>
+<ul>
+<li><strong>Site not found</strong>: "Check the address, or your connection." The name may be misspelled, or you may be offline.</li>
+<li><strong>You're offline</strong>: "Check your connection and try again." Turn on Wi-Fi or mobile data.</li>
+<li><strong>The site took too long to respond</strong>: the site is slow or down. Try again in a moment.</li>
+<li><strong>The site refused the connection</strong>: the site may be down, or this network (at work or school, say) blocks it.</li>
+<li><strong>Can't open this page</strong>, with two error numbers: something else went wrong. If it keeps happening on one site, send us feedback with the numbers.</li>
+<li><strong>This site doesn't support a secure connection</strong>: <strong>HTTPS-only</strong> (on by default) only loads pages over secure connections, and this site doesn't have one. <strong>Open anyway (not secure)</strong> opens just that site, in that tab (HTTPS-only is back on once you leave it), but the network you're on could see or change what you send and receive there. Avoid typing passwords or card numbers on it.</li>
+<li><strong>Connection isn't secure</strong>: the site's security certificate couldn't be checked, so Wayward didn't open it. The address bar shows a globe instead of a lock (TalkBack reads it as <strong>Not secure</strong>). Someone could be reading or changing what you send. Only use <strong>Open anyway (not secure)</strong> if you trust the connection, like your own home router's page.</li>
+</ul>
+<div class="shots"><figure><img src="../img/states-error-host.webp" width="720" height="1600" loading="lazy" alt="Error page &quot;Site not found&quot;: &quot;Check the address, or your connection.&quot;"></figure></div>
+<p>More help: <a href="site-broken.html">Fix a site that looks broken or won't work</a>.</p>
+<h2 id="empty-screens">Empty screens</h2>
+<ul>
+<li><strong>No downloads yet</strong>: you haven't downloaded anything. Open a video and tap the tab above the address bar, share a link to Wayward, or hold a picture to download it.</li>
+<li><strong>No tabs</strong>, <strong>No tabs match.</strong>, <strong>No private tabs. Tap + to open one.</strong>: nothing to show on the Tabs screen, or nothing matches your search.</li>
+<li><strong>No groups yet. Long-press a tab to add it to a group.</strong>: the Groups view before you've made one.</li>
+<li><strong>No bookmarks yet. Open the menu on a page and tap Bookmark.</strong> and <strong>This folder is empty.</strong>: nothing saved there yet.</li>
+<li><strong>No history yet. Pages you visit in tabs show up here; private tabs never add to it.</strong>: nothing visited yet, or it was cleared.</li>
+<li><strong>History is off. Turn it on in Settings &gt; Tabs and History to remember pages you visit in tabs that aren't private.</strong>: you turned off <strong>History</strong>.</li>
+<li><strong>Sites you visit often show up here.</strong>: the start page before you've browsed much.</li>
+<li><strong>No sites yet</strong>: in <strong>Site permissions</strong>, before any site has asked for notifications or protected video.</li>
+<li><strong>Ad blocking is on</strong>: the start page's counter before anything was blocked this week.</li>
+</ul>
+<div class="shots"><figure><img src="../img/states-tabs-no-match.webp" width="720" height="1600" loading="lazy" alt="Search your tabs with nothing found: &quot;No tabs match.&quot;"></figure></div>
+<h2 id="while-you-browse">While you browse</h2>
+<ul>
+<li><strong>Stopped more dialogs from this page.</strong>: the page kept popping up messages, so after three in a row Wayward stopped it.</li>
+<li><strong>This image is part of the page and can't be saved on its own</strong>: when you hold a picture the page draws itself, there's no picture file to save, copy or share.</li>
+<li><strong>Couldn't get the image</strong>, <strong>The site refused it (HTTP ...)</strong> with the site's error number, <strong>The site didn't send an image</strong>, <strong>The site sent an empty file</strong>, <strong>The site didn't answer</strong>, <strong>The file is too big (over ...)</strong> with the largest size allowed: copying, sharing or downloading a picture or a link's file didn't work, and why. Try again, or open the picture in a new tab first.</li>
+<li><strong>The private tab closed before the image arrived</strong>: you closed the private tab while its picture was still coming.</li>
+<li><strong>No app on your phone opens this link</strong> or <strong>No app on this phone can open that link</strong>: a link meant for an app, and you don't have that app.</li>
+<li><strong>To get this site's notifications, turn on notifications for Wayward in your phone's settings.</strong>: you allowed the site, but Android has Wayward's notifications turned off. Turn them on in your phone's settings for Wayward.</li>
+<li><strong>Blocked by uBlock Origin. Loading its settings…</strong> and <strong>Loading uBlock Origin's lists…</strong>: right after Wayward starts, the ad blocker takes a few seconds to get ready. Open the screen again in a moment.</li>
+<li><strong>uBlock Origin: ...</strong> followed by a message: the ad blocker couldn't make a change you asked for. Try again.</li>
+</ul>
+<div class="shots"><figure><img src="../img/states-notifications-off.webp" width="720" height="1600" loading="lazy" alt="A site allowed to notify while Android has Wayward&#x27;s notifications off: the toast &quot;To get this site&#x27;s notifications, turn on notifications for Wayward in your phone&#x27;s settings.&quot;"></figure></div>
+<h2 id="the-start-page-and-the-menu">The start page and the menu</h2>
+<ul>
+<li><strong>Added to the start page</strong>, <strong>That page is already on the start page</strong>: what happened when you added a shortcut.</li>
+<li><strong>Start page full. Remove one, or choose more in Customize.</strong> or <strong>Start page full. Remove a shortcut first.</strong>: every tile is taken. Remove one, or pick more tiles in <strong>Settings</strong> &gt; <strong>Customize</strong> &gt; <strong>Shortcuts</strong> (up to 16).</li>
+<li><strong>Already added, but hidden. Choose more in Customize.</strong> and <strong>Not added. Some are hidden: choose more in Customize.</strong>: you have more shortcuts than tiles. Choose more tiles in Customize.</li>
+<li><strong>This phone's home screen doesn't take shortcuts</strong> and <strong>Already on your home screen: name and icon updated</strong>: see <a href="../getting-started/the-menu.html#if-something-doesn-t-work">Find your way around the menu</a>.</li>
+<li><strong>This page couldn't be saved as a PDF</strong>, <strong>This page can't be printed right now</strong> and <strong>Android's print service isn't available here</strong>: see the same page.</li>
+</ul>
+<h2 id="translating">Translating</h2>
+<ul>
+<li><strong>This phone can't run the translator.</strong>: translation needs something this phone doesn't have.</li>
+<li><strong>The language files didn't download. Check your connection and try again.</strong>: each language downloads the first time; that download didn't finish.</li>
+<li><strong>The translator doesn't have this language yet.</strong>: that language can't be translated yet.</li>
+<li><strong>This page couldn't be translated.</strong>: something else went wrong; reload and try again.</li>
+</ul>
+<h2 id="locks-and-spaces">Locks and spaces</h2>
+<ul>
+<li><strong>Set a screen lock on your phone first</strong>, <strong>Set a screen lock on your phone first to use this.</strong> or <strong>Needs a screen lock on your phone (Settings &gt; Security).</strong>: Wayward's locks use your phone's own fingerprint, face or PIN, so they need a screen lock set in your phone's settings first.</li>
+<li><strong>That's as many spaces as Wayward keeps. Delete one to make another.</strong>: you've reached the most spaces.</li>
+</ul>
+<h2 id="bookmarks-settings-files-and-pictures">Bookmarks, settings files and pictures</h2>
+<ul>
+<li><strong>Your bookmarks couldn't be opened after a problem with this phone's key storage, so a new list was started.</strong>: your bookmarks are kept encrypted with a key held in your phone's secure key storage, and the phone lost that key. Without it the old list can't be read, so Wayward started a new one. If you saved your bookmarks to a file, import it again.</li>
+<li><strong>Couldn't save the bookmark just now. Try again in a moment.</strong>: your phone's key storage didn't answer in time. Try again.</li>
+<li>Bookmark and settings files: see <a href="../getting-started/bring-your-things.html">Bring your bookmarks and settings</a> for <strong>No bookmarks found in that file.</strong>, <strong>That file is too big to import.</strong>, <strong>That isn't a Wayward settings file.</strong>, <strong>Couldn't read or save the file.</strong> and the rest.</li>
+<li>Wallpaper: <strong>That picture can't be used. Try another one.</strong> or <strong>That picture is too big. Try a smaller one.</strong> Pick another photo.</li>
+</ul>
+<h2 id="downloads">Downloads</h2>
+<p>What a failed download's message means is in <a href="download-fails.html">When a download fails</a>, including <strong>Not saved: it's an app file. Tap its link to download it.</strong>, and the message from sites the Google Play version of Wayward can't download from. While a download moves along, its row can also say:</p>
+<ul>
+<li><strong>Preparing…</strong>, <strong>Checking…</strong> or <strong>Moving…</strong>: getting the file ready, or moving it, which takes a moment for big files and slow folders.</li>
+<li><strong>Cancelled</strong>: you cancelled it.</li>
+<li><strong>File missing</strong>: the file was deleted or moved outside Wayward, so only its row is left. Delete the row, or download it again.</li>
+<li><strong>No app on your phone opens this file</strong>: you have no app for this kind of file. Install one that opens it, or share the file to an app that does.</li>
+</ul>
+<p>Moving downloads:</p>
+<ul>
+<li><strong>Moved to the folder</strong>, <strong>Moved 3 downloads to the folder</strong>, <strong>Moved into Wayward, behind the downloads lock</strong>: done.</li>
+<li><strong>Moved 2 of 3; the rest couldn't be written there</strong>: the folder ran out of space, or wouldn't take some files. Free some space or pick another folder.</li>
+<li><strong>Already moving</strong>, <strong>Couldn't move it</strong>, <strong>Couldn't use that folder</strong>: try again, or pick another folder.</li>
+<li><strong>This phone has no folder picker</strong>: your phone has no app for picking folders, so downloads stay inside Wayward.</li>
+<li><strong>Removed from the list. The file is still in your folder.</strong>: you removed a download kept in your phone's folder from the list; the file itself is still there.</li>
+</ul>
+<h2 id="premium">Premium</h2>
+<p><strong>Connecting to Google Play. Try again in a moment.</strong>, <strong>Google Play isn't offering Premium to this account right now.</strong>, <strong>Purchase pending…</strong> and <strong>Checking with Google Play…</strong>: see <a href="../premium/unlock-or-restore.html#if-it-doesn-t-work">Unlock Premium, or get it back</a>.</p>
+<h2 id="the-ai-assistant">The AI assistant</h2>
+<p>Before it can answer:</p>
+<ul>
+<li><strong>The AI assistant is part of Wayward Premium.</strong>: see <a href="../premium/unlock-or-restore.html">Premium</a>.</li>
+<li><strong>Turn on the AI assistant in Settings &gt; AI assistant first.</strong>, <strong>Pick an AI provider in Settings &gt; AI assistant first.</strong>, <strong>Add your OpenRouter key in Settings &gt; AI assistant first.</strong>: finish setting it up in <strong>Settings</strong> &gt; <strong>AI assistant</strong>.</li>
+<li><strong>This tab is locked. Unlock it first.</strong>, <strong>This chat is locked. Unlock it first.</strong>: unlock it with your fingerprint, face or PIN first.</li>
+<li><strong>The preview was closed.</strong>: the link preview it was reading closed.</li>
+</ul>
+<p>From your AI provider, in the chat:</p>
+<ul>
+<li><strong>OpenRouter rejected the key. Reconnect it in Settings &gt; AI assistant.</strong> or <strong>Anthropic rejected the key. Check it in Settings &gt; AI assistant.</strong>: the key is wrong, or was revoked. Add it again.</li>
+<li><strong>Your OpenAI account is out of credits.</strong>: add credit with your provider.</li>
+<li><strong>Too many requests, or your xAI account reached a limit. Try again in a moment, or check your account.</strong>: wait a little, or check your provider account's limits.</li>
+<li><strong>OpenRouter is busy right now. Try again in a moment.</strong>: the provider is overloaded.</li>
+<li><strong>AI request failed: ...</strong> with the provider's own words: something else went wrong at the provider.</li>
+<li><strong>The AI provider or model changed, so this message starts a new conversation.</strong>: you switched provider or model, so the assistant starts fresh.</li>
+<li><strong>Your last chat is too big to open right now. It stays on your phone until you tap New chat, and nothing new is kept until then.</strong>: start a new chat to go on.</li>
+</ul>
+<p>Setting up the key:</p>
+<ul>
+<li><strong>OpenRouter connected</strong>, <strong>Key saved</strong>: done; your key is stored encrypted on your phone.</li>
+<li><strong>Couldn't connect: ...</strong>: the OpenRouter sign-in didn't finish. Try again.</li>
+</ul>
+<p>Saving chats and tasks:</p>
+<ul>
+<li><strong>Chat saved. The copy isn't encrypted.</strong>, <strong>Chat saved and encrypted. To read it, use Open saved chat in the assistant's menu.</strong>, <strong>Encrypting the chat…</strong>: what happened when you saved the chat to a file.</li>
+<li><strong>Use at least 12 characters.</strong>, <strong>The passwords don't match.</strong>: the password for an encrypted chat needs 12 or more characters, typed the same twice.</li>
+<li><strong>That password doesn't open this file, or the file is damaged.</strong>, <strong>This isn't an encrypted Wayward chat.</strong>, <strong>This chat was saved by a newer Wayward. Update Wayward to open it.</strong>, <strong>This file is too big to open right now.</strong>: opening a saved chat didn't work, and why.</li>
+<li><strong>This chat used a locked tab or locked Downloads, so it can't be saved to a file.</strong>: to keep what was locked private, that chat stays in Wayward.</li>
+<li><strong>Saved. It's in the assistant's panel and in Settings &gt; AI assistant.</strong>, <strong>Give it a name and something to ask.</strong>, <strong>Too long to save. Keep it under 2000 characters.</strong>, <strong>You have 50 saved tasks, the most Wayward keeps. Delete one first.</strong>, <strong>That saved task was deleted</strong>, <strong>Saved tasks can't be read right now. Try again after restarting Wayward.</strong>: what happened with a saved task.</li>
+</ul>
+<p>For more, see <a href="../ai-assistant/set-up.html">Set up the assistant with your own key</a>, <a href="../ai-assistant/save-chat.html">Save, open or delete a chat</a> and <a href="../ai-assistant/saved-tasks.html">Receipts and saved tasks</a>.</p>
+<h2 id="phone-settings-wayward-opens-for-you">Phone settings Wayward opens for you</h2>
+<ul>
+<li><strong>Look for Passwords or Autofill in your phone's settings</strong>, <strong>Look for Default apps in your phone's settings</strong>: your phone doesn't have the page Wayward tried to open, so it opened your phone's main settings instead. Find the setting there.</li>
+<li><strong>Couldn't open your phone's settings</strong>: open your phone's Settings app yourself.</li>
+</ul>
+<h2 id="quick-confirmations">Quick confirmations</h2>
+<p>Short messages that say something worked: <strong>Copied</strong>, <strong>Image copied</strong>, <strong>Download started</strong>, <strong>Version copied</strong>, <strong>Browsing data cleared</strong>, <strong>Everything deleted</strong>, <strong>Translation files deleted</strong>, <strong>Settings saved</strong>, <strong>Settings restored</strong>, and <strong>Icon changed. Your home screen may take a moment to update.</strong></p><h2>More in Troubleshooting &amp; support</h2><ul class="pages"><li><a href="send-feedback.html">Send feedback or report a problem</a></li><li><a href="site-broken.html">Fix a site that looks broken or won&#x27;t work</a></li><li><a href="download-fails.html">When a download fails</a></li><li><a href="slow-pages.html">When pages are slow or scrolling stutters</a></li></ul>
+</main></body></html>

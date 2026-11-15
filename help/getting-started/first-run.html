@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Set up Wayward the first time · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Getting started</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Set up Wayward the first time</h1><p class="kind">Walkthrough</p><p>When you first open Wayward, setup helps you make a few choices and shows you the gestures you'll use most. It takes a minute or two. To keep the defaults, tap <strong>Next</strong> on each page. You can change your choices later in <strong>Settings</strong>.</p>
+<p>Wayward needs Android 10 or later.</p>
+<p>If you first open Wayward by tapping a link in another app, Wayward opens that page immediately and postpones setup until the next time you open it.</p>
+<h2 id="getting-around-the-setup">Getting around the setup</h2>
+<ul>
+<li><strong>Next</strong> takes you to the next page. On the last page it says <strong>Done</strong>.</li>
+<li>Swipe sideways to go back and forth, or use your phone's Back.</li>
+<li><strong>Skip</strong>, at the top, ends the setup and leaves everything as it is now.</li>
+<li>The dots at the bottom show how far along you are.</li>
+<li>Back on the first page closes Wayward. The setup shows again next time.</li>
+</ul>
+<h2 id="1-welcome-to-wayward">1. Welcome to Wayward</h2>
+<p>The first page holds the choices most people care about:</p>
+<ul>
+<li><strong>Search engine</strong>: what your searches from the address bar use. DuckDuckGo is the default, and Brave, Startpage, Ecosia, Google and Bing are in the list.</li>
+<li><strong>Address bar</strong>: <strong>At the bottom</strong>, nearest your thumb, or <strong>At the top</strong>. The buttons stay at the bottom either way.</li>
+<li><strong>Full screen pages</strong> (Android 11 and later): pages fill the whole screen, and the bars slide away while you scroll.</li>
+<li><strong>Ad blocking</strong>: how much Wayward blocks. <strong>Standard</strong> blocks ads, trackers, malware and cookie notices, and breaks the fewest sites. <strong>Strict</strong> also blocks phishing, "open in app" banners and social widgets. <strong>Maximum</strong> also hides pop-ups, chat, newsletter and notification prompts, and more sites can break.</li>
+<li><strong>Ad and tracker counter</strong>: your start page shows how many ads and trackers Wayward blocked this week.</li>
+<li><strong>Private by default</strong>: links from other apps, and the tab Wayward starts with, open as private tabs. Private tabs are locked by default, so with this setting on, Wayward asks for your fingerprint, face or PIN as it starts.</li>
+</ul>
+<div class="shots"><figure><img src="../img/welcome-start.webp" width="720" height="1600" loading="lazy" alt="The welcome&#x27;s first page: search engine, address bar place, full screen pages, ad blocking, the counter"></figure><figure><img src="../img/welcome-ad-blocking.webp" width="720" height="1600" loading="lazy" alt="Welcome: how much ad blocking"></figure><figure><img src="../img/welcome-more-choices.webp" width="720" height="1600" loading="lazy" alt="Welcome: the first page&#x27;s lower choices (Private by default)"></figure></div>
+<h2 id="2-make-it-yours">2. Make it yours</h2>
+<p>Pick a look. The whole setup switches to it as you tap, so you see it immediately.</p>
+<ul>
+<li><strong>Normal</strong> has the two-row bar: the address on top, a row of buttons under it.</li>
+<li><strong>Minimal</strong> is quieter: neutral greys and plain buttons, and the Minimalist Address Bar, one floating pill with the address, Shields, Tabs and the menu. See <a href="minimum-bar.html">Use the Minimalist Address Bar</a>.</li>
+</ul>
+<p>Under the two drawings, <strong>Theme</strong> sets <strong>Match phone</strong>, <strong>Light</strong> or <strong>Dark</strong>.</p>
+<div class="shots"><figure><img src="../img/welcome-look.webp" width="720" height="1600" loading="lazy" alt="Welcome: Normal or Minimal layout, and the theme"></figure><figure><img src="../img/welcome-look-minimal.webp" width="720" height="1600" loading="lazy" alt="Welcome: the Minimal layout picked (the Minimalist Address Bar)"></figure></div>
+<h2 id="3-four-gestures">3. Four gestures</h2>
+<p>Four short pages each show one gesture as a little looping animation:</p>
+<ul>
+<li><strong>Tap the address bar</strong> to search, type an address, or scan a QR code.</li>
+<li><strong>Hold a link or picture</strong> to open it in a new or private tab, copy it, share it or download it.</li>
+<li><strong>Your tabs and spaces</strong>: spaces sit at the top of the Tabs screen. Hold a space to edit or lock it. Hold a tab to pin it, rename it or pick several, and swipe a tab sideways to close it.</li>
+<li><strong>Pull down to reload</strong>: at the top of a page, pull it down and let go. Scrolling down a page hides the bars, and scrolling up brings them back.</li>
+</ul>
+<div class="shots"><figure><img src="../img/welcome-tap-address.webp" width="720" height="1600" loading="lazy" alt="Welcome: the address bar gesture"></figure><figure><img src="../img/welcome-tabs-spaces.webp" width="720" height="1600" loading="lazy" alt="Welcome: tabs and spaces"></figure></div>
+<h2 id="4-bring-your-things">4. Bring your things</h2>
+<p>This page is for anyone coming from another browser, or putting Wayward back on a phone. All of it is optional.</p>
+<ul>
+<li><strong>Import bookmarks</strong>: pick a bookmarks file another browser saved. They land in a folder of their own in Bookmarks.</li>
+<li><strong>Restore a backup</strong>: pick a Wayward settings file you saved before. Wayward lists what will change and asks first. It replaces what you picked on the earlier pages.</li>
+<li><strong>Downloads go to</strong>: <strong>Private, in app</strong> keeps downloads private, behind your lock. <strong>A folder on your phone</strong> saves them where your gallery and other apps can see them. Wayward explains that and asks first, then opens Android's folder picker.</li>
+</ul>
+<div class="shots"><figure><img src="../img/welcome-bring.webp" width="720" height="1600" loading="lazy" alt="Welcome: import bookmarks, restore a backup, where downloads go"></figure><figure><img src="../img/welcome-downloads-go.webp" width="720" height="1600" loading="lazy" alt="Welcome: downloads inside Wayward or in the phone&#x27;s folder"></figure></div>
+<p>More in <a href="bring-your-things.html">Bring your bookmarks and settings</a>.</p>
+<h2 id="5-make-wayward-your-browser">5. Make Wayward your browser</h2>
+<p>This page only shows while Wayward isn't your phone's default browser. <strong>Set as default</strong> brings up Android's own question, and <strong>Not now</strong> skips it. Either way, the setup moves on. More in <a href="default-browser.html">Make Wayward your default browser</a>.</p>
+<div class="shots"><figure><img src="../img/welcome-default-browser.webp" width="720" height="1600" loading="lazy" alt="Welcome: make Wayward your browser"></figure></div>
+<h2 id="6-want-an-ai-assistant">6. Want an AI assistant?</h2>
+<p>The last page asks about the assistant. It can answer questions about the page you're on, sum it up, or browse for you, with your own key from an AI provider. Without Premium, the page says <strong>It's part of Premium.</strong></p>
+<ul>
+<li><strong>Yes, set it up</strong> ends the setup on the assistant's settings, ready for your key. See <a href="../ai-assistant/set-up.html">Set up the assistant with your own key</a>.</li>
+<li><strong>No thanks</strong> takes the assistant off the bar and asks what goes in its place. <strong>Pick your middle button</strong> shows the bar as it will look, with eight choices: New tab, New private tab, Find in page, Share, Back, Forward, Bookmarks and History. Tap one, then <strong>Done</strong>. Your pick sits in the gradient circle in the middle of the bar, where the assistant was.</li>
+<li>With the Minimalist Address Bar there's no middle button, so <strong>No thanks</strong> just takes the assistant away.</li>
+<li><strong>Skip</strong> leaves the bar as it is, assistant included.</li>
+</ul>
+<div class="shots"><figure><img src="../img/welcome-assistant.webp" width="720" height="1600" loading="lazy" alt="Welcome: the question about the AI assistant"></figure><figure><img src="../img/welcome-middle-button.webp" width="720" height="1600" loading="lazy" alt="Welcome: &quot;No thanks&quot; lets you pick the middle button that takes the assistant&#x27;s place"></figure><figure><img src="../img/welcome-done-bar.webp" width="720" height="1600" loading="lazy" alt="After &quot;No thanks&quot;: the picked button sits in the assistant&#x27;s place on the bar"></figure></div>
+<p>Changed your mind? <strong>Settings</strong> &gt; <strong>Customize</strong> &gt; <strong>Middle button</strong> &gt; <strong>AI assistant</strong> brings the assistant back.</p>
+<div class="shots"><figure><img src="../img/welcome-assistant-setup.webp" width="720" height="1600" loading="lazy" alt="Welcome: &quot;Yes, set it up&quot; ends the welcome on the assistant&#x27;s settings"></figure></div>
+<h2 id="the-end">The end</h2>
+<p>The setup fades into the globe and <strong>Welcome to Wayward</strong>, then into your start page (or the assistant's settings, if you said yes). A tap or Back skips ahead.</p>
+<div class="shots"><figure><img src="../img/welcome-ending.webp" width="720" height="1600" loading="lazy" alt="The welcome ends on the globe and &quot;Welcome to Wayward&quot;, which fades into the start page"></figure></div>
+<h2 id="run-the-setup-again">Run the setup again</h2>
+<p>Want the tour again, or to go through the choices once more? Open the <strong>⋮</strong> menu, then <strong>Settings</strong> &gt; <strong>Welcome setup</strong>. Pick one, then tap <strong>Continue</strong>:</p>
+<ul>
+<li><strong>Just the tutorial</strong>: only the four gesture pages, then you're back in Settings.</li>
+<li><strong>The whole setup</strong>: every page again, each choice showing what you have now. It ends in the browser, on the tab you were on.</li>
+</ul>
+<div class="shots"><figure><img src="../img/welcome-again.webp" width="720" height="1600" loading="lazy" alt="Settings &gt; Welcome setup: just the tutorial or the whole setup again, in one dropdown, and Continue"></figure></div>
+<p>After an update that brings the setup back, like 1.5.0, Wayward opens on the whole setup once, the same way. Your tabs, settings and downloads stay as they were, and <strong>Skip</strong> or <strong>Done</strong> takes you to them.</p><h2>More in Getting started</h2><ul class="pages"><li><a href="default-browser.html">Make Wayward your default browser</a></li><li><a href="the-bars.html">Get to know the bars</a></li><li><a href="minimum-bar.html">Use the Minimalist Address Bar</a></li><li><a href="the-menu.html">Find your way around the menu</a></li><li><a href="bring-your-things.html">Bring your bookmarks and settings</a></li><li><a href="new-phone.html">Move Wayward to a new phone</a></li></ul>
+</main></body></html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Compare your tabs · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">AI assistant</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Compare your tabs</h1><p class="kind">How-to</p><p>Ask the assistant to compare two to four open tabs, such as product pages, hotel listings or recipes. It's good for "which is the better value?".</p>
+<ol>
+<li>Open the pages you want to compare, each in its own regular tab.</li>
+<li>Open the assistant's panel. In an empty chat, tap <strong>Compare tabs</strong>.</li>
+<li>Pick the tabs ("Pick 2 to 4 tabs."). <strong>Your question</strong> starts as <strong>Which is the better choice, and why?</strong>; change it to what you want to know.</li>
+<li>Tap <strong>Compare</strong>.</li>
+<li>A card asks <strong>Share pages?</strong>, naming the sites, your provider and the size of the request. Tap <strong>Share</strong>, or <strong>Don't share</strong>.</li>
+</ol>
+<div class="shots"><figure><img src="../img/ai-compare-pick.webp" width="720" height="1600" loading="lazy" alt="Compare tabs: &quot;Pick 2 to 4 tabs.&quot;, &quot;Your question&quot; filled in, and Compare"></figure></div>
+<div class="shots"><figure><img src="../img/ai-compare-card.webp" width="720" height="1600" loading="lazy" alt="The compare card &quot;Share pages?&quot;: the sites, the provider and the size, with Don&#x27;t share and Share"></figure></div>
+<p>While it works, the chat says <strong>Reading the pages you picked</strong>, then the answer comes. Follow-up questions in the same chat know those pages.</p>
+<p>If you closed one of the tabs meanwhile, nothing is compared, and the chat says so. If a page couldn't be read, open that tab once and try again.</p><h2>More in AI assistant</h2><ul class="pages"><li><a href="set-up.html">Set up the assistant with your own key</a></li><li><a href="chat.html">Ask about a page</a></li><li><a href="ways-to-ask.html">Other ways to ask the assistant</a></li><li><a href="tasks-approvals.html">Let it do things, with your OK</a></li><li><a href="saved-tasks.html">Receipts and saved tasks</a></li><li><a href="save-chat.html">Save, open or delete a chat</a></li><li><a href="name-personality.html">Name it and set how it talks</a></li></ul>
+</main></body></html>

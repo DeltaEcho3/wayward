@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lock a tab, your private tabs, a space or Downloads · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Privacy &amp; security</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Lock a tab, your private tabs, a space or Downloads</h1><p class="kind">How-to</p><p>Locks keep what's behind them hidden until you use your phone's fingerprint, face or PIN to open it. Use them if someone else might pick up your phone. The locks need a screen lock on your phone; without one, Wayward asks you to set one first.</p>
+<p>A lock controls who can see something. It isn't extra encryption: what's behind it is stored as it would be without the lock (see <a href="index.html#what-s-encrypted-and-what-wayward-connects-to">what's encrypted</a>).</p>
+<h2 id="lock-one-tab">Lock one tab</h2>
+<p>Open the <strong>⋮</strong> menu on the page and tap <strong>Lock this tab</strong>, or hold the tab on the Tabs screen and tap <strong>Lock tab</strong>. Locking and unlocking both ask for your fingerprint, face or PIN.</p>
+<div class="shots"><figure><img src="../img/tabs-hold-menu.webp" width="720" height="1600" loading="lazy" alt="Holding a tab: Add to bookmarks, Pin tab, Rename, Lock tab, Add to group, Move to private tab, Move to space, Select tabs, Close other tabs"></figure></div>
+<p>While it's locked, its page, address and videos stay hidden. The tab shows <strong>This tab is locked</strong>, with <strong>Unlock with your fingerprint, face or PIN.</strong> and an <strong>Unlock</strong> button, and the address bar only says <strong>Locked tab</strong>. On the Tabs screen its card shows a lock (or a blurred picture) and <strong>Locked tab</strong>, and its menu offers only <strong>Unlock tab</strong> and <strong>Close other tabs</strong>. <strong>Unlock tab</strong> takes the lock off for good.</p>
+<div class="shots"><figure><img src="../img/locks-tab-card.webp" width="720" height="1600" loading="lazy" alt="A locked tab on the Tabs screen: a lock, &quot;Locked tab&quot; and a blurred picture; its menu has only Unlock tab and Close other tabs"></figure></div>
+<h2 id="lock-your-private-tabs">Lock your private tabs</h2>
+<p><strong>Settings</strong> &gt; <strong>Tabs and History</strong> &gt; <strong>Lock private tabs</strong> is on to start with. While it's on, every way into private tabs asks for the unlock first, even when none are open yet. Locked, they show <strong>Private tabs are locked</strong> with <strong>Unlock</strong>, and the phone's prompt is titled <strong>Unlock private tabs</strong>. One unlock opens them all. Turning the lock off asks for the unlock too. See <a href="private-tabs.html">private tabs</a>.</p>
+<div class="shots"><figure><img src="../img/locks-settings.webp" width="720" height="1600" loading="lazy" alt="Settings &gt; Tabs and History: Lock private tabs, and &quot;Locked tabs lock again&quot;"></figure></div>
+<div class="shots"><figure><div class="shot-missing" role="img" aria-label="Screenshot to come"><b>locks-private-shut</b>Locked private tabs on the Tabs screen: &quot;Private tabs are locked&quot; with Unlock</div></figure></div>
+<h2 id="lock-a-space">Lock a space</h2>
+<p>Any space but Main can be locked: on the Tabs screen, open <strong>⋮</strong> and turn on <strong>Lock this space</strong>, or turn it on in <strong>Edit space</strong>. One unlock opens the whole space, and its pages are never added to history. Locked, the space shows <strong>This space is locked</strong> with <strong>Unlock</strong> in place of its tabs, and a lock in its color instead of its dot (on its chip, in the space picker, in <strong>Settings</strong> &gt; <strong>Spaces</strong> and in the address bar). Deleting a locked space asks for the unlock first.</p>
+<div class="shots"><figure><div class="shot-missing" role="img" aria-label="Screenshot to come"><b>locks-space-shut</b>A locked space: a lock in its color on its chip, and &quot;This space is locked&quot; with Unlock in place of its tabs</div></figure></div>
+<h2 id="lock-downloads">Lock Downloads</h2>
+<p><strong>Lock downloads</strong>, under <strong>Lock</strong> in <strong>Settings</strong> &gt; <strong>Downloads</strong> (or the gear on the Downloads screen), is on to start with. Downloads asks for your fingerprint, face or PIN before showing anything: <strong>Downloads are locked</strong>, with <strong>Unlock</strong> and <strong>Back to browser</strong>. Turning the lock on or off asks too. It covers the files kept inside Wayward; files you saved to a folder on your phone are outside it.</p>
+<div class="shots"><figure><img src="../img/locks-downloads-setting.webp" width="720" height="1600" loading="lazy" alt="Download settings: the Lock downloads switch (off here, so the sheet can be shown)"></figure></div>
+<h2 id="when-things-lock-again">When things lock again</h2>
+<p>Leaving Wayward locks everything again (private tabs a minute after you leave). Inside Wayward, <strong>Settings</strong> &gt; <strong>Tabs and History</strong> &gt; <strong>Locked tabs lock again</strong> decides:</p>
+<ul>
+<li><strong>Right away</strong> (the start): a locked tab, locked space or your private tabs lock as soon as you go back to the Tabs screen or another tab, and Downloads as soon as you leave it.</li>
+<li><strong>After 30 seconds</strong>: they wait half a minute first. Choosing this asks for the unlock.</li>
+</ul>
+<h2 id="what-else-a-lock-does">What else a lock does</h2>
+<ul>
+<li>Closing a locked tab (its X, a swipe, <strong>Close all tabs (not private)</strong>, <strong>Close other tabs</strong>, <strong>Close group</strong> or <strong>Close tab</strong>) asks for the unlock first.</li>
+<li><strong>Clear browsing data</strong> asks for the unlock first when it would close locked tabs, or private tabs behind their lock.</li>
+<li>A locked tab on screen, an open locked space, locked Downloads and a chat that holds locked content always block screenshots and the recent apps picture.</li>
+<li>Whatever locks stops playing, and a locked tab plays nothing and shows no media controls.</li>
+<li>A chat with the assistant that used a locked tab, or holds something from Downloads, locks with it: <strong>This chat used a locked tab</strong> or <strong>This chat holds something from Downloads</strong>, with <strong>Unlock</strong> and <strong>New chat</strong>. The prompt is titled <strong>Unlock the chat</strong>.</li>
+</ul><h2>More in Privacy &amp; security</h2><ul class="pages"><li><a href="lock-it-down.html">Lock Wayward down</a></li><li><a href="shield-sheet.html">See what was blocked, and let a broken site through</a></li><li><a href="ad-blocking.html">Choose how much Wayward blocks</a></li><li><a href="block-pop-ups.html">Hide pop-ups and overlays on pages</a></li><li><a href="connection-settings.html">Secure connections, Secure DNS and the other privacy settings</a></li><li><a href="site-permissions.html">Camera, notifications and other site permissions</a></li><li><a href="private-tabs.html">Use private tabs</a></li><li><a href="spaces.html">Keep sign-ins apart with spaces</a></li><li><a href="clear-data.html">Clear data, Shred a site, or delete everything</a></li></ul>
+</main></body></html>

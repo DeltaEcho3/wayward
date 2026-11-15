@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lock Wayward down · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Privacy &amp; security</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Lock Wayward down</h1><p class="kind">Walkthrough</p><p>By default, Wayward blocks ads and trackers, encrypts history and tabs on your phone, and locks private tabs. If other people use your phone, or you just want more, here's how to tighten everything in about five minutes. You'll need a screen lock (fingerprint, face or PIN) set up on your phone.</p>
+<h2 id="1-pick-how-much-to-block">1. Pick how much to block</h2>
+<p>Open the <strong>⋮</strong> menu, then <strong>Settings</strong> &gt; <strong>Shields &amp; Privacy</strong>. <strong>Ad blocking</strong> starts on <strong>Standard</strong>. <strong>Strict</strong> also blocks phishing sites, tracking in links and "open in app" banners; it breaks a few more sites. See <a href="ad-blocking.html">choose how much Wayward blocks</a>.</p>
+<h2 id="2-make-private-the-default">2. Make private the default</h2>
+<p>Go back to <strong>Settings</strong>, then <strong>Tabs and History</strong>:</p>
+<ul>
+<li>Turn on <strong>Private by default</strong>. Links from other apps, and the tab Wayward starts with, then open as private tabs, which keep no history and forget their cookies when they close.</li>
+<li>Check that <strong>Lock private tabs</strong> is on. Every way into private tabs then asks for your fingerprint, face or PIN first.</li>
+<li>Leave <strong>Locked tabs lock again</strong> on <strong>Right away</strong>, so whatever you locked closes again as soon as you look away from it.</li>
+</ul>
+<div class="shots"><figure><img src="../img/tabsset-screen.webp" width="720" height="1600" loading="lazy" alt="Tabs and History: New tabs open on, Ad and tracker counter, Private by default, Lock private tabs, Locked tabs lock again (Right away or After 30 seconds), History"></figure></div>
+<h2 id="3-check-that-your-downloads-are-locked">3. Check that your downloads are locked</h2>
+<p>Go back to <strong>Settings</strong> and tap <strong>Downloads</strong>. Under <strong>Lock</strong>, <strong>Lock downloads</strong> is on to start with: the Downloads screen asks for your unlock before showing anything. Keep new downloads on <strong>Private, in app</strong> (where they start), so they stay out of your gallery and behind that lock.</p>
+<div class="shots"><figure><img src="../img/locks-downloads-setting.webp" width="720" height="1600" loading="lazy" alt="Download settings: the Lock downloads switch (off here, so the sheet can be shown)"></figure></div>
+<h2 id="4-keep-wayward-out-of-screenshots-and-recent-apps">4. Keep Wayward out of screenshots and recent apps</h2>
+<p>In <strong>Settings</strong> &gt; <strong>Shields &amp; Privacy</strong>, under <strong>Privacy</strong>:</p>
+<ul>
+<li><strong>Hide in recent apps</strong> is on to start with: your phone's app switcher shows Wayward blank.</li>
+<li><strong>Screenshots</strong> starts on <strong>Not in private tabs</strong>. Pick <strong>Blocked</strong> to stop screenshots and screen recording everywhere in Wayward.</li>
+</ul>
+<div class="shots"><figure><img src="../img/shields-privacy.webp" width="720" height="1600" loading="lazy" alt="Shields &amp; Privacy, Privacy: Cookies, Global Privacy Control, Hide in recent apps, Screenshots, Links that open apps"></figure></div>
+<h2 id="5-lock-anything-else-that-s-sensitive">5. Lock anything else that's sensitive</h2>
+<ul>
+<li>One tab: open the <strong>⋮</strong> menu on it and tap <strong>Lock this tab</strong>.</li>
+<li>A whole set of tabs: make a space for them and turn on <strong>Lock this space</strong>. See <a href="spaces.html">spaces</a>.</li>
+</ul>
+<h2 id="6-decide-what-happens-when-you-close-wayward">6. Decide what happens when you close Wayward</h2>
+<p>If you'd like a clean slate each time, turn on <strong>Settings</strong> &gt; <strong>Tabs and History</strong> &gt; <strong>Delete everything when Wayward closes</strong>. Swiping Wayward away then deletes all tabs and browsing data. You'll start signed out of every site.</p>
+<h2 id="7-know-where-the-emergency-button-is">7. Know where the emergency button is</h2>
+<p>On the Tabs screen, <strong>⋮</strong> &gt; <strong>Emergency delete</strong> closes every tab and deletes all browsing data at once, after one question. Bookmarks, downloads, saved tasks and settings are kept. See <a href="clear-data.html">clear data, Shred and Emergency delete</a>.</p>
+<div class="shots"><figure><img src="../img/tabs-emergency-ask.webp" width="720" height="1600" loading="lazy" alt="Emergency delete asks first: &quot;Delete everything?&quot;"></figure></div>
+<p>That's it. For what each lock does, see <a href="locks.html">locks</a>; for what's encrypted on your phone, see <a href="index.html#what-s-encrypted-and-what-wayward-connects-to">what's encrypted</a>.</p><h2>More in Privacy &amp; security</h2><ul class="pages"><li><a href="shield-sheet.html">See what was blocked, and let a broken site through</a></li><li><a href="ad-blocking.html">Choose how much Wayward blocks</a></li><li><a href="block-pop-ups.html">Hide pop-ups and overlays on pages</a></li><li><a href="connection-settings.html">Secure connections, Secure DNS and the other privacy settings</a></li><li><a href="site-permissions.html">Camera, notifications and other site permissions</a></li><li><a href="private-tabs.html">Use private tabs</a></li><li><a href="spaces.html">Keep sign-ins apart with spaces</a></li><li><a href="locks.html">Lock a tab, your private tabs, a space or Downloads</a></li><li><a href="clear-data.html">Clear data, Shred a site, or delete everything</a></li></ul>
+</main></body></html>

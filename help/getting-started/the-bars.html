@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Get to know the bars · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Getting started</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Get to know the bars</h1><p class="kind">How-to</p><p>Use the bars to navigate and control the page you're reading. This is the standard two-row bar. If you picked Minimal in the setup, you have the one-row Minimalist Address Bar instead: see <a href="minimum-bar.html">Use the Minimalist Address Bar</a>.</p>
+<h2 id="the-address-pill">The address pill</h2>
+<p>The pill floats over the bottom of the page. From left to right:</p>
+<ul>
+<li><strong>Back</strong> and <strong>Forward</strong> arrows. A colored dot between them means the tab is in a space with its own sign-ins (a lock means the space is locked).</li>
+<li>A lock (a secure page) or a globe (not secure), then the site's name. Tap the name to search or type an address. Hold it for <strong>Copy link</strong>, and for <strong>Paste</strong> (plus <strong>Paste and go</strong> for a copied address) when you've copied something.</li>
+<li>The blue shield on the right is <strong>Shields</strong>, with how many ads and trackers it blocked on this page. Tap it for this site's Shields, like turning protection off for a site that doesn't work: see <a href="../privacy-security/shield-sheet.html">See what was blocked, and let a broken site through</a>.</li>
+</ul>
+<p>While a page loads, a thin line in Wayward's colors runs along the bottom of the pill.</p>
+<h2 id="the-buttons">The buttons</h2>
+<p>Under the pill is a row of buttons. As Wayward comes, they are:</p>
+<ul>
+<li><strong>Home</strong> shows Wayward's start page. It's drawn over your tab, so Back takes you to the page again. If <strong>New tabs open on</strong> is set to <strong>Search engine's page</strong>, Home opens your search engine's page instead.</li>
+<li><strong>Reload</strong> loads the page again. It rests (faded) on the start page.</li>
+<li><strong>Bookmark</strong>, the star, saves the page to your bookmarks; tap again to remove it. It's filled in while the page is saved. Hold it to open Bookmarks.</li>
+<li>The round button in the middle, in Wayward's gradient, opens the <strong>AI assistant</strong>. While the assistant works on a reply, its colors turn and its sparkle breathes. Without Premium it opens the Premium page. You can put something else in the middle: see <a href="../make-it-yours/customize-bar.html">Change the bottom bar's buttons</a>.</li>
+<li><strong>Tabs</strong>, the rounded square, shows how many tabs are open. It's filled in while you're in a private tab. Tap it for the Tabs screen.</li>
+<li><strong>Downloads</strong> opens your downloads. While downloads run it shows a ring with their progress, and a number once two or more are going.</li>
+<li>The <strong>⋮</strong> menu (TalkBack calls it <strong>Menu</strong>) opens the menu: see <a href="the-menu.html">Find your way around the menu</a>.</li>
+</ul>
+<div class="shots"><figure><img src="../img/browser-page.webp" width="720" height="1600" loading="lazy" alt="A page with the bars: the address pill floating over the page, the row of buttons under it"></figure><figure><img src="../img/bars-assistant-working.webp" width="720" height="1600" loading="lazy" alt="The assistant&#x27;s button while it works"></figure></div>
+<h2 id="hold-the-tabs-button">Hold the Tabs button</h2>
+<p>Holding <strong>Tabs</strong> opens a small menu of quick tab actions:</p>
+<ul>
+<li>In a private tab, <strong>Switch to tabs</strong> jumps back to your most recent tab, or opens a new one if you have none.</li>
+<li>If you have more than one space, a line for each of the others, like <strong>Go to Main</strong>.</li>
+<li><strong>New tab</strong> and <strong>New private tab</strong>.</li>
+<li><strong>Close tab</strong> closes the tab you're in.</li>
+</ul>
+<div class="shots"><figure><img src="../img/bars-tabs-hold.webp" width="720" height="1600" loading="lazy" alt="Hold the Tabs button: quick tab actions"></figure></div>
+<h2 id="when-you-close-a-tab">When you close a tab</h2>
+<p>A bar saying <strong>Tab closed</strong> shows just above the bottom bar for a few seconds, with <strong>Undo</strong>. Tap <strong>Undo</strong> to get the tab back. For a private tab it says <strong>Private tab closed</strong>, and for several at once, how many closed.</p>
+<div class="shots"><figure><img src="../img/bars-undo-close.webp" width="720" height="1600" loading="lazy" alt="A tab just closed: &quot;Tab closed&quot; with Undo"></figure></div>
+<h2 id="when-you-scroll">When you scroll</h2>
+<p>Scrolling down a page sends the bars away, so you see more of the page. Scroll back up, reach the top, or open another page, and they come back. While a page is still loading they stay put, for a few seconds at most.</p>
+<p>With <strong>Full screen pages</strong> on (Android 11 and later, and on by default), the phone's own top bar stays hidden on secure pages and the page runs to every edge. As you scroll, the address bar, the buttons and the phone's navigation bar leave together. The site's name, with its lock, shows for two seconds where the address was. Any downward drag brings everything back.</p>
+<p>With <strong>Full screen pages</strong> off, the bar shrinks to a slim strip with the site's name instead of leaving. Tap the strip to bring the bar back.</p>
+<p>While a video plays and you leave the screen alone, the bar goes away by itself after a couple of seconds, so it doesn't cover the player's controls.</p>
+<p>Turn <strong>Full screen pages</strong> on or off in <strong>Settings</strong> &gt; <strong>Customize</strong>.</p>
+<div class="shots"><figure><img src="../img/bars-gone-on-scroll.webp" width="720" height="1600" loading="lazy" alt="Full screen pages: scrolling down sends the bars away and the page fills the screen"></figure><figure><img src="../img/bars-slim-strip.webp" width="720" height="1600" loading="lazy" alt="Full screen pages off: scrolling shrinks the bar to a slim strip with the site&#x27;s name"></figure></div>
+<h2 id="the-address-bar-at-the-top">The address bar at the top</h2>
+<p>Prefer the address at the top? <strong>Settings</strong> &gt; <strong>Customize</strong> &gt; <strong>At the top</strong>. The address sits on its own bar at the top, the buttons stay at the bottom, and both slide away as you scroll.</p>
+<div class="shots"><figure><img src="../img/bars-address-top.webp" width="720" height="1600" loading="lazy" alt="The address bar at the top, the buttons still at the bottom"></figure></div>
+<h2 id="a-few-more-things">A few more things</h2>
+<ul>
+<li>Your phone's Back goes to the previous page. On a tab's first page it closes the tab and takes you back to the tab it was opened from, or to the app whose link opened it.</li>
+<li>When the keyboard comes up for a box on the page, the bottom bar steps aside so it doesn't cover what you type.</li>
+<li>Controls at the bottom of a page (a video's seek bar, a comment box, a cookie notice) sit just above the bar instead of under it.</li>
+<li>On a wide screen (landscape, a tablet, an open foldable), the bars keep a phone's width, centered.</li>
+<li>In dark mode, the strips around a web page (the status bar, the bar and the gesture bar) are black, so the page stands out. Everywhere else, the dark theme uses greys.</li>
+<li>A video in full screen shows the site's name with "Back to exit" for a moment, so you always know whose page it is.</li>
+</ul>
+<div class="shots"><figure><img src="../img/bars-landscape.webp" width="720" height="324" loading="lazy" alt="On its side: the bars keep a phone&#x27;s width, centered"></figure><figure><img src="../img/bars-dark.webp" width="720" height="1600" loading="lazy" alt="Dark: the bars and the strips around a page are black"></figure></div><h2>More in Getting started</h2><ul class="pages"><li><a href="first-run.html">Set up Wayward the first time</a></li><li><a href="default-browser.html">Make Wayward your default browser</a></li><li><a href="minimum-bar.html">Use the Minimalist Address Bar</a></li><li><a href="the-menu.html">Find your way around the menu</a></li><li><a href="bring-your-things.html">Bring your bookmarks and settings</a></li><li><a href="new-phone.html">Move Wayward to a new phone</a></li></ul>
+</main></body></html>

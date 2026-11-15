@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Secure connections, Secure DNS and the other privacy settings · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Privacy &amp; security</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Secure connections, Secure DNS and the other privacy settings</h1><p class="kind">How-to</p><p>Below <strong>Blocking</strong> in <strong>Settings</strong> &gt; <strong>Shields &amp; Privacy</strong>, you'll find <strong>Connection</strong>, <strong>Privacy</strong> and <strong>Advanced</strong>. What each setting does, and what Wayward starts with:</p>
+<h2 id="connection">Connection</h2>
+<ul>
+<li><strong>HTTPS-only</strong> (on): pages only load over secure https. A site that can't do https gets a page saying <strong>This site doesn't support a secure connection</strong>, with <strong>Open anyway (not secure)</strong> if you still want it. That opens just that site in that tab, over plain http. HTTPS-only is back on as soon as that tab goes to another site, you switch tabs, or you close it, so the next visit asks again.</li>
+<li><strong>Secure DNS</strong> (Quad9): encrypts the lookups that turn a site's name into an address, so your network can't log them. Pick Quad9, Cloudflare, Mullvad, <strong>Custom</strong> (your own provider's <strong>DNS-over-HTTPS address</strong>, which has to start with https://) or <strong>Off</strong>. It isn't a VPN: sites still see your IP address.</li>
+<li><strong>WebRTC</strong> (<strong>Hide local IP</strong>): what a site's video calls can learn about your network. <strong>Hide local IP</strong> keeps your home network's addresses private. <strong>Relay only</strong> also hides your own address, but some calls may not connect. <strong>Off</strong> turns video calls in pages off altogether. <strong>Default</strong> lets sites see your phone's local addresses.</li>
+</ul>
+<div class="shots"><figure><img src="../img/shields-connection.webp" width="720" height="1600" loading="lazy" alt="Shields &amp; Privacy, Connection: HTTPS-only, Secure DNS and WebRTC; then Cookies"></figure></div>
+<div class="shots"><figure><img src="../img/shields-dns.webp" width="720" height="1600" loading="lazy" alt="Secure DNS: Off, Quad9, Cloudflare, Mullvad or Custom"></figure></div>
+<p>When a site's security certificate can't be checked, Wayward doesn't open it: you see <strong>Connection isn't secure</strong>. Only continue if you trust the connection, like your own router. <strong>Open anyway (not secure)</strong> works after a second's pause, and the address bar then shows the globe and <strong>Not secure</strong>. Wayward forgets the choice when it closes.</p>
+<h2 id="privacy">Privacy</h2>
+<ul>
+<li><strong>Cookies</strong> (<strong>Isolate cross-site</strong>): keeps each site's cookies in its own jar, so a site embedded in another can't follow you around. <strong>Block all third-party</strong> refuses those cookies altogether: stricter, but some sign-ins that go through another site may stop working.</li>
+<li><strong>Global Privacy Control</strong> (on): tells sites not to sell or share your data.</li>
+<li><strong>Hide in recent apps</strong> (on): blanks Wayward's picture in your phone's app switcher. Before Android 13, this also blocks screenshots.</li>
+<li><strong>Screenshots</strong> (<strong>Not in private tabs</strong>): <strong>Allowed</strong>, <strong>Not in private tabs</strong> or <strong>Blocked</strong>. Blocking also stops screen recording. A locked tab always blocks them while it's on screen.</li>
+<li><strong>Links that open apps</strong> (<strong>Ask</strong>): when a page's link wants to open another app, <strong>Ask</strong> asks you each time, and <strong>Never</strong> keeps you in Wayward and opens the link's web page if it has one.</li>
+</ul>
+<div class="shots"><figure><img src="../img/shields-privacy.webp" width="720" height="1600" loading="lazy" alt="Shields &amp; Privacy, Privacy: Cookies, Global Privacy Control, Hide in recent apps, Screenshots, Links that open apps"></figure></div>
+<div class="shots"><figure><img src="../img/shields-screenshots.webp" width="720" height="1600" loading="lazy" alt="Screenshots: Allowed, Not in private tabs or Blocked"></figure></div>
+<h2 id="advanced">Advanced</h2>
+<ul>
+<li><strong>Strict fingerprinting protection</strong> (off): Tor Browser's protection, so Wayward tells sites the same things as every other browser with it on. Some sites break, times show in UTC, and sites see English and a light theme. While it's on, <strong>Ask sites for English</strong> is on too. It works on pages you load after turning it on.</li>
+<li><strong>JavaScript speed-ups</strong> (on): Firefox's JavaScript compilers. Off makes sites slower and stops WebAssembly, in exchange for less that an attack can use. It takes full effect after Wayward restarts.</li>
+<li><strong>Skip AMP pages</strong> (on): opens a site's own page instead of its AMP copy from a search engine.</li>
+<li><strong>Ask sites for English</strong> (off): sites see English as the only language you read, whatever your phone or <strong>Settings</strong> &gt; <strong>Languages</strong> say.</li>
+</ul>
+<div class="shots"><figure><img src="../img/shields-advanced.webp" width="720" height="1600" loading="lazy" alt="Shields &amp; Privacy, Advanced: Strict fingerprinting protection, JavaScript speed-ups, Skip AMP pages, Ask sites for English, and the footer on what Shields cover"></figure></div>
+<h2 id="what-shields-don-t-cover">What Shields don't cover</h2>
+<p>Shields protect web pages. The assistant's connections to your AI provider and the video downloader's connections go around uBlock Origin, HTTPS-only and Secure DNS.</p><h2>More in Privacy &amp; security</h2><ul class="pages"><li><a href="lock-it-down.html">Lock Wayward down</a></li><li><a href="shield-sheet.html">See what was blocked, and let a broken site through</a></li><li><a href="ad-blocking.html">Choose how much Wayward blocks</a></li><li><a href="block-pop-ups.html">Hide pop-ups and overlays on pages</a></li><li><a href="site-permissions.html">Camera, notifications and other site permissions</a></li><li><a href="private-tabs.html">Use private tabs</a></li><li><a href="spaces.html">Keep sign-ins apart with spaces</a></li><li><a href="locks.html">Lock a tab, your private tabs, a space or Downloads</a></li><li><a href="clear-data.html">Clear data, Shred a site, or delete everything</a></li></ul>
+</main></body></html>

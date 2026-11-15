@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bring your bookmarks and settings · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Getting started</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Bring your bookmarks and settings</h1><p class="kind">How-to</p><p>Import bookmarks from another browser. You can also back up Wayward settings and restore them on this phone or a new one.</p>
+<h2 id="import-bookmarks-from-another-browser">Import bookmarks from another browser</h2>
+<p>Wayward reads the bookmarks file other browsers save, a file ending in .html. Android doesn't let one browser read another's bookmarks, so first get that file from your old browser.</p>
+<h3 id="get-the-file-from-your-old-browser">Get the file from your old browser</h3>
+<p>Brave, DuckDuckGo and Vivaldi can save the file on the phone. The others can't, but there's a way round for most.</p>
+<h4 id="brave">Brave</h4>
+<p>Open Bookmarks, tap the three dots at the top, then "Export bookmarks". The file goes to your Download folder as bookmarks.html. If you've exported before, it's bookmarks (1).html and so on, so pick the newest.</p>
+<h4 id="duckduckgo">DuckDuckGo</h4>
+<p>Open the menu, then "Bookmarks", tap the three dots at the top, then "Export". Choose a folder, like Download, and save. The file is named bookmarks_ddg and the date.</p>
+<h4 id="vivaldi">Vivaldi</h4>
+<p>Tap the Panel button at the bottom left to open the Bookmarks panel, tap the three dots at its top, then "Export Bookmarks". Look for the file in Download.</p>
+<h4 id="chrome">Chrome</h4>
+<p>Chrome on a phone can't save the file, but Google Takeout can, all on the phone:</p>
+<ol>
+<li>Make sure Chrome keeps its bookmarks in your Google Account. In Chrome, open "Settings", tap your name, then "Save in account". Bookmarks kept only on the phone don't go to Takeout.</li>
+<li>Go to takeout.google.com with the same account. Untick everything except Chrome, then "Next step" and "Create export".</li>
+<li>Google emails you a link, sometimes after a while. Download the archive, then open it in your Files app and tap "Extract".</li>
+<li>The file is in the Takeout folder, then Chrome: Bookmarks.html.</li>
+</ol>
+<p>Or, on a computer signed in to Chrome with the same account: Chrome's "Bookmark manager", the three dots at its top, then "Export bookmarks". Your phone's bookmarks are in that file too, loose at its top.</p>
+<h4 id="firefox">Firefox</h4>
+<p>Firefox on a phone can't save the file. With Firefox on a computer:</p>
+<ol>
+<li>Turn on Firefox Sync on the phone, and sign in to Firefox on the computer with the same account.</li>
+<li>On the computer, open "Manage bookmarks". Your phone's bookmarks are in "Mobile Bookmarks".</li>
+<li>Firefox leaves Mobile Bookmarks out of its export, so select everything inside it, copy it, and paste it into a new folder elsewhere. That copy syncs back to the phone; delete it once you're done.</li>
+<li>"Import and Backup", then "Export Bookmarks to HTML".</li>
+</ol>
+<h4 id="microsoft-edge">Microsoft Edge</h4>
+<p>Edge on a phone can't save the file. Sync it with Edge on a computer (the same Microsoft account), then on the computer open "Favorites", the three dots, then "Export favorites". Check that the file has your phone's favorites; on a computer they're under "Mobile favorites".</p>
+<h4 id="opera">Opera</h4>
+<p>Opera on a phone can't save the file. Sync it with Opera on a computer (the same Opera account), then on the computer open "Show all bookmarks" and use the import and export button at the bottom of the left panel to export. Check that the file has your phone's bookmarks.</p>
+<h4 id="samsung-internet">Samsung Internet</h4>
+<p>Samsung Internet (now called Samsung Browser) can't save its bookmarks to a file, on a phone or a computer.</p>
+<h4 id="a-file-made-on-a-computer">A file made on a computer</h4>
+<p>Copy it into the phone's Download folder over USB, email it to yourself and save the attachment, or put it in your cloud drive, which your phone's file picker can usually open.</p>
+<h3 id="import-it">Import it</h3>
+<ol>
+<li>In Wayward, open the <strong>⋮</strong> menu, then <strong>Bookmarks</strong>.</li>
+<li>Tap the three dots at the top of Bookmarks (TalkBack: <strong>More</strong>), then <strong>Import bookmarks</strong>. A short guide opens first, with the steps above for each browser: tap a browser to see its steps.</li>
+<li>Tap <strong>Choose file</strong> and pick the file.</li>
+</ol>
+<p>Your bookmarks land in a new folder named for the day you imported them, like <strong>Imported Nov 14, 2026</strong>, and Wayward says how many came in. You can also import from the first-run setup's <strong>Bring your things</strong> page.</p>
+<div class="shots"><figure><img src="../img/bookmarks-more.webp" width="720" height="1600" loading="lazy" alt="The Bookmarks screen&#x27;s three dots: Export bookmarks and Import bookmarks"></figure></div>
+<p>If it doesn't work:</p>
+<ul>
+<li><strong>No bookmarks found in that file.</strong> The file isn't a bookmarks file. Export again from the other browser, and pick the .html file it saves.</li>
+<li><strong>That file is too big to import.</strong> Try exporting a smaller part, like one folder at a time.</li>
+<li><strong>Couldn't read or save the file.</strong> Your phone couldn't open it. Copy it to your phone's Downloads folder and try again.</li>
+</ul>
+<h2 id="save-your-bookmarks-to-a-file">Save your bookmarks to a file</h2>
+<p>Bookmarks &gt; three dots &gt; <strong>Export bookmarks</strong> saves them all to a file named wayward-bookmarks with the date. Almost any browser can import it, and so can Wayward on another phone.</p>
+<div class="shots"><figure><img src="../img/bookmarks-export.webp" width="720" height="1600" loading="lazy" alt="Export bookmarks: Android&#x27;s save screen with the file&#x27;s name, wayward-bookmarks and the date, .html"></figure></div>
+<h2 id="back-up-your-settings">Back up your settings</h2>
+<ol>
+<li>Open the <strong>⋮</strong> menu, then <strong>Settings</strong>.</li>
+<li>Near the end, in the Wayward group, tap <strong>Back up settings</strong>.</li>
+<li>Tap <strong>Save to a file</strong>, pick where to keep it, and save.</li>
+</ol>
+<p>Wayward says <strong>Settings saved</strong>. The file is named wayward-settings with the date. Keep it somewhere safe, like your cloud drive, if you want it after a reset or on a new phone.</p>
+<div class="shots"><figure><img src="../img/settings-backup.webp" width="720" height="1600" loading="lazy" alt="Back up settings: what is and is not in the file, with Restore and Save to a file"></figure><figure><img src="../img/settings-backup-save.webp" width="720" height="1600" loading="lazy" alt="Save to a file: Android&#x27;s save screen with the file&#x27;s name, wayward-settings and the date, .json"></figure></div>
+<h2 id="restore-your-settings">Restore your settings</h2>
+<ol>
+<li><strong>Settings</strong> &gt; <strong>Back up settings</strong> &gt; <strong>Restore</strong>, and pick the file. (The first-run setup's <strong>Restore a backup</strong> does the same.)</li>
+<li>Wayward shows <strong>Restore these settings?</strong> with when the file was saved, and a <strong>These change:</strong> list of the most important settings that would change.</li>
+<li>Tap <strong>Restore</strong>.</li>
+</ol>
+<p>Wayward says <strong>Settings restored</strong>. Only restore a file you saved yourself.</p>
+<div class="shots"><figure><img src="../img/settings-backup-restore.webp" width="720" height="1600" loading="lazy" alt="Restore: Android&#x27;s file picker, to pick a settings file"></figure></div>
+<h2 id="what-s-in-the-settings-file">What's in the settings file</h2>
+<p>The file has your choices in Settings: Shields (and uBlock Origin's filter lists), search, tabs and history, your theme and color, Customize (bars, menu, home page), accessibility, video and audio, the languages websites see, most download settings, the AI assistant's provider, model, name and personality, and your spaces' names and colors.</p>
+<p>It leaves out anything secret or about the sites you visit:</p>
+<ul>
+<li>your AI key, so you'll need to add it again;</li>
+<li>locks, and the AI assistant's on switch and how much it may do on its own;</li>
+<li>your bookmarks, start page shortcuts, tabs, history and downloads;</li>
+<li>sites you picked for anything, like sites kept light or always shared with the assistant;</li>
+<li>your download folder, the home-screen icon, Wayward's own language and your wallpaper picture.</li>
+</ul>
+<h2 id="if-something-goes-wrong">If something goes wrong</h2>
+<ul>
+<li><strong>That isn't a Wayward settings file.</strong> Pick the .json file Wayward saved.</li>
+<li><strong>Settings restored, but uBlock Origin's filter lists couldn't be set. Try again in a moment.</strong> Everything else came back. Restore the same file again in a minute.</li>
+<li><strong>Couldn't read or save the file.</strong> Your phone couldn't read or write it there. Try another folder.</li>
+</ul><h2>More in Getting started</h2><ul class="pages"><li><a href="first-run.html">Set up Wayward the first time</a></li><li><a href="default-browser.html">Make Wayward your default browser</a></li><li><a href="the-bars.html">Get to know the bars</a></li><li><a href="minimum-bar.html">Use the Minimalist Address Bar</a></li><li><a href="the-menu.html">Find your way around the menu</a></li><li><a href="new-phone.html">Move Wayward to a new phone</a></li></ul>
+</main></body></html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ask about a page · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">AI assistant</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Ask about a page</h1><p class="kind">How-to</p><p>Ask what the current page says, for a summary, or anything about it. It only reads the page after you've seen what would be shared and said yes (unless you chose otherwise).</p>
+<h2 id="ask">Ask</h2>
+<ol>
+<li>Open the page and tap the assistant's button in the middle of the bar (TalkBack: <strong>AI assistant</strong>).</li>
+<li>The panel opens at the bottom: the assistant's mark, its name, the model under it, and your chat. An empty chat offers three examples to tap: <strong>What's this page about?</strong>, <strong>Download this video in 720p</strong> and <strong>Find videos about sunsets</strong>.</li>
+<li>Type your question in the message box (it says "Ask" and the assistant's name) and tap <strong>Send</strong>.</li>
+</ol>
+<div class="shots"><figure><img src="../img/ai-empty-chat.webp" width="720" height="1600" loading="lazy" alt="The panel on an empty chat: its mark, name and model, the Compare tabs chip, three examples to tap, and the message box with Send"></figure></div>
+<h2 id="the-sharing-card">The sharing card</h2>
+<p>Before the assistant reads a page, it asks with <strong>Share page?</strong>:</p>
+<ul>
+<li>the site, and where it would go (your provider and model),</li>
+<li>what goes: about how many words of the page's text and how many links and buttons, any screenshots it takes (with typed text blacked out), and a video's captions if it reads them,</li>
+<li>other sites shown inside the page, whose text and buttons would go too,</li>
+<li>the size, as an estimate in tokens, which your provider bills you for.</li>
+</ul>
+<p>Tap <strong>Preview what's sent</strong> to see the beginning of exactly what goes (<strong>Hide what's sent</strong> folds it away). Then tap <strong>Share</strong>, or <strong>Don't share</strong>. Tick "Always share" and the site's name to skip the card for that site from now on.</p>
+<div class="shots"><figure><img src="../img/ai-share-card.webp" width="720" height="1600" loading="lazy" alt="The sharing card &quot;Share page?&quot;: the site, where it is sent, what goes and its size, Preview what&#x27;s sent, Always share this site, Don&#x27;t share and Share; Send is a Stop while the assistant works"></figure></div>
+<div class="shots"><figure><img src="../img/ai-share-preview.webp" width="720" height="1600" loading="lazy" alt="Preview what&#x27;s sent on the sharing card: the beginning of what goes to the AI"></figure></div>
+<p>Sites you always share are listed in <strong>Settings</strong> &gt; <strong>AI assistant</strong> under <strong>Sharing pages</strong>, each with <strong>Remove</strong>. There's also <strong>Always share pages</strong>, which skips the card on every site, after warning you (<strong>Share pages without asking?</strong>). Private tabs are never shared, and a locked tab only after you've unlocked it.</p>
+<h2 id="while-it-works-and-its-answer">While it works, and its answer</h2>
+<p>Small step lines show what it's doing, like <strong>Reading the page</strong>, and your answers to its cards show as "You allowed:" or "You denied:". While it works, <strong>Send</strong> turns into a red <strong>Stop</strong>; tap it and the chat says <strong>Stopped</strong>.</p>
+<p>Answers are formatted, with headings, lists, tables, quotes and code, and links in them open in a new tab next to your page. Hold a message to select and copy its text.</p>
+<div class="shots"><figure><img src="../img/ai-formatted.webp" width="720" height="1600" loading="lazy" alt="A formatted reply: headings, bold, italic, code, numbered steps and bullets"></figure></div>
+<div class="shots"><figure><img src="../img/ai-select-text.webp" width="720" height="1600" loading="lazy" alt="Holding a message selects its text: Copy, Select all and Read aloud"></figure></div>
+<p>If an answer is offensive or harmful, tap <strong>Report</strong> under it. <strong>Report this answer?</strong> sends that answer and the model's name to Wayward's support, through Android's share sheet, and nothing else from your chat or browsing.</p>
+<div class="shots"><figure><img src="../img/ai-report.webp" width="720" height="1600" loading="lazy" alt="Report under an answer: &quot;Report this answer?&quot;"></figure></div>
+<h2 id="your-chat-stays">Your chat stays</h2>
+<p>The chat is kept on your phone, encrypted, and comes back after you close Wayward, so you can carry on. Follow-up questions keep what the last messages read. To start fresh, or save it, see <a href="save-chat.html">save, open or delete a chat</a>. The <strong>⋮</strong> in the panel's top corner also has <strong>Settings</strong>, which goes straight to the assistant's settings.</p>
+<p>The assistant doesn't work in private tabs. There the panel says it doesn't, and to switch to a regular tab.</p><h2>More in AI assistant</h2><ul class="pages"><li><a href="set-up.html">Set up the assistant with your own key</a></li><li><a href="ways-to-ask.html">Other ways to ask the assistant</a></li><li><a href="compare-tabs.html">Compare your tabs</a></li><li><a href="tasks-approvals.html">Let it do things, with your OK</a></li><li><a href="saved-tasks.html">Receipts and saved tasks</a></li><li><a href="save-chat.html">Save, open or delete a chat</a></li><li><a href="name-personality.html">Name it and set how it talks</a></li></ul>
+</main></body></html>

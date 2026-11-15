@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Open, find and close tabs · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Browsing</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Open, find and close tabs</h1><p class="kind">How-to</p><p>Open the Tabs screen to see every page you have open, find one, switch to it or close it.</p>
+<h2 id="open-the-tabs-screen">Open the Tabs screen</h2>
+<p>Tap the Tabs button on the bar: the square with a number on it, which is how many tabs you have open. The Tabs screen fades in.</p>
+<div class="shots"><figure><img src="../img/tabs-grid.webp" width="720" height="1600" loading="lazy" alt="The Tabs screen: the spaces&#x27; chips, a grid of cards (picture, title, X; the tab you are on tinted), and the bar: Search, Private tabs, +, Tabs with the count, the three dots"></figure></div>
+<p>You'll see:</p>
+<ul>
+<li>Your spaces as chips along the top (just <strong>Main</strong> until you make another). See <a href="../privacy-security/spaces.html">spaces</a>.</li>
+<li>A card for each tab, two across on a phone: a picture of the page, its title and an X. The tab you're on has its title row tinted. A tab still on the start page shows as <strong>New tab</strong> with the compass. With the phone on its side you get four across, and three on an opened foldable.</li>
+<li>The bar at the bottom: <strong>Search your tabs</strong>, the mask for private tabs, + for a new tab, <strong>Tabs</strong> with your count, and the <strong>⋮</strong> menu.</li>
+</ul>
+<p>Tap a card to go to that tab.</p>
+<h2 id="open-a-new-tab">Open a new tab</h2>
+<p>Tap + (TalkBack: <strong>New tab</strong>). The new tab opens at once, on the start page. Hold + to pick <strong>New tab</strong> or <strong>New private tab</strong>.</p>
+<p>Tapping the mask opens a new private tab. See <a href="../privacy-security/private-tabs.html">private tabs</a>.</p>
+<h2 id="close-a-tab-and-get-it-back">Close a tab, and get it back</h2>
+<ul>
+<li>Tap the X on its card, or swipe the card sideways. Past about a third of its width it slides away and closes; let go sooner and it springs back.</li>
+<li>The cards after it slide into its place.</li>
+<li>A bar says <strong>Tab closed</strong> with <strong>Undo</strong> for about three seconds (longer if your phone's accessibility settings ask for more time). Tap <strong>Undo</strong> and the tab comes back where it was, or swipe the bar away.</li>
+</ul>
+<div class="shots"><figure><img src="../img/tabs-swipe-close.webp" width="720" height="1600" loading="lazy" alt="Swiping a tab sideways: the card follows the finger and fades; past a third of its width it closes"></figure></div>
+<div class="shots"><figure><img src="../img/tabs-undo-close.webp" width="720" height="1600" loading="lazy" alt="A tab closed with its X: &quot;Tab closed&quot; with Undo above the Tabs screen&#x27;s bar"></figure></div>
+<p>To close the tab you're on without opening the Tabs screen, hold the Tabs button on the bar and tap <strong>Close tab</strong>.</p>
+<h2 id="find-a-tab">Find a tab</h2>
+<p>Tap <strong>Search your tabs</strong> and type. The cards narrow to the tabs whose title, name or address match. The X or Back closes the search.</p>
+<div class="shots"><figure><img src="../img/tabs-search.webp" width="720" height="1600" loading="lazy" alt="Search your tabs: a field above the bar, and the grid narrowed to the tabs that match"></figure></div>
+<h2 id="the-tabs-screen-s-menu">The Tabs screen's menu</h2>
+<p>Tap <strong>⋮</strong> on the Tabs screen's bar:</p>
+<ul>
+<li>At the top, the space you're in, with its color, its sign-ins and how many tabs are open. The pencil opens <strong>Edit space</strong>.</li>
+<li><strong>Show tabs as</strong>: <strong>Grid</strong> or <strong>List</strong>. Wayward remembers your choice for each space, and for private tabs.</li>
+<li><strong>Close all tabs (not private)</strong> closes your regular tabs but leaves pinned tabs and pinned groups, with <strong>Undo</strong>. Once you have more than one space it reads <strong>Close all tabs in this space</strong>.</li>
+<li><strong>Spaces</strong>, <strong>Groups</strong>, <strong>History</strong>, <strong>Bookmarks</strong> and <strong>Downloads</strong>, then <strong>Emergency delete</strong> in red (see <a href="../privacy-security/clear-data.html">clear data and delete everything</a>).</li>
+<li><strong>Clear data</strong> and <strong>Settings</strong> side by side at the bottom.</li>
+</ul>
+<p>If you took <strong>Search your tabs</strong> or + off the Tabs screen's bar in <strong>Settings</strong> &gt; <strong>Customize</strong>, they show at the top of the menu's last card instead.</p>
+<div class="shots"><figure><img src="../img/tabs-menu.webp" width="720" height="1600" loading="lazy" alt="The Tabs screen&#x27;s menu: the space with its pencil, Show tabs as Grid or List, Close all tabs in this space, then Spaces, Groups, History, Bookmarks, Downloads, Emergency delete in red, and Clear data and Settings"></figure></div>
+<p>The list view has a row for each tab, with a small picture, its name and site, its pin and lock marks, and an X.</p>
+<div class="shots"><figure><img src="../img/tabs-list.webp" width="720" height="1600" loading="lazy" alt="The Tabs screen as a list: a row for each tab (small picture, name, site, pin, X) and for each group"></figure></div>
+<h2 id="when-you-come-back">When you come back</h2>
+<p>Your regular tabs are still there after you close Wayward and open it again, with their pins, names and groups. Private tabs aren't kept.</p><h2>More in Browsing</h2><ul class="pages"><li><a href="search-tabs-home.html">Search, keep a few tabs open, and find your way home</a></li><li><a href="address-bar.html">Search or go to an address</a></li><li><a href="copy-paste-share.html">Copy, paste or share a page&#x27;s address</a></li><li><a href="scan-qr.html">Scan a QR code</a></li><li><a href="search-settings.html">Change your search engine, and search one site directly</a></li><li><a href="tab-menu.html">Pin, rename or pick several tabs</a></li><li><a href="tab-groups.html">Group your tabs</a></li><li><a href="home-page.html">Use the start page</a></li><li><a href="find-in-page.html">Find words on a page</a></li><li><a href="translate-page.html">Translate a page</a></li><li><a href="reader-view.html">Read an article without the clutter</a></li><li><a href="desktop-print-pdf.html">Desktop site, zoom, print and save as PDF</a></li><li><a href="long-press.html">Hold a link, picture or video for more</a></li><li><a href="page-dialogs.html">When a page asks you something</a></li><li><a href="history.html">Find a page in your history, or clear it</a></li><li><a href="bookmarks.html">Bookmarks, folders, import and export</a></li><li><a href="links-from-apps.html">Links from other apps, and link previews</a></li><li><a href="home-screen.html">The widget and home-screen shortcuts</a></li><li><a href="passwords.html">Sign in with your password manager</a></li></ul>
+</main></body></html>

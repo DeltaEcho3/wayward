@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Save a video from a page · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Downloads &amp; video</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Save a video from a page</h1><p class="kind">Walkthrough</p><p>Find a video on a page, save it and play it later in Wayward. Only save videos you have the right to keep: see <a href="index.html#saving-sharing-and-the-rules">is it OK to download videos?</a>. Wayward never gets around copy protection.</p>
+<h2 id="1-look-for-the-video-tab">1. Look for the video tab</h2>
+<p>Open the page with the video. When Wayward finds a video it can save, a small tab peeks out of the address bar (TalkBack: <strong>Video downloads</strong>). It glows in Wayward's colors until you open it, and pulses three times when the page's video first shows up. With the address bar at the top, it hangs below it.</p>
+<div class="shots"><figure><img src="../img/dl-video-tab.webp" width="720" height="1600" loading="lazy" alt="The video tab: a small tab on the address bar when the page has a video to download"></figure></div>
+<p>No tab? Try playing the video first, since some pages only load it then. Some videos can't be saved at all; see <a href="index.html#when-a-download-doesn-t-work">why a download didn't work</a>.</p>
+<h2 id="2-open-the-panel">2. Open the panel</h2>
+<p>Tap the tab. While Wayward looks up what the video comes in, the panel says <strong>Checking available qualities…</strong>.</p>
+<div class="shots"><figure><img src="../img/dl-video-checking.webp" width="720" height="1600" loading="lazy" alt="While the qualities are looked up the panel says &quot;Checking available qualities…&quot;"></figure></div>
+<p>Then you see:</p>
+<ul>
+<li>the video's title, and the site with the video's length (like "example.com, 4:12"),</li>
+<li>the qualities it comes in, each with its real file size and type. The best one Wayward's own player can open is picked for you. A file that only shows one size is named by its height when the page's player says it ("720p"), and one whose type isn't known until it's downloaded shows only its size,</li>
+<li><strong>Sound</strong>, when the video has its sound in more than one language: pick the language you want,</li>
+<li>the button, which says what you'll get, like "Download 720p · 48.0 MB",</li>
+<li>a note on where it's saved: <strong>Saved privately in the app. Sizes marked ~ are estimates.</strong> (in a private tab, or with no download folder set), <strong>Saved to your download folder. Sizes marked ~ are estimates.</strong> (with a folder set in <strong>Settings</strong> &gt; <strong>Downloads</strong>), or just <strong>Sizes marked ~ are estimates.</strong> when <strong>Ask where to save</strong> is on, since you pick the place after the download starts.</li>
+</ul>
+<div class="shots"><figure><img src="../img/dl-video-panel.webp" width="720" height="1600" loading="lazy" alt="The video download panel: the video&#x27;s title and site, the quality in one dropdown with its size and file type, the Download button and the note on where it is saved"></figure></div>
+<p>A quality you already saved from this page is grayed out and marked <strong>Already downloaded</strong> (not in private tabs).</p>
+<h2 id="3-or-make-a-gif">3. Or make a GIF</h2>
+<p>Short videos (30 seconds or less) also have a GIF row: "no sound · made on your phone". Pick it and the button turns into <strong>Download GIF</strong>. Wayward makes the GIF on your phone, from the first 30 seconds at most, without sound.</p>
+<h2 id="4-download-it">4. Download it</h2>
+<p>Tap the download button. Wayward says <strong>Download started</strong>, and a ring around the Downloads button on the bar fills as it goes. The video is kept inside Wayward, or in your downloads folder if you picked one (a private tab's downloads always stay inside).</p>
+<div class="shots"><figure><img src="../img/dl-started.webp" width="720" height="1600" loading="lazy" alt="A download starts: the toast &quot;Download started&quot;, and the bar&#x27;s Downloads button gets a ring that fills"></figure></div>
+<p>You can keep browsing, or leave Wayward: the download carries on. If Android asks whether Wayward may send notifications, allowing it shows the download's progress there.</p>
+<h2 id="5-find-it-in-downloads">5. Find it in Downloads</h2>
+<p>Tap Downloads on the bar (or <strong>Downloads</strong> on the start page, or in the Tabs screen's <strong>⋮</strong> menu). Your downloads are grouped by day, each with an icon for its kind, its name, its size and the site it came from. If the downloads lock is on, unlock first.</p>
+<div class="shots"><figure><img src="../img/dl-list.webp" width="720" height="1600" loading="lazy" alt="The Downloads screen: the space used, filter chips, rows by day with an icon for the kind, the name, size and site, a private tab&#x27;s file marked, and search, settings and More in the header"></figure></div>
+<h2 id="6-watch-it">6. Watch it</h2>
+<p>Tap the video. It plays in Wayward's own player, full screen on black, with the usual controls. Tap the round X to go back to your list, which is just as you left it.</p>
+<div class="shots"><figure><img src="../img/player-video.webp" width="720" height="1600" loading="lazy" alt="The built-in player for a saved video: on black, with previous, back 5 seconds, pause, forward 15 seconds, next, the time bar, the gear and a round X"></figure></div>
+<p>Next: <a href="where-downloads-go.html">choose where downloads go</a>, and <a href="index.html#when-a-download-doesn-t-work">what to do when a download doesn't work</a>.</p><h2>More in Downloads &amp; video</h2><ul class="pages"><li><a href="files-images.html">Download files, pictures and PDFs</a></li><li><a href="where-downloads-go.html">Choose where downloads go</a></li><li><a href="manage-downloads.html">Find, pause and delete downloads</a></li><li><a href="download-settings.html">Download settings</a></li><li><a href="player.html">Watch, listen and look in Wayward</a></li><li><a href="page-video.html">Full screen, background play and picture-in-picture</a></li></ul>
+</main></body></html>

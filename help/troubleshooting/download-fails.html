@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>When a download fails · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Troubleshooting &amp; support</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>When a download fails</h1><p class="kind">How-to</p><p>If your download stops or never starts, here's how to get it going, and what its message means.</p>
+<h2 id="first-retry">First, retry</h2>
+<p>Open <strong>Downloads</strong> (the arrow button on the bar). A failed download says why on its row. Tap its three dots and then <strong>Retry</strong>. To retry several, hold one to start selecting, tap the others, then tap <strong>Retry</strong> in the bar at the bottom.</p>
+<div class="shots"><figure><img src="../img/dl-failed.webp" width="720" height="1600" loading="lazy" alt="A failed download says why in its row (&quot;The site refused it&quot;), and its menu has Retry"></figure></div>
+<p>If it fails again, find its message below.</p>
+<h2 id="what-the-message-means">What the message means</h2>
+<ul>
+<li><strong>The link expired or the site refused it. Open the page again and try once more.</strong> Video addresses often only work for a short time. Tap the download's three dots, then <strong>Source</strong> to open its page again, and download it from there.</li>
+<li><strong>Parts of the video didn't download. Tap Retry.</strong> Some pieces didn't arrive, so Wayward didn't keep a broken file. <strong>Retry</strong> fetches it again.</li>
+<li><strong>This space keeps its sign-ins apart, so they couldn't be used. Try it from Main.</strong> The video needs your sign-in, and a space with its own sign-ins can't send it with the download. Open the page in Main and download it there.</li>
+<li><strong>This isn't a video file. The site may have sent a web page, or the link may have expired.</strong> Open the page again and download from it.</li>
+<li><strong>Open Wayward, then tap Retry</strong>: the download needs Wayward open. Open it and tap <strong>Retry</strong>.</li>
+<li><strong>The PDF is gone; save the page as a PDF again</strong>: open the page and use <strong>Save as PDF</strong> in the menu again.</li>
+<li><strong>Not saved: it's an app file. Tap its link to download it.</strong> Wayward only keeps an app file (an .apk) when you asked for it. Tap the link on the page, and Wayward asks <strong>Download this app?</strong> first.</li>
+<li><strong>Continues when you open Wayward</strong>: Android closed Wayward while the download ran, and this download needs Wayward open to go on. It keeps what it has and carries on as soon as you open Wayward.</li>
+<li><strong>Waiting for connection</strong>: you're offline. It goes on by itself when you're back online.</li>
+<li><strong>Waiting for one to finish</strong>: you've reached your limit of downloads at once. Change it in <strong>Settings</strong> &gt; <strong>Downloads</strong> &gt; <strong>Downloads at once</strong>.</li>
+<li><strong>This site can't resume, so the download started again.</strong> After a pause, the site sent the whole file again instead of the rest.</li>
+</ul>
+<h2 id="when-the-video-panel-has-no-download-button">When the video panel has no download button</h2>
+<p>The panel that opens from the tab above the address bar says why:</p>
+<ul>
+<li><strong>Play the video first, then download it.</strong> Some players only load their video once it plays. Play it for a moment, then open the panel again.</li>
+<li><strong>This video is protected and can't be downloaded.</strong> The site protects it with copy protection (DRM). Wayward never gets around copy protection, so it can't be saved. You can still watch it.</li>
+<li><strong>Wayward can't save this player's video.</strong> The page builds the video in a way Wayward can't save. Playing it still works.</li>
+</ul>
+<p>Some sites can't be downloaded from at all in the Google Play version of Wayward: their videos get no download tab, and a download from one says it isn't available in this version of Wayward.</p>
+<p>Only download what you have the right to, and follow each site's terms (see section 7 of the <a href="../../terms.html">terms</a>).</p>
+<h2 id="still-failing">Still failing?</h2>
+<p>Send us a report: <strong>Settings</strong> &gt; <strong>Send feedback</strong>, with <strong>Download problem</strong>. It includes a short code for what went wrong, never the address or the file's name. See <a href="send-feedback.html">Send feedback or report a problem</a>. For more on downloads, see <a href="../downloads-video/index.html#when-a-download-doesn-t-work">When a download doesn't work</a> and <a href="../downloads-video/save-a-video.html">Save a video from a page</a>.</p><h2>More in Troubleshooting &amp; support</h2><ul class="pages"><li><a href="send-feedback.html">Send feedback or report a problem</a></li><li><a href="site-broken.html">Fix a site that looks broken or won&#x27;t work</a></li><li><a href="slow-pages.html">When pages are slow or scrolling stutters</a></li><li><a href="messages.html">What Wayward&#x27;s messages mean</a></li></ul>
+</main></body></html>

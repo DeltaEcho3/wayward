@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Let it do things, with your OK · Wayward help</title><style>
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
+header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+header img{width:48px;height:48px;border-radius:12px}header a{color:var(--fg);text-decoration:none;font-weight:700;font-size:20px}
+.brand{background:linear-gradient(90deg,#1e9bff,#6c4dff,#e6409b,#ff9a3c);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav{margin-left:auto;display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--muted);font-size:14px;text-decoration:none}
+a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:100%;font-size:14px;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
+code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
+.draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
+@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
+</style></head>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
+<div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">AI assistant</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Let it do things, with your OK</h1><p class="kind">How-to</p><p>You can ask the assistant to do more than answer: it can browse for you. Ask "find the trail map on this page and open it" or "download this video in 720p", and it reads, taps, types and searches, in regular tabs, with your OK.</p>
+<h2 id="what-it-can-do">What it can do</h2>
+<p>Each thing it does shows as a small step line in the chat:</p>
+<ul>
+<li>read the page (<strong>Reading the page</strong>), find words on it, scroll, and wait for the page or some text to show up,</li>
+<li>look at the screen when the text isn't enough (<strong>Taking Screenshot</strong>), with fields, typed text and other sites' frames blacked out,</li>
+<li>open an address, go back (<strong>Going back</strong>), and search the web with DuckDuckGo ("Searching:" and the words),</li>
+<li>tap a link or button ("Clicking" and its name) and fill in a field (<strong>Filling in a field</strong>),</li>
+<li>start a video (<strong>Starting video</strong>), list the videos on a page (<strong>Checking for videos</strong>) and their real qualities and sizes (<strong>Checking available qualities</strong>),</li>
+<li>read a video's captions (<strong>Reading the video's captions</strong>), or, for one without captions, turn its speech into text on your phone (<strong>Getting the video's sound</strong>, then how far the transcribing is),</li>
+<li>save a video (<strong>Getting the download ready</strong>, then "Download started:" and the quality), check on a download (<strong>Checking the download</strong>) and list your downloads (<strong>Checking downloads</strong>),</li>
+<li>propose a plan for a bigger task (<strong>Proposing a plan</strong>).</li>
+</ul>
+<p>It can't run anything on your phone, and it can't change Wayward's settings, Shields, locks or your files. It never types passwords, card numbers or one-time codes.</p>
+<div class="shots"><figure><img src="../img/ai-read-reply.webp" width="720" height="1600" loading="lazy" alt="After Share: the step line &quot;Reading the page&quot;, the note &quot;You allowed: …&quot;, the answer, and Report and Receipt under it"></figure></div>
+<h2 id="how-much-it-asks">How much it asks</h2>
+<p><strong>Settings</strong> &gt; <strong>AI assistant</strong> &gt; <strong>How it acts</strong>:</p>
+<ul>
+<li><strong>Ask each time</strong> (where it starts): it asks before each step that does something on a page.</li>
+<li><strong>OK the task once</strong>: it asks once before starting, shows its plan when it has one, then works through the task by itself, typing included.</li>
+<li><strong>Always allow</strong>: it reads, taps and types by itself, without the sharing card. Wayward asks first (<strong>Let the assistant act without asking?</strong>), since pages then go to your provider without confirmation.</li>
+</ul>
+<div class="shots"><figure><img src="../img/ais-screen.webp" width="720" height="1600" loading="lazy" alt="Settings &gt; AI assistant: its switch, Ask from the address bar, and How it acts (Ask each time, OK the task once, Always allow)"></figure></div>
+<div class="shots"><figure><img src="../img/ais-always-allow.webp" width="720" height="1600" loading="lazy" alt="Always allow first asks &quot;Let the assistant act without asking?&quot;"></figure></div>
+<p>While <strong>Always allow</strong> or <strong>Always share pages</strong> is on, the panel says <strong>Always allow on</strong> or <strong>Always share on</strong> under the assistant's name, so you always know.</p>
+<div class="shots"><figure><img src="../img/ai-named.webp" width="720" height="1600" loading="lazy" alt="The assistant under its own name, and &quot;Always share on&quot; under it while that is on"></figure></div>
+<h2 id="the-cards-it-shows">The cards it shows</h2>
+<ul>
+<li><strong>Approve this?</strong> comes before a step that does something: what it wants to click, type, open or search for, and where. Tap <strong>Allow</strong> (it works after half a second) or <strong>Deny</strong>. The chat notes your answer.</li>
+<li><strong>Start task?</strong> comes before a task you'll OK once: its plan in numbered steps, the sites, what it shares with your provider, an estimate of the steps and tokens, and its limits. Tap <strong>Start task</strong>, or <strong>Not now</strong>. During the task the panel counts the steps, like "Step 3 of 40".</li>
+<li><strong>Download this video?</strong> lists the video's qualities with the one it picked selected. You can pick another, then tap <strong>Download</strong>, or <strong>Not now</strong>. When the download ends, the chat says so ("Downloaded:" and its name; just <strong>A download finished. It's in Downloads.</strong> while Downloads is locked).</li>
+</ul>
+<div class="shots"><figure><img src="../img/ai-approval.webp" width="720" height="1600" loading="lazy" alt="The approval card &quot;Approve this?&quot; before a step that does something, with Deny and Allow"></figure></div>
+<h2 id="what-it-always-asks-about">What it always asks about</h2>
+<p>Whatever you set in <strong>How it acts</strong>, a card comes up with its own title before:</p>
+<ul>
+<li><strong>This looks like a log-in</strong></li>
+<li><strong>This looks like a purchase</strong></li>
+<li><strong>This looks like a deletion</strong></li>
+<li><strong>This is from another site</strong>: anything inside another site's frame on the page,</li>
+<li><strong>It read another site before this</strong>: typing or pressing on a different site from the one it read, so one site's contents can't be carried to another, and, with <strong>Always allow</strong> or a task you OK'd, a web search once it has read a page (with <strong>Ask each time</strong>, every search has a card anyway),</li>
+<li>opening an address that didn't come from you or from a page it read.</li>
+</ul>
+<p>At a "verify you're not a bot" check it stops and tells you, in every mode. You can tap <strong>Stop</strong> at any time. One message also stops after 15 steps (40 for a task you OK'd, or with <strong>Always allow</strong>), and the chat says so, like "Stopped after 15 steps. Ask again to continue."</p>
+<p>For how to stay safe with it, see <a href="index.html#what-s-sent-and-staying-safe">what's sent, and staying safe</a>.</p><h2>More in AI assistant</h2><ul class="pages"><li><a href="set-up.html">Set up the assistant with your own key</a></li><li><a href="chat.html">Ask about a page</a></li><li><a href="ways-to-ask.html">Other ways to ask the assistant</a></li><li><a href="compare-tabs.html">Compare your tabs</a></li><li><a href="saved-tasks.html">Receipts and saved tasks</a></li><li><a href="save-chat.html">Save, open or delete a chat</a></li><li><a href="name-personality.html">Name it and set how it talks</a></li></ul>
+</main></body></html>
