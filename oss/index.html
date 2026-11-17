@@ -15,25 +15,38 @@ code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
 .draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
 @media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
+.crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
+.shots{display:flex;flex-wrap:wrap;gap:16px;margin:16px 0}.shots figure{margin:0;flex:0 1 300px;max-width:100%}
+.shots img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--line)}
+.shot-missing{aspect-ratio:9/20;border:2px dashed var(--line);border-radius:14px;padding:16px;font-size:13px;color:var(--muted);overflow:hidden}
+.shot-missing b{display:block;color:var(--fg);margin-bottom:6px;word-break:break-all}
+ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.cats .card{margin:0}.cats h2{font-size:18px;margin:0 0 4px}.cats p{margin:0;color:var(--muted);font-size:14px}
+input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
 </style></head>
-<body><main><header><img src="../icon.png" alt=""><a href="../index.html"><span class="brand">Wayward</span></a><nav><a href="../index.html">Home</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a><a href="../support.html">Support</a><a href="../oss/">Open source</a></nav></header>
+<body><main><header><img src="../icon.png" alt=""><a href="../index.html"><span class="brand">Wayward</span></a><nav><a href="../index.html">Home</a><a href="../help/index.html">Help</a><a href="../privacy.html">Privacy</a><a href="../terms.html">Terms</a><a href="../support.html">Support</a><a href="../oss/">Open source</a></nav></header>
 
 <h1>Open-source code in Wayward</h1>
 <p>Wayward's own code is proprietary, but it includes open-source software. The full list of components and licenses is in the app under
-<strong>About &amp; licenses &gt; Open-source parts</strong>. These are the sources their licenses require us to offer, exactly as used in Wayward.</p>
+<strong>Settings</strong> &gt; <strong>About Wayward</strong> &gt; <strong>Legal information</strong> &gt; <strong>Open-source licenses</strong>. These are the sources their licenses require us to offer, exactly as used in Wayward.</p>
 <div class="card"><h3>uBlock Origin 1.75.4, modified by Wayward (GPL-3.0)</h3>
 <p>Wayward added one file and one line (2026-10-27, changed 2026-10-28, 2026-10-31, 2026-11-03 and 2026-11-04) and changed one file (2026-10-28), all listed in WAYWARD-CHANGES.txt inside it.
 <a href="uBlock-1.75.4.1-wayward.tar.gz">The copy Wayward bundles, with its changes (tar.gz)</a> ·
 <a href="uBlock-1.75.4-source.tar.gz">uBlock Origin 1.75.4's own source (tar.gz)</a> · upstream: <a href="https://github.com/gorhill/uBlock/tree/1.75.4">github.com/gorhill/uBlock</a></p></div>
 <div class="card"><h3>FFmpeg 9.0.2 (LGPL-2.1 or later)</h3>
-<p>Built by Wayward with LGPL parts only. <a href="ffmpeg-9.0.2.tar.xz">Source (tar.xz)</a> · <a href="ffmpeg-9.0.2.tar.xz.asc">signature</a> ·
+<p>Built by Wayward with LGPL parts only, as shared libraries with the ffmpeg and ffprobe programs linked to them. <a href="ffmpeg-9.0.2.tar.xz">Source (tar.xz)</a> · <a href="ffmpeg-9.0.2.tar.xz.asc">signature</a> ·
 <a href="build_ffmpeg.sh">build script</a> · <a href="ffmpeg-configure.txt">configure options</a></p></div>
 <div class="card"><h3>GeckoView 159.0.1 (MPL-2.0)</h3>
-<p>Used unmodified. Source: <a href="https://hg.mozilla.org/releases/mozilla-release">hg.mozilla.org/releases/mozilla-release</a>, tag FIREFOX_159_0_1_RELEASE.</p></div>
-<h3>Checksums (SHA-256)</h3><pre><code>e45b545f265fde9fe00ca9d33f715634d3ee611b81205467d86881c9aef16b15  build_ffmpeg.sh
+<p>No file of it is changed. Its archive of the engine's own scripts and pages (omni.ja) ships without parts Wayward never uses: the developer tools server, settings for other processors, and the engine's diagnostic about: pages with their texts.
+<a href="omni_trim.py">The script that takes them out, which lists them</a> (it uses <a href="zip_without.py">zip_without.py</a>) ·
+source: <a href="https://hg.mozilla.org/releases/mozilla-release">hg.mozilla.org/releases/mozilla-release</a>, tag FIREFOX_159_0_1_RELEASE.</p></div>
+<h3>Checksums (SHA-256)</h3><pre><code>b9b41d2c5101f717632a3c2b5fd605ecf658a02d54d08ec45ae37e5ca86db9a4  build_ffmpeg.sh
 8c3850283eb25fa026482078a04051e0be17347b09ef81a0849bec15a96e002e  ffmpeg-9.0.2.tar.xz
 d617fd94ea354dadd2a8bb16243d37c44e1e9729b06b6ad58fe30bfb0fa943f2  ffmpeg-9.0.2.tar.xz.asc
-05492e438ccf350b3282afcac6d20209443647f6a9587feae05aad5a7c7c24ee  ffmpeg-configure.txt
+2a1c9f16a39f6b07741e418b4ad6d2bf92d606ad3914a38e9c539f449b3aad71  ffmpeg-configure.txt
+d83fd6248e07f5da059d3aaa0a8ec1a28004c13892c31a1a78ecf9417207b914  omni_trim.py
 a518c7d6e6b3f81d1a738befeb617abba59f93bd6b1e626da079a1003e9db52b  uBlock-1.75.0-source.tar.gz
 9fe24832342a8650035b1b2b222c7c0df6f7379b967e46fbebd295f6fded1011  uBlock-1.75.0.1-wayward.tar.gz
 a5288dd0669e1178a90810b570af37b89fc223845ea7fe4ab4792cba3a036c2b  uBlock-1.75.0.2-wayward.tar.gz
@@ -41,7 +54,8 @@ a5288dd0669e1178a90810b570af37b89fc223845ea7fe4ab4792cba3a036c2b  uBlock-1.75.0.
 8c0a2ec78f07a3acbef6de66f7ca48eef7fcefa9fe707560f55a11f18b6b0186  uBlock-1.75.0.7-wayward.tar.gz
 686df041044609d290cbc327b425a0f2a4c326ef534a03e24f2c267d956629c7  uBlock-1.75.0.8-wayward.tar.gz
 ca3a6fd43aec99c002e3bb1cb1d97b34eea4228ef35f8c076b55644caa397870  uBlock-1.75.4-source.tar.gz
-1d9737bc089a001c198cd86c69409905fc4fe85a67df1a85bc3e7fd8924300b0  uBlock-1.75.4.1-wayward.tar.gz
+ac24a4060292799f351d42702c6d6907b0dede5e2ff60f4eeb6350f102dcd7f9  uBlock-1.75.4.1-wayward.tar.gz
+c6e9f16a060a82d51a2c98a554419f74e690626dd95d1a42ba816db0838e37c7  zip_without.py
 </code></pre>
 
 </main></body></html>
