@@ -30,7 +30,7 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <div class="crumbs"><a href="index.html">Help</a><form action="index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Every setting, screen by screen</h1><p>Everything in Settings, in the order you'll find it, with what each choice does and how it starts out. To open Settings, tap the <strong>⋮</strong> menu, then <strong>Settings</strong>. It's also in the Tabs screen's menu.</p>
 <p>Settings has four groups: <strong>Privacy</strong>, <strong>Browsing</strong>, <strong>Appearance</strong> and <strong>Wayward</strong>. Each row shows where it stands now. A row with an arrow opens a screen inside Wayward; a row with a box-and-arrow mark opens your phone's own settings, outside Wayward; a row with neither opens a small dialog. On a wide screen (a tablet, an open foldable, landscape), Settings keeps a readable width in the middle.</p>
 <p>To find a setting, tap the magnifier at the top of Settings and type a word or two. Wayward looks through every Settings page, by a setting's name, the line under it and its page, and each result says where it lives (for example Shields &amp; Privacy &gt; Connection). Tap one to go straight to it; its row lights up for a moment. The X clears what you typed, and Back closes the search.</p>
-<div class="shots"><figure><img src="img/settings-top.webp" width="720" height="1600" loading="lazy" alt="Settings, top: the &quot;Make Wayward your browser&quot; card with its X, then Privacy (Shields with its dot and the week&#x27;s count, Site permissions, Clear browsing data, Passwords and passkeys last, the note on passkeys) and the start of Browsing"></figure><figure><img src="img/settings-middle.webp" width="720" height="1600" loading="lazy" alt="Settings, further down: Browsing (Search with its engine, Tabs and History, Spaces with the space you are in, Downloads with its folder, Video and audio) and Appearance (Themes and app icon, Customize, Accessibility, Languages)"></figure><figure><img src="img/settings-bottom.webp" width="720" height="1600" loading="lazy" alt="Settings, the end: the Wayward group with Premium, Rate Wayward (leaves Wayward), Send feedback, Back up settings, Welcome setup and About Wayward with the version"></figure></div>
+<div class="shots"><figure><img src="img/settings-top.webp" width="720" height="1600" loading="lazy" alt="Settings, top: the &quot;Make Wayward your browser&quot; card with its X, then Privacy (Shields with its dot and the week&#x27;s count, Site permissions, Clear browsing data, Passwords and passkeys last, the note on passkeys) and the start of Browsing"></figure><figure><img src="img/settings-middle.webp" width="720" height="1600" loading="lazy" alt="Settings, further down: Browsing (Search with its engine, Tabs and History, Spaces with the space you are in, Downloads with its folder, Video and audio) and Appearance (Themes and app icon, Customize, Accessibility, Languages)"></figure><figure><img src="img/settings-bottom.webp" width="720" height="1600" loading="lazy" alt="Settings, the end: the Wayward group with Premium, Rate Wayward (leaves Wayward), Send feedback, Backup (Settings, bookmarks and chats), Welcome setup and About Wayward with the version"></figure></div>
 <h2 id="at-the-top">At the top</h2>
 <p>Until Wayward is your default browser, a card says <strong>Make Wayward your browser</strong>. Tap it to make Wayward your browser, or tap its X to put it away. See <a href="getting-started/default-browser.html">Make Wayward your default browser</a>.</p>
 <h2 id="privacy">Privacy</h2>
@@ -61,6 +61,7 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <li><strong>Hide in recent apps</strong> (on): blanks Wayward's preview in your phone's app switcher. Before Android 13 it also blocks screenshots.</li>
 <li><strong>Screenshots</strong>: <strong>Not in private tabs</strong> (by default), <strong>Allowed</strong> or <strong>Blocked</strong>. Blocking stops screen recording too, and a locked tab always blocks them while it's on screen.</li>
 <li><strong>Links that open apps</strong>: <strong>Ask</strong> (by default) asks each time a page's link wants to open another app; <strong>Never</strong> keeps you in Wayward and opens the link's web page.</li>
+<li><strong>Remove photo location and camera</strong> (on): pictures you download, copy or share and photos you upload lose where they were taken, the camera's make, model and serial numbers, and Facebook's photo ID. The picture, its orientation, colours and dates stay, and the photo on your phone is never changed.</li>
 </ul>
 <p><strong>Advanced</strong></p>
 <ul>
@@ -110,6 +111,8 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <ul>
 <li><strong>New tabs open on</strong>: <strong>Wayward start page</strong> (by default) or <strong>Search engine's page</strong>: what new tabs and the Home button show.</li>
 <li><strong>Ad and tracker counter</strong> (on, with Wayward's start page in the Normal look): the week's blocked count on the start page. The Minimal look has its own switch, <strong>Ad blocking</strong>, in <strong>Settings</strong> &gt; <strong>Customize</strong>.</li>
+<li><strong>Inactive tabs</strong> (on): tabs you haven't opened in a while, and the older copy of a page that's open twice, move to a card at the top of the Tabs screen. Nothing is closed. Turning it off brings every inactive tab back to the grid. See <a href="browsing/tabs.html#inactive-tabs">Inactive tabs</a>.</li>
+<li><strong>Inactive after</strong>: <strong>7 days</strong>, <strong>14 days</strong> (by default), <strong>21 days</strong> or <strong>30 days</strong>, shown while <strong>Inactive tabs</strong> is on.</li>
 <li><strong>Private by default</strong> (off): links from other apps, and the tab Wayward starts with, open as private tabs. With <strong>Lock private tabs</strong> on, Wayward then asks for your unlock as it starts.</li>
 <li><strong>Lock private tabs</strong> (on): asks for your fingerprint, face or PIN before showing private tabs, a brand-new one included. It needs a screen lock on your phone; turning it off asks for your unlock.</li>
 <li><strong>Locked tabs lock again</strong>: <strong>Right away</strong> (by default) or <strong>After 30 seconds</strong>, for locked tabs, locked spaces, private tabs and Downloads. Leaving Wayward still locks them.</li>
@@ -158,8 +161,14 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <p><strong>Help</strong> (How-tos and FAQs) opens this help on Wayward's website, in a new tab.</p>
 <h3 id="send-feedback">Send feedback</h3>
 <p>Report a problem or send an idea; you see the whole report first. See <a href="troubleshooting/send-feedback.html">Send feedback or report a problem</a>.</p>
-<h3 id="back-up-settings">Back up settings</h3>
-<p>Tap it for <strong>Save to a file</strong> or <strong>Restore</strong>. See <a href="getting-started/bring-your-things.html">Bring your bookmarks and settings</a>.</p>
+<h3 id="backup">Backup</h3>
+<p>The row says <strong>Settings, bookmarks and chats</strong>, or leaves out chats while the assistant is hidden. The screen has a card for each, every one its own file:</p>
+<ul>
+<li><strong>Settings</strong> (your choices, spaces and look): <strong>Restore</strong> or <strong>Save to a file</strong>.</li>
+<li><strong>Bookmarks</strong> (a file other browsers can read too): <strong>Import</strong>, with the guide to getting a file from another browser, or <strong>Export</strong>. The Bookmarks screen's <strong>⋮</strong> has the same two.</li>
+<li><strong>Chats</strong> (your kept chat, in a locked file): <strong>Open a chat</strong> reads an encrypted chat file, and <strong>Save chat</strong> saves the kept chat as an encrypted file, with a password, into a folder you pick. It's hidden while the assistant is.</li>
+</ul>
+<p>Under the cards, a note: AI keys, the license and locks are never in a backup, so add your AI key again on a new phone. See <a href="getting-started/bring-your-things.html">Bring your bookmarks and settings</a>.</p>
 <h3 id="welcome-setup">Welcome setup</h3>
 <p>Tap it for <strong>Just the tutorial</strong> or <strong>The whole setup</strong>, then <strong>Continue</strong>. See <a href="getting-started/first-run.html#run-the-setup-again">Run the setup again</a>.</p>
 <h3 id="about-wayward">About Wayward</h3>

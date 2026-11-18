@@ -16,6 +16,10 @@ What goes (LEFT_OUT), and why nobody misses it:
 - The engine's developer tools server (chrome/devtools/modules): it runs only for remote debugging, which Wayward
   never turns on in any build (GeckoRuntimeSettings.remoteDebuggingEnabled), and for the test-automation agent
   (chrome/remote), which is never started.
+- Marionette, the test-automation agent's driver (chrome/remote/content/marionette): it runs only when the engine
+  starts with --marionette or is asked to by a test harness, which Wayward never does. Its component
+  (chrome/remote/content/components/Marionette.sys.mjs) stays: the engine loads it at every start, and it only looks
+  for that flag, loading the folder that goes only once it's there.
 - Settings for CPUs Wayward isn't built for (armeabi-v7a, x86_64): Wayward ships arm64-v8a only.
 - The engine's own about: pages for developers and support staff (about:support, about:memory, about:telemetry and
   the rest of ABOUT_PAGES), their styles, and their texts in 99 languages. Wayward opens web addresses only: a typed
@@ -53,6 +57,7 @@ ABOUT_TEXTS = [
 # (what it is, the entries: shell patterns where * also crosses folders)
 LEFT_OUT = [
     ("developer tools server", ["chrome/devtools/modules/*"]),
+    ("test-automation driver (Marionette)", ["chrome/remote/content/marionette/*"]),
     ("other CPUs' settings", ["armeabi-v7a/*", "x86_64/*", "defaults/pref/armeabi-v7a/*", "defaults/pref/x86_64/*"]),
     ("about: pages nobody can open",
      ["chrome/toolkit/content/global/" + p for p in ABOUT_PAGES]
@@ -62,7 +67,9 @@ LEFT_OUT = [
 ]
 
 # Files that stay and name something that goes, each for a use that never happens in Wayward:
-# the test-automation agent and the remote debugger (never started), a manifest's folder names, a comparison with
+# the test-automation agent and the remote debugger (never started; Marionette's component, which loads its driver
+# only when the engine starts with --marionette, and the agent's DOM helper, which loads Marionette's atoms only for
+# the agent), a manifest's folder names, a comparison with
 # the JSON viewer's address (GeckoView has no JSON viewer), a type named in a comment, a task runner for desktop, and
 # each language's count of translated texts, which nothing in the archive reads.
 STILL_NAMED_BY = [
@@ -80,6 +87,7 @@ def names_for(entry):
         ("chrome/toolkit/content/global/", "chrome://global/content/"),
         ("chrome/toolkit/skin/classic/global/", "chrome://global/skin/"),
         ("chrome/geckoview/content/", "chrome://geckoview/content/"),
+        ("chrome/remote/content/", "chrome://remote/content/"),
     ):
         if entry.startswith(folder):
             return [address + entry[len(folder):]]
@@ -106,6 +114,7 @@ def plan(archive):
                 wanted[text.encode()] = entry
         # The developer tools as a whole, so a new file of theirs is covered too.
         wanted[b"resource://devtools/"] = "chrome/devtools/modules/*"
+        wanted[b"chrome://remote/content/marionette/"] = "chrome/remote/content/marionette/*"
         problems = []
         for info in infos:
             name = info.filename
