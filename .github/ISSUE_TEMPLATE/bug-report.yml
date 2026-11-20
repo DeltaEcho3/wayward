@@ -1,0 +1,52 @@
+name: Bug report
+description: Something in Wayward doesn't work the way it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues are public. Please don't paste private addresses (pages you wouldn't want others to see), account names, passwords or AI keys. If a page's address is needed, give the site's home page or describe the kind of page.
+  - type: input
+    id: version
+    attributes:
+      label: Wayward version
+      description: Settings > About Wayward shows it.
+      placeholder: "1.8.1"
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Android version
+      placeholder: "Android 16"
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: Phone
+      description: Maker and model.
+      placeholder: "Galaxy S26"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps
+      description: What you did, one step per line, starting from opening Wayward.
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and what happened
+    validations:
+      required: true
+  - type: textarea
+    id: more
+    attributes:
+      label: Anything else
+      description: A screenshot helps. Check it shows nothing private first.

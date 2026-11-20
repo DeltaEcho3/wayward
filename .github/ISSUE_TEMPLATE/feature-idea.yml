@@ -1,0 +1,23 @@
+name: Feature idea
+description: Something you'd like Wayward to do.
+labels: ["idea"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: The idea
+      description: What would you like Wayward to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What it would help you with
+      description: The thing you were trying to do when you wished for it.
+    validations:
+      required: true
+  - type: textarea
+    id: now
+    attributes:
+      label: How you do it today
+      description: In Wayward or another app, if you have a way.

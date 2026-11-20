@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Help
+    url: https://deltaecho3.github.io/wayward/help/
+    about: How-tos, walkthroughs and answers. Most questions are answered here.
+  - name: Support
+    url: https://deltaecho3.github.io/wayward/support.html
+    about: Write to trywayward@gmail.com, or send feedback from the app in Settings > Send feedback.
+  - name: Security problem
+    url: https://github.com/DeltaEcho3/wayward/security/advisories/new
+    about: Please report security problems privately, not in a public issue.

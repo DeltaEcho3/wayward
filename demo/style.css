@@ -20,6 +20,7 @@ h2 { margin: 28px 0 6px; font: 700 22px/1.25 Georgia, "Noto Serif", serif; }
 .lede { font-size: 19px; color: #2e3532; }
 ul.pack { padding-left: 20px; }
 ul.pack li { margin: 4px 0; }
+.slot { height: auto; margin: 18px auto; border-radius: 6px; }
 .note { background: #eef4ef; border-left: 4px solid var(--green); padding: 12px 14px; border-radius: 6px; font-size: 16px; }
 .cards { display: grid; gap: 16px; padding: 0 18px; }
 .card { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; color: var(--ink); text-decoration: none; }

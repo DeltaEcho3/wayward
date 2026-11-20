@@ -1,0 +1,55 @@
+name: A site that breaks
+description: A page looks wrong, is blank, or something on it doesn't work in Wayward.
+labels: ["site"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issues are public. Give only an address you're happy for others to see: the site's home page is often enough. Don't paste addresses with your account, an order or a search in them.
+
+        First try the shield in the address bar and turn off **Protection on this site**. If the page works then, say so below: it tells us blocking is the cause.
+  - type: input
+    id: site
+    attributes:
+      label: The site
+      placeholder: "example.com"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What goes wrong
+    validations:
+      required: true
+  - type: dropdown
+    id: protection
+    attributes:
+      label: With Protection on this site turned off
+      options:
+        - The page works
+        - It's still broken
+        - I didn't try
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Ad blocking level
+      description: Settings > Shields & Privacy > Ad blocking.
+      options:
+        - Standard
+        - Strict
+        - Maximum
+        - Custom
+        - I don't know
+  - type: input
+    id: version
+    attributes:
+      label: Wayward version
+      description: Settings > About Wayward shows it.
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Android version and phone
