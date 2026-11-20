@@ -40,7 +40,16 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <h2 id="close-what-you-don-t-need">Close what you don't need</h2>
 <ul>
 <li>Downloads share your connection: with several running at once, pages load slower. <strong>Settings</strong> &gt; <strong>Downloads</strong> &gt; <strong>Downloads at once</strong> sets how many run together.</li>
-<li>Lots of open tabs, and video playing in the background, use your phone's memory and battery. Close tabs you're done with from the Tabs screen.</li>
+<li>Video playing in the background, and tabs that stay loaded, use your phone's memory and battery. Close tabs you're done with from the Tabs screen. See <a href="#how-wayward-saves-memory">how Wayward saves memory</a> below.</li>
+</ul>
+<h2 id="how-wayward-saves-memory">How Wayward saves memory</h2>
+<p>Wayward does these by itself, so there's nothing to set:</p>
+<ul>
+<li>When you go to another app, it closes the pages of your background tabs, apart from pinned tabs and a few others, and it closes some when memory runs low. A page loads again when you open its tab, with your place on it. See <a href="../browsing/tabs.html#pages-that-stay-loaded">pages that stay loaded</a>.</li>
+<li>On Android 14 and later, when your phone is low on memory as you switch tabs, it keeps fewer pages loaded for a minute.</li>
+<li>Its video downloader starts only when a video download or a check of a video's qualities needs it, not every time Wayward opens. So the first one after Wayward starts takes a moment longer.</li>
+<li>uBlock Origin waits until you've used Wayward for a few minutes before it updates its filter lists.</li>
+<li><strong>Standard</strong> ad blocking leaves out the big URLhaus malware list. <strong>Strict</strong> and <strong>Maximum</strong> add it, and use more memory. See <a href="../privacy-security/ad-blocking.html">choose how much Wayward blocks</a>.</li>
 </ul>
 <h2 id="restart-wayward">Restart Wayward</h2>
 <p>Swipe Wayward away in your phone's recent apps and open it again. (If <strong>Delete everything when Wayward closes</strong> is on in <strong>Settings</strong> &gt; <strong>Tabs and History</strong>, this deletes your tabs and browsing data, as that switch says.)</p>

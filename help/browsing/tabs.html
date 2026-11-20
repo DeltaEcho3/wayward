@@ -29,7 +29,7 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open source</a></nav></header>
 <div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Browsing</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Open, find and close tabs</h1><p class="kind">How-to</p><p>Open the Tabs screen to see every page you have open, find one, switch to it or close it.</p>
 <h2 id="open-the-tabs-screen">Open the Tabs screen</h2>
-<p>Tap the Tabs button on the bar: the square with a number on it, which is how many tabs you have open. The Tabs screen fades in.</p>
+<p>Tap the Tabs button on the bar: the square with a number on it, which is how many tabs you have open (apart from inactive tabs). The Tabs screen fades in.</p>
 <div class="shots"><figure><img src="../img/tabs-grid.webp" width="720" height="1600" loading="lazy" alt="The Tabs screen: the spaces&#x27; chips, a grid of cards (picture, title, X; the tab you are on tinted), and the bar: Search, Private tabs, +, Tabs with the count, the three dots"></figure></div>
 <p>You'll see:</p>
 <ul>
@@ -72,7 +72,7 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <li>At the top, the space you're in, with its color, its sign-ins and how many tabs are open. The pencil opens <strong>Edit space</strong>.</li>
 <li><strong>Show tabs as</strong>: <strong>Grid</strong> or <strong>List</strong>. Wayward remembers your choice for each space, and for private tabs.</li>
 <li><strong>Close all tabs (not private)</strong> closes your regular tabs but leaves pinned tabs, pinned groups and inactive tabs (but closes an older copy along with its newer one), with <strong>Undo</strong>. Once you have more than one space it reads <strong>Close all tabs in this space</strong>.</li>
-<li><strong>Spaces</strong>, <strong>Groups</strong>, <strong>History</strong>, <strong>Bookmarks</strong> and <strong>Downloads</strong>, then <strong>Emergency delete</strong> in red (see <a href="../privacy-security/clear-data.html">clear data and delete everything</a>).</li>
+<li><strong>Spaces</strong>, <strong>Groups</strong>, <strong>History</strong>, <strong>Bookmarks</strong> and <strong>Downloads</strong>, then <strong>Emergency delete</strong> in red, and <strong>Exit Wayward</strong> last, under a line (see <a href="../privacy-security/clear-data.html">clear data and delete everything</a>). <strong>Exit Wayward</strong> isn't there if you hid it in <strong>Settings</strong> &gt; <strong>Customize</strong> &gt; <strong>Menu</strong>.</li>
 <li><strong>Clear data</strong> and <strong>Settings</strong> side by side at the bottom.</li>
 </ul>
 <p>If you took <strong>Search your tabs</strong> or + off the Tabs screen's bar in <strong>Settings</strong> &gt; <strong>Customize</strong>, they show at the top of the menu's last card instead.</p>
@@ -81,8 +81,18 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <div class="shots"><figure><img src="../img/tabs-list.webp" width="720" height="1600" loading="lazy" alt="The Tabs screen as a list: a row for each tab (small picture, name, site, pin, X) and for each group"></figure></div>
 <h2 id="when-you-come-back">When you come back</h2>
 <p>Your regular tabs are still there after you close Wayward and open it again, with their pins, names and groups. Private tabs aren't kept.</p>
+<h3 id="pages-that-stay-loaded">Pages that stay loaded</h3>
+<p>When you go to another app, Wayward closes the pages of the tabs in the background to free your phone's memory, and it closes some when memory runs low. Each tab keeps its place on the page and what you'd typed in its forms, and its page loads again when you open it. These stay loaded when you leave:</p>
+<ul>
+<li>the tab you're on,</li>
+<li>pinned tabs and tabs in a pinned group,</li>
+<li>a tab playing sound or video, or with it paused,</li>
+<li>the tab the assistant is working in,</li>
+<li>a tab opened in the last few seconds, and the tab the one you're on was opened from, so a sign-in or card check window can still answer its page while you fetch a code from another app.</li>
+</ul>
+<p>Nothing closes while Wayward waits on a screen it opened itself, like a page's file picker, a share sheet or your unlock. When memory runs low with Wayward open, pinned tabs and tabs in a pinned group keep their pages longest: unpinned tabs close first, oldest first. To keep a page loaded, pin its tab (see <a href="tab-menu.html">pin, rename or pick several tabs</a>).</p>
 <h3 id="text-you-hadn-t-sent-yet">Text you hadn't sent yet</h3>
-<p>If Android ends a page or all of Wayward while it's in the background, the page loads again when you come back. Text you typed in its text box or rich editor and hadn't sent yet (a chat page's message box, for example) comes back too: Wayward puts it back in the same empty box once the page has made it, as if you'd typed it, so the page's Send button works. Nothing is sent or pressed for you, and nothing shows when it happens. There's nothing to turn on.</p>
+<p>If Android ends a page or all of Wayward while it's in the background, the page loads again when you come back. Text you typed in its text box or rich editor and hadn't sent yet (a chat page's message box, for example) comes back too, as it does when a page reloads: Wayward puts it back in the same empty box once the page has made it, as if you'd typed it, so the page's Send button works. Nothing is sent or pressed for you, and nothing shows when it happens. There's nothing to turn on.</p>
 <ul>
 <li>It's kept with the tab, encrypted on your phone, and never sent anywhere. The assistant can't read it.</li>
 <li>Only on secure (https) pages. Never from a private tab, a password, card or one-time code box, a box the site asks browsers not to remember, text with a card number in it, or a locked tab while it's locked. At most 20,000 characters.</li>
