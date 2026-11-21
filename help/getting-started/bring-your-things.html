@@ -1,10 +1,14 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Bring your bookmarks and settings · Wayward help</title>
+<script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
 <link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
 <style>
-:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff}
-@media (prefers-color-scheme:dark){:root{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff}}
+:root{--bg:#fff;--fg:#15171a;--muted:#5b6270;--card:#f4f5f7;--line:#e3e5e9;--accent:#6c4dff;color-scheme:light}
+:root[data-theme="dark"]{--bg:#0b0b12;--fg:#e9eaec;--muted:#9aa1ad;--card:#15151c;--line:#26262e;--accent:#9d8bff;color-scheme:dark}
+.theme{flex:none;width:36px;height:36px;padding:0;border:1px solid var(--line);border-radius:50%;background:var(--card);color:var(--fg);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.theme:hover,.theme:focus-visible{border-color:var(--accent);outline:none}.theme svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.theme .sun{display:none}:root[data-theme="dark"] .theme .sun{display:block}:root[data-theme="dark"] .theme .moon{display:none}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 main{max-width:760px;margin:0 auto;padding:24px 20px 64px}
 header{display:flex;align-items:center;gap:14px;padding:8px 0 24px;border-bottom:1px solid var(--line);margin-bottom:24px}
@@ -15,7 +19,7 @@ a{color:var(--accent)}h1{line-height:1.2}table{border-collapse:collapse;width:10
 th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}th{background:var(--card)}
 code{background:var(--card);padding:2px 5px;border-radius:5px;font-size:14px}
 .draft{background:#fff4e5;color:#7a4a00;border:1px solid #f5c98a;padding:12px 14px;border-radius:10px;margin-bottom:20px}
-@media (prefers-color-scheme:dark){.draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}}
+:root[data-theme="dark"] .draft{background:#2a1f0e;color:#f5c98a;border-color:#5a4220}
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:12px 0}
 .crumbs{font-size:14px;color:var(--muted);margin:0 0 8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
 .crumbs a{color:var(--muted)}.crumbs form{margin-left:auto}.kind{color:var(--muted);font-size:14px;margin-top:-8px}
@@ -28,7 +32,7 @@ ul.pages{padding-left:20px}ul.pages li{margin:4px 0}.cats{display:grid;gap:12px;
 input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
 .crumbs input[type=search]{width:180px;padding:4px 8px;font-size:14px}#results{padding-left:20px}#results .muted{color:var(--muted);font-size:14px}
 </style></head>
-<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open-source parts</a></nav></header>
+<body><main><header><img src="../../icon.png" alt=""><a href="../../index.html"><span class="brand">Wayward</span></a><nav><a href="../../index.html">Home</a><a href="../../help/index.html">Help</a><a href="../../privacy.html">Privacy</a><a href="../../terms.html">Terms</a><a href="../../support.html">Support</a><a href="../../oss/">Open-source parts</a></nav><button class="theme" id="theme" type="button" aria-label="Switch to dark mode" title="Dark mode"><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button></header>
 <div class="crumbs"><a href="../index.html">Help</a> › <a href="index.html">Getting started</a><form action="../index.html" role="search"><input type="search" name="q" placeholder="Search the help" aria-label="Search the help"></form></div><h1>Bring your bookmarks and settings</h1><p class="kind">How-to</p><p>Import bookmarks from another browser. You can also back up Wayward settings and restore them on this phone or a new one.</p>
 <h2 id="import-bookmarks-from-another-browser">Import bookmarks from another browser</h2>
 <p>Wayward reads the bookmarks file other browsers save, a file ending in .html. Android doesn't let one browser read another's bookmarks, so first get that file from your old browser.</p>
@@ -114,4 +118,4 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <li><strong>Settings restored, but uBlock Origin's filter lists couldn't be set. Try again in a moment.</strong> Everything else came back. Restore the same file again in a minute.</li>
 <li><strong>Couldn't read or save the file.</strong> Your phone couldn't read or write it there. Try another folder.</li>
 </ul><h2>More in Getting started</h2><ul class="pages"><li><a href="first-run.html">Set up Wayward the first time</a></li><li><a href="default-browser.html">Make Wayward your default browser</a></li><li><a href="the-bars.html">Get to know the bars</a></li><li><a href="minimum-bar.html">Use the Minimalist Address Bar</a></li><li><a href="the-menu.html">Find your way around the menu</a></li><li><a href="new-phone.html">Move Wayward to a new phone</a></li></ul>
-</main></body></html>
+</main><script>(function(){var b=document.getElementById("theme"),r=document.documentElement;function show(){var d=r.getAttribute("data-theme")==="dark";b.setAttribute("aria-label",d?"Switch to light mode":"Switch to dark mode");b.title=d?"Light mode":"Dark mode"}b.addEventListener("click",function(){var d=r.getAttribute("data-theme")==="dark";if(d)r.removeAttribute("data-theme");else r.setAttribute("data-theme","dark");try{localStorage.setItem("theme",d?"light":"dark")}catch(e){}show()});show()})()</script></body></html>
