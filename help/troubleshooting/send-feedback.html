@@ -38,13 +38,18 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <ol>
 <li>Open the <strong>⋮</strong> menu and tap <strong>Settings</strong>.</li>
 <li>Near the end, in the <strong>Help and about</strong> group, tap <strong>Send feedback</strong>.</li>
-<li>Under <strong>What's it about</strong>, pick one: <strong>Something isn't working</strong>, <strong>Idea or suggestion</strong>, <strong>The app crashed</strong>, <strong>Download problem</strong>, <strong>AI assistant problem</strong> or <strong>Something else</strong>.</li>
+<li>Under <strong>What's it about</strong>, pick one: <strong>Something isn't working</strong>, <strong>This website has a problem</strong>, <strong>Idea or suggestion</strong>, <strong>The app crashed</strong>, <strong>Download problem</strong>, <strong>AI assistant problem</strong> or <strong>Something else</strong>.</li>
 <li>Under <strong>Where</strong>, pick the part of Wayward: <strong>General</strong>, <strong>Browsing</strong>, <strong>Downloads</strong>, <strong>AI assistant</strong>, <strong>Premium</strong> or <strong>Settings</strong>.</li>
 <li>Under <strong>Describe it (optional)</strong>, say what happened in a few words.</li>
 <li>If you like, scroll down to <strong>Exactly what will be sent</strong> to read the whole report first.</li>
 <li>Tap <strong>Send feedback…</strong>, just under your description. Your phone's share menu opens with the report ready to email to us. Pick your email app and send it from there.</li>
 </ol>
 <div class="shots"><figure><img src="../img/settings-bottom.webp" width="720" height="1600" loading="lazy" alt="Settings, the end: Your Wayward (Premium, Backup with what it holds, Welcome setup) and Help and about (Help, Send feedback, Rate Wayward, About Wayward with the version)"></figure><figure><img src="../img/feedback-screen.webp" width="720" height="1600" loading="lazy" alt="Send feedback: What&#x27;s it about, Where, Describe it (optional), the button &quot;Send feedback…&quot;, and &quot;Exactly what will be sent&quot; with the start of the report"></figure><figure><img src="../img/feedback-about-list.webp" width="720" height="1600" loading="lazy" alt="What&#x27;s it about: Something isn&#x27;t working, Idea or suggestion, The app crashed, Download problem, AI assistant problem, Something else"></figure><figure><img src="../img/feedback-where-list.webp" width="720" height="1600" loading="lazy" alt="Where: General, Browsing, Downloads, AI assistant, Premium, Settings"></figure></div>
+<h2 id="report-a-website">Report a website</h2>
+<p>On the site, tap the shield in the address bar, then <strong>Report a problem with this site</strong> (next to <strong>Protection on this site</strong>). The report opens on <strong>This website has a problem</strong>, about that page. Picked in <strong>Send feedback</strong> itself, that kind of report is about the tab you're on.</p>
+<p><strong>Include the site's address</strong> shows the address the report would carry: the site and the page's path, never what follows a ? or #, a name and password, or a part that looks like an e-mail address, a key or a long number (6 or more digits in a row, like an order or phone number). It starts on in a regular tab and off in a private tab. With it off, the report leaves out the address and the names of the sites blocked on the page, which can name it. A locked tab's report says nothing about its page.</p>
+<p>The report also says how this site is protected (<strong>Protection on this site</strong>, JavaScript on this site, the ad blocking level and each Shield), how much was blocked on the page and the page's size on your screen.</p>
+<div class="shots"><figure><img src="../img/shield-report.webp" width="720" height="1600" loading="lazy" alt="Report a problem with this site, from the shield sheet: Send feedback with This website has a problem and Browsing picked, Include the site&#x27;s address (on in a regular tab) with the address, and the report to read before sending"></figure><figure><img src="../img/shield-report-site.webp" width="720" height="1600" loading="lazy" alt="The website report&#x27;s own part: the tab, the address, the site&#x27;s Shields one by one, what was blocked on the page and the page&#x27;s size"></figure></div>
 <h2 id="what-helps">What helps</h2>
 <ul>
 <li>What you were doing, what you expected, and what happened instead.</li>
@@ -58,12 +63,18 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <p>Any other report also has:</p>
 <ul>
 <li>your phone's maker and model (never anything that tells your phone apart from others like it), and the versions of Wayward's built-in parts;</li>
-<li>a short code for the last thing that went wrong, with roughly when;</li>
-<li>the settings that change how Wayward behaves, like where the address bar is and whether Shields are all on;</li>
-<li>the last 50 things Wayward did that explain a failure, each in a few words and a code, never an address, a page's text or title, a file name, a chat or a key;</li>
-<li>for <strong>The app crashed</strong>, the last crash: roughly when, and where in Wayward's code it happened.</li>
+<li>your phone's time zone, said once, like "Times are PST (UTC-8)": every time in the report is your phone's own date and time to the minute, like 2026-11-24 09:45, written the same whatever Wayward's language;</li>
+<li>a short code for the last thing that went wrong, with its date and time;</li>
+<li>how many times since Wayward started a page's process crashed or was stopped by Android, in regular tabs (two numbers, nothing about which tab or site);</li>
+<li>how many pages couldn't load since Wayward started, by the error code their page showed and its name, like "3/147 connection reset: 2" (never which page, site or tab);</li>
+<li>how much memory Wayward uses, in all and by kind (the app, its page processes and how many there are, its media helper and other helpers), as Android reports it;</li>
+<li>the settings that change how Wayward behaves, like where the address bar is and whether Shields are all on, and whether ad blocking is working (with how many filters it uses);</li>
+<li>for <strong>This website has a problem</strong>, the site's Shields, what was blocked on the page and its size, and the address only if you leave it in (see Report a website);</li>
+<li>the last 50 things Wayward did that explain a failure, each with its date and time, in a few words and a code, like "2026-11-24 09:45: page load failed: 3/147 connection reset"; the same thing several times in a row shows once, with the last time and how many ("2026-11-24 09:45, last of 3: ..."). Never an address, a page's text or title, a file name, a chat or a key;</li>
+<li>for <strong>The app crashed</strong>, the last crash: its date and time, and where in Wayward's code it happened. If the same crash happened more than once, it's counted ("3 times, the first 2026-11-20 18:02") instead of repeated. Wayward deletes the last crash and the log's lines once they're 30 days old.</li>
 </ul>
-<p>No browsing history, web addresses, downloads, cookies or AI chats are ever included. The full list, and how long we keep a report, is in the <a href="../../privacy.html">privacy policy</a>.</p>
+<div class="shots"><figure><img src="../img/feedback-report-end.webp" width="720" height="1600" loading="lazy" alt="Send feedback, the report&#x27;s end: the settings it names (the address bar, the download button, how many sites have location) and the recent events, each with the phone&#x27;s date and time, the zone said once above"></figure></div>
+<p>No browsing history, downloads, cookies or AI chats are ever included, and no web address but the site's in a report that a website has a problem, while <strong>Include the site's address</strong> is on. The full list, and how long we keep a report, is in the <a href="../../privacy.html">privacy policy</a>.</p>
 <h2 id="other-ways-to-reach-us">Other ways to reach us</h2>
 <ul>
 <li>Email us yourself at trywayward@gmail.com.</li>

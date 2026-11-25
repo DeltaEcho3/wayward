@@ -70,7 +70,7 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <li><strong>Restore all</strong> returns every one of them to the grid.</li>
 <li><strong>Close all 23</strong> (with your count) asks first: <strong>Keep</strong> or <strong>Delete</strong>. <strong>Undo</strong> brings them back for a few seconds.</li>
 </ul>
-<div class="shots"><figure><img src="../img/tabs-inactive-screen.webp" width="720" height="1600" loading="lazy" alt="The Inactive tabs screen: the note, the Open twice list (each row says where the newer copy stays, with its X), Restore all and Close all"></figure></div>
+<div class="shots"><figure><img src="../img/tabs-inactive-screen.webp" width="720" height="1600" loading="lazy" alt="The Inactive tabs screen: the note, the Not opened in 14 days list (site and age on each row, its X), Restore all and Close all"></figure></div>
 <p>To change after how many days a tab is inactive, or to turn this off, go to <strong>Settings</strong> &gt; <strong>Tabs and History</strong> &gt; <strong>Inactive tabs</strong>. Turned off, every inactive tab comes back to the grid.</p>
 <h2 id="the-tabs-screen-s-menu">The Tabs screen's menu</h2>
 <p>Tap <strong>⋮</strong> on the Tabs screen's bar:</p>
@@ -79,7 +79,7 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <li><strong>Show tabs as</strong>: <strong>Grid</strong> or <strong>List</strong>. Wayward remembers your choice for each space, and for private tabs.</li>
 <li><strong>Close all tabs (not private)</strong> closes your regular tabs but leaves pinned tabs, pinned groups and inactive tabs (but closes an older copy along with its newer one), with <strong>Undo</strong>. Once you have more than one space it reads <strong>Close all tabs in this space</strong>.</li>
 <li><strong>Spaces</strong>, <strong>Groups</strong>, <strong>History</strong>, <strong>Bookmarks</strong> and <strong>Downloads</strong>, then <strong>Emergency delete</strong> in red, and <strong>Exit Wayward</strong> last, under a line (see <a href="../privacy-security/clear-data.html">clear data and delete everything</a>). <strong>Exit Wayward</strong> isn't there if you hid it in <strong>Settings</strong> &gt; <strong>Customize</strong> &gt; <strong>Menu</strong>.</li>
-<li><strong>Clear data</strong> and <strong>Settings</strong> side by side at the bottom.</li>
+<li><strong>Clear data</strong> and <strong>Settings</strong> side by side at the bottom, where they stay while the rest of the menu scrolls.</li>
 </ul>
 <p>If you took <strong>Search your tabs</strong> or + off the Tabs screen's bar in <strong>Settings</strong> &gt; <strong>Customize</strong> &gt; <strong>Bars</strong>, they show at the top of the menu's last card instead.</p>
 <div class="shots"><figure><img src="../img/tabs-menu.webp" width="720" height="1600" loading="lazy" alt="The Tabs screen&#x27;s menu: the space with its pencil, Show tabs as Grid or List, Close all tabs in this space, then Spaces, Groups, History, Bookmarks, Downloads, Emergency delete in red, Exit Wayward under a line, and Clear data and Settings"></figure></div>
@@ -93,10 +93,13 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <li>the tab you're on,</li>
 <li>pinned tabs and tabs in a pinned group,</li>
 <li>a tab playing sound or video, or with it paused,</li>
-<li>the tab the assistant is working in,</li>
+<li>a tab whose page is using your camera or microphone,</li>
+<li>a tab whose page is still loading,</li>
+<li>a tab with text you typed in its page and haven't sent yet (see <a href="#text-you-hadn-t-sent-yet">Text you hadn't sent yet</a>),</li>
+<li>the tab the assistant is working in, and so the page an approval card is about,</li>
 <li>a tab opened in the last few seconds, and the tab the one you're on was opened from, so a sign-in or card check window can still answer its page while you fetch a code from another app.</li>
 </ul>
-<p>Nothing closes while Wayward waits on a screen it opened itself, like a page's file picker, a share sheet or your unlock. When memory runs low with Wayward open, pinned tabs and tabs in a pinned group keep their pages longest: unpinned tabs close first, oldest first. To keep a page loaded, pin its tab (see <a href="tab-menu.html">pin, rename or pick several tabs</a>).</p>
+<p>Nothing closes while Wayward waits on a screen it opened itself, like a page's file picker, a share sheet or your unlock. When memory runs low with Wayward open, a tab using the camera or microphone or playing keeps its page whatever happens, pinned tabs and tabs in a pinned group keep theirs longest, and tabs with paused media, a page still loading or unsent text close after the rest: plain tabs close first, oldest first. To keep a page loaded, pin its tab (see <a href="tab-menu.html">pin, rename or pick several tabs</a>).</p>
 <h3 id="text-you-hadn-t-sent-yet">Text you hadn't sent yet</h3>
 <p>If Android ends a page or all of Wayward while it's in the background, the page loads again when you come back. Text you typed in its text box or rich editor and hadn't sent yet (a chat page's message box, for example) comes back too, as it does when a page reloads: Wayward puts it back in the same empty box once the page has made it, as if you'd typed it, so the page's Send button works. Nothing is sent or pressed for you, and nothing shows when it happens. There's nothing to turn on.</p>
 <ul>

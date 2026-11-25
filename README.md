@@ -31,7 +31,7 @@ Wayward doesn't send us your browsing history, the sites you visit, your downloa
 
 ## Premium
 
-Premium is a one-time purchase through Google Play, not a subscription. It unlocks the AI assistant, alternate app icons, extra color themes and a supporter badge. Your AI provider bills you separately for what the assistant uses. Ad and tracker blocking, the privacy shields, video downloads and the downloads lock are free.
+Premium is a one-time purchase through Google Play, not a subscription. It unlocks the AI assistant, alternate app icons, extra color themes and a supporter badge. Your AI provider bills you separately for what the assistant uses. Ad and tracker blocking, the privacy shields, video downloads and the downloads lock come with every copy of Wayward, Premium or not.
 
 ## Help and feedback
 

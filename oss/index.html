@@ -37,17 +37,17 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <h1>Open-source code in Wayward</h1>
 <p>Wayward's own code is proprietary, but it includes open-source software. The full list of components and licenses is in the app under
 <strong>Settings</strong> &gt; <strong>About Wayward</strong> &gt; <strong>Legal information</strong> &gt; <strong>Open-source licenses</strong>. These are the sources their licenses require us to offer, exactly as used in Wayward.</p>
-<div class="card"><h3>uBlock Origin 1.75.4, modified by Wayward (GPL-3.0)</h3>
-<p>Wayward added one file and one line (2026-10-27, changed 2026-10-28, 2026-10-31, 2026-11-03, 2026-11-04 and 2026-11-19) and changed four files (one on 2026-10-28, three on 2026-11-19), all listed in WAYWARD-CHANGES.txt inside it.
-<a href="uBlock-1.75.4.2-wayward.tar.gz">The copy Wayward bundles, with its changes (tar.gz)</a> ·
-<a href="uBlock-1.75.4-source.tar.gz">uBlock Origin 1.75.4's own source (tar.gz)</a> · upstream: <a href="https://github.com/gorhill/uBlock/tree/1.75.4">github.com/gorhill/uBlock</a></p></div>
+<div class="card"><h3>uBlock Origin 1.77.0, modified by Wayward (GPL-3.0)</h3>
+<p>Wayward changed it: it added a file that connects it to Wayward's settings, and changed others of its files, from 2026-10-27 to 2026-11-25, carried over to uBlock Origin 1.77.0 on 2026-11-24. WAYWARD-CHANGES.txt inside it lists every change, file by file, with its date.
+<a href="uBlock-1.77.0.5-wayward.tar.gz">The copy Wayward bundles, with its changes (tar.gz)</a> ·
+<a href="uBlock-1.77.0-source.tar.gz">uBlock Origin 1.77.0's own source (tar.gz)</a> · upstream: <a href="https://github.com/gorhill/uBlock/tree/1.77.0">github.com/gorhill/uBlock</a></p></div>
 <div class="card"><h3>FFmpeg 9.0.2 (LGPL-2.1 or later)</h3>
 <p>Built by Wayward with LGPL parts only, as shared libraries with the ffmpeg and ffprobe programs linked to them. <a href="ffmpeg-9.0.2.tar.xz">Source (tar.xz)</a> · <a href="ffmpeg-9.0.2.tar.xz.asc">signature</a> ·
 <a href="build_ffmpeg.sh">build script</a> · <a href="ffmpeg-configure.txt">configure options</a></p></div>
-<div class="card"><h3>GeckoView 159.0.1 (MPL-2.0)</h3>
+<div class="card"><h3>GeckoView 161.0 (MPL-2.0)</h3>
 <p>No file of it is changed. Its archive of the engine's own scripts and pages (omni.ja) ships without parts Wayward never uses: the developer tools server, the test-automation driver (Marionette), settings for other processors, and the engine's diagnostic about: pages with their texts.
 <a href="omni_trim.py">The script that takes them out, which lists them</a> (it uses <a href="zip_without.py">zip_without.py</a>) ·
-source: <a href="https://hg.mozilla.org/releases/mozilla-release">hg.mozilla.org/releases/mozilla-release</a>, tag FIREFOX_159_0_1_RELEASE.</p></div>
+source: <a href="https://hg.mozilla.org/releases/mozilla-release">hg.mozilla.org/releases/mozilla-release</a>, tag FIREFOX_161_0_RELEASE. Its two ANGLE graphics libraries (libGLESv2_angle.so, libEGL_angle.so) are left out: the engine loads them only when a setting Wayward never turns on asks for them.</p></div>
 <h3>Checksums (SHA-256)</h3><pre><code>b9b41d2c5101f717632a3c2b5fd605ecf658a02d54d08ec45ae37e5ca86db9a4  build_ffmpeg.sh
 8c3850283eb25fa026482078a04051e0be17347b09ef81a0849bec15a96e002e  ffmpeg-9.0.2.tar.xz
 d617fd94ea354dadd2a8bb16243d37c44e1e9729b06b6ad58fe30bfb0fa943f2  ffmpeg-9.0.2.tar.xz.asc
@@ -62,6 +62,8 @@ a5288dd0669e1178a90810b570af37b89fc223845ea7fe4ab4792cba3a036c2b  uBlock-1.75.0.
 ca3a6fd43aec99c002e3bb1cb1d97b34eea4228ef35f8c076b55644caa397870  uBlock-1.75.4-source.tar.gz
 ac24a4060292799f351d42702c6d6907b0dede5e2ff60f4eeb6350f102dcd7f9  uBlock-1.75.4.1-wayward.tar.gz
 0ca3b1a01bc69fa73718e902b5cc46c8955dd42f113670edb54b11f5e439612d  uBlock-1.75.4.2-wayward.tar.gz
+a7eec8fa853caf6e18ae5393e6f44152712751e6a4499a1ca6216ead80f12878  uBlock-1.77.0-source.tar.gz
+5dab83ba95f9375faab70f7983b1165be03ef3a64f3866f5d899f6efb1f7cdf0  uBlock-1.77.0.5-wayward.tar.gz
 c6e9f16a060a82d51a2c98a554419f74e690626dd95d1a42ba816db0838e37c7  zip_without.py
 </code></pre>
 
