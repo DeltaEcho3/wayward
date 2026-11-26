@@ -48,14 +48,14 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <p>Just after Wayward starts, uBlock Origin may still be getting ready. Its rows then read <strong>Ads &amp; trackers</strong>, saying it's loading its settings; open the screen again in a moment.</p>
 <h2 id="filter-lists">Filter lists</h2>
 <p><strong>Filter lists</strong> shows how many of uBlock Origin's lists are on, and opens them all as switches, in sections: <strong>Ads</strong>, <strong>Privacy</strong>, <strong>Malware and phishing</strong>, <strong>Cookie notices</strong>, <strong>Social widgets</strong>, <strong>"Open in app" banners</strong>, <strong>Annoyances</strong>, <strong>Host lists</strong> and <strong>Regional</strong>. Each section says how many of its lists are on, like 7 of 9 on. Turn any of them on or off.</p>
-<p>A list that isn't on your phone yet downloads the first time you turn it on, and the lists update by themselves after that. More lists means more for each page to load. This screen only switches lists uBlock Origin already knows; adding one by its address is done in uBlock Origin's own dashboard (see <a href="index.html#shields-and-ad-blocking">the Shields questions</a>).</p>
+<p>A list that isn't on your phone yet downloads the first time you turn it on, and the lists update by themselves after that. The lists aren't loaded again for each page: uBlock Origin builds them into its rules once. More lists mostly means more of your phone's memory, and a longer wait while it gets ready after Wayward starts or the lists update. This screen only switches lists uBlock Origin already knows; adding one by its address is done in uBlock Origin's own dashboard (see <a href="index.html#shields-and-ad-blocking">the Shields questions</a>).</p>
 <div class="shots"><figure><img src="../img/shields-filter-lists.webp" width="720" height="1600" loading="lazy" alt="Filter lists: uBlock Origin&#x27;s lists as switches, by section (here Ads)"></figure></div>
 <div class="shots"><figure><img src="../img/shields-filter-lists-more.webp" width="720" height="1600" loading="lazy" alt="Filter lists, further down: Malware and phishing, Cookie notices, Social widgets"></figure></div>
 <p>To hide pop-ups that cover pages, see <a href="block-pop-ups.html">hide pop-ups and overlays</a>.</p>
 <h2 id="the-other-blocking-switches">The other blocking switches</h2>
 <p>The rest of <strong>Blocking</strong> is switches. All of them are on unless you turn them off, apart from the first:</p>
 <ul>
-<li><strong>Block JavaScript on every site</strong> (off to start with). Many sites stop working without it. You can turn it back on for one site from the shield button.</li>
+<li><strong>Block JavaScript on every site</strong> (off by default). Many sites stop working without it. You can turn it back on for one site from the shield button.</li>
 <li><strong>Strict tracking protection</strong>: Firefox's strict mode, against trackers, cryptominers and social trackers.</li>
 <li><strong>Block social trackers</strong>: share and like buttons that follow you from site to site.</li>
 <li><strong>Block fingerprinting</strong>: mixes up what sites can read to recognize your phone.</li>

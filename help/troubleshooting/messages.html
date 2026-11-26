@@ -52,14 +52,14 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <p>More help: <a href="site-broken.html">Fix a site that looks broken or won't work</a>.</p>
 <h2 id="empty-screens">Empty screens</h2>
 <ul>
-<li><strong>No downloads yet</strong>: you haven't downloaded anything. On a page with a video you can save, tap the floating download button, the download tab on the address bar, or <strong>Download video</strong> in the <strong>⋮</strong> menu (whichever <strong>Settings</strong> &gt; <strong>Customize</strong> &gt; <strong>Download button</strong> shows), share a link to Wayward, or hold a picture to download it.</li>
+<li><strong>No downloads yet</strong>: you haven't downloaded anything. On a page with a video you can save, tap the floating download button, the download tab on the address bar, or <strong>Download video</strong> in the <strong>⋮</strong> menu (whichever <strong>Settings</strong> &gt; <strong>Customize</strong> &gt; <strong>Download button</strong> shows), or hold a picture to download it. A link you share to Wayward from another app opens its page, so you can save from there.</li>
 <li><strong>No tabs</strong>, <strong>No tabs match.</strong>, <strong>No private tabs. Tap + to open one.</strong>: nothing to show on the Tabs screen, or nothing matches your search.</li>
 <li><strong>No groups yet. Long-press a tab to add it to a group.</strong>: the Groups view before you've made one.</li>
 <li><strong>No bookmarks yet. Open the menu on a page and tap Bookmark.</strong> and <strong>This folder is empty.</strong>: nothing saved there yet.</li>
 <li><strong>No history yet. Pages you visit in tabs show up here; private tabs never add to it.</strong>: nothing visited yet, or it was cleared.</li>
 <li><strong>History is off. Turn it on in Settings &gt; Tabs and History to remember pages you visit in tabs that aren't private.</strong>: you turned off <strong>History</strong>.</li>
 <li><strong>Sites you visit often show up here.</strong>: the start page before you've browsed much.</li>
-<li><strong>No sites yet</strong>: in <strong>Site permissions</strong>, before any site has asked for notifications or protected video.</li>
+<li><strong>No sites yet</strong>: in <strong>Site permissions</strong>, under <strong>Notifications</strong>, <strong>Protected video</strong>, <strong>Location</strong>, <strong>Camera</strong> or <strong>Microphone</strong>, when no answer of that kind is remembered. Answers for <strong>Only this time</strong>, answers from private tabs and answers that have ended aren't listed.</li>
 <li><strong>Ad blocking is on</strong>: the start page's counter before anything was blocked this week.</li>
 </ul>
 <div class="shots"><figure><img src="../img/states-tabs-no-match.webp" width="720" height="1600" loading="lazy" alt="Search your tabs with nothing found: &quot;No tabs match.&quot;"></figure></div>
@@ -93,17 +93,17 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <h2 id="locks-and-spaces">Locks and spaces</h2>
 <ul>
 <li><strong>Set a screen lock on your phone first</strong>, <strong>Set a screen lock on your phone first to use this.</strong> or <strong>Needs a screen lock on your phone (Settings &gt; Security).</strong>: Wayward's locks use your phone's own fingerprint, face or PIN, so they need a screen lock set in your phone's settings first.</li>
-<li><strong>That's as many spaces as Wayward keeps. Delete one to make another.</strong>: you've reached the most spaces.</li>
+<li><strong>That's as many spaces as Wayward keeps. Delete one to make another.</strong>: you have 12 spaces, Main included, which is the most Wayward keeps.</li>
 </ul>
 <h2 id="bookmarks-settings-files-and-pictures">Bookmarks, settings files and pictures</h2>
 <ul>
-<li><strong>Your bookmarks couldn't be opened after a problem with this phone's key storage, so a new list was started.</strong>: your bookmarks are kept encrypted with a key held in your phone's secure key storage, and the phone lost that key. Without it the old list can't be read, so Wayward started a new one. If you saved your bookmarks to a file, import it again.</li>
+<li><strong>Your bookmarks couldn't be opened after a problem with this phone's key storage, so a new list was started.</strong>: your bookmarks are kept encrypted with a key held in your phone's secure key storage, and that key was lost or no longer opens them. Wayward keeps the old list on your phone and starts a new one. If the key works again while the new list is still empty, your old bookmarks come back by themselves. If you saved your bookmarks to a file, you can import it.</li>
 <li><strong>Couldn't save the bookmark just now. Try again in a moment.</strong>: your phone's key storage didn't answer in time. Try again.</li>
 <li>Bookmark and settings files: see <a href="../getting-started/bring-your-things.html">Bring your bookmarks and settings</a> for <strong>No bookmarks found in that file.</strong>, <strong>That file is too big to import.</strong>, <strong>That isn't a Wayward settings file.</strong>, <strong>Couldn't read or save the file.</strong> and the rest.</li>
 <li>Wallpaper: <strong>That picture can't be used. Try another one.</strong> or <strong>That picture is too big. Try a smaller one.</strong> Pick another photo.</li>
 </ul>
 <h2 id="downloads">Downloads</h2>
-<p>What a failed download's message means is in <a href="download-fails.html">When a download fails</a>, including <strong>Not saved: it's an app file. Tap its link to download it.</strong>, and the message from sites the Google Play version of Wayward can't download from. While a download moves along, its row can also say:</p>
+<p>What a failed download's message means is in <a href="download-fails.html">When a download fails</a>, including <strong>Not saved: it's an app file. Tap its link to download it.</strong>, and the message from the one site Wayward can't download from. While a download moves along, its row can also say:</p>
 <ul>
 <li><strong>Preparing…</strong>, <strong>Checking…</strong> or <strong>Moving…</strong>: getting the file ready, or moving it, which takes a moment for big files and slow folders.</li>
 <li><strong>Cancelled</strong>: you cancelled it.</li>
@@ -130,7 +130,7 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 </ul>
 <p>When a button does nothing:</p>
 <ul>
-<li><strong>Another app is drawing over Wayward. Close it and tap again.</strong>: another app has a window over part of Wayward, like a screen-dimming or blue light filter app, a chat bubble or a floating button. So that another app can't tap them for you, these buttons don't take a tap while it's there: the assistant's <strong>Allow</strong>, <strong>Share</strong>, <strong>Start task</strong>, <strong>Download</strong> and <strong>Send</strong>, the confirmation for <strong>Always allow</strong>, and a site's <strong>Allow</strong> for the camera, microphone, notifications or protected video. Close that app's window, bubble or filter, then tap again. TalkBack and a keyboard still work as usual.</li>
+<li><strong>Another app is drawing over Wayward. Close it and tap again.</strong>: another app has a window over part of Wayward, like a screen-dimming or blue light filter app, a chat bubble or a floating button. So that another app can't tap them for you, these buttons don't take a tap while it's there: the assistant's buttons that let it go ahead (like <strong>Allow</strong>, <strong>Share</strong>, <strong>Start task</strong> and <strong>Download</strong>), <strong>Send</strong> and the examples that send when tapped, a saved task's <strong>Run</strong>, the confirmation for <strong>Always allow</strong>, and a site's <strong>Allow</strong> for your location, camera, microphone, notifications or protected video. On Android 10, only a window over the button you tap stops it. Close that app's window, bubble or filter, then tap again. TalkBack and a keyboard still work as usual.</li>
 </ul>
 <p>From your AI provider, in the chat:</p>
 <ul>
@@ -140,7 +140,7 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <li><strong>OpenRouter is busy right now. Try again in a moment.</strong>: the provider is overloaded.</li>
 <li><strong>AI request failed: ...</strong> with the provider's own words: something else went wrong at the provider.</li>
 <li><strong>The AI provider or model changed, so this message starts a new conversation.</strong>: you switched provider or model, so the assistant starts fresh.</li>
-<li><strong>Your last chat is too big to open right now. It stays on your phone until you tap New chat, and nothing new is kept until then.</strong>: start a new chat to go on.</li>
+<li><strong>Your last chat is too big to open right now. It stays on your phone until you tap New chat, and nothing new is kept until then.</strong>: Wayward tries to open it again the next time it starts. You can still chat meanwhile, but nothing new is kept. <strong>New chat</strong> deletes the old chat for good, and it can't be saved to a file first.</li>
 </ul>
 <p>Setting up the key:</p>
 <ul>

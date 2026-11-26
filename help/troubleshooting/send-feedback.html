@@ -54,12 +54,12 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <ul>
 <li>What you were doing, what you expected, and what happened instead.</li>
 <li>For a crash, pick <strong>The app crashed</strong>: the report then includes where Wayward crashed, which helps most.</li>
-<li>Links and file paths you type are taken out automatically (even a plain site name like example.com), but anything else is sent as you wrote it. Leave out personal details.</li>
+<li>Links that start with http or www, and file paths, are taken out automatically, but anything else is sent as you wrote it, a plain site name like example.com included. Leave out personal details.</li>
 <li>The report goes out as an email from your own email app, so you can add to it there before you send: a screenshot, or the site it happened on.</li>
 </ul>
 <h2 id="what-s-in-a-report">What's in a report</h2>
 <p><strong>Exactly what will be sent</strong>, at the bottom of the same screen, shows the whole report, word for word.</p>
-<p>An idea holds only what you picked and typed, plus Wayward's version, the browser engine's version and your Android version.</p>
+<p>An idea holds only what you picked and typed, plus a random report number (new each time), Wayward's version, the browser engine's version and your Android version.</p>
 <p>Any other report also has:</p>
 <ul>
 <li>your phone's maker and model (never anything that tells your phone apart from others like it), and the versions of Wayward's built-in parts;</li>
@@ -74,11 +74,11 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <li>for <strong>The app crashed</strong>, the last crash: its date and time, and where in Wayward's code it happened. If the same crash happened more than once, it's counted ("3 times, the first 2026-11-20 18:02") instead of repeated. Wayward deletes the last crash and the log's lines once they're 30 days old.</li>
 </ul>
 <div class="shots"><figure><img src="../img/feedback-report-end.webp" width="720" height="1600" loading="lazy" alt="Send feedback, the report&#x27;s end: the settings it names (the address bar, the download button, how many sites have location) and the recent events, each with the phone&#x27;s date and time, the zone said once above"></figure></div>
-<p>No browsing history, downloads, cookies or AI chats are ever included, and no web address but the site's in a report that a website has a problem, while <strong>Include the site's address</strong> is on. The full list, and how long we keep a report, is in the <a href="../../privacy.html">privacy policy</a>.</p>
+<p>Your browsing history, downloads, cookies and AI chats are never included. The only web address Wayward adds is in a report that a website has a problem, while <strong>Include the site's address</strong> is on: that page's address (without anything after a ? or #) and the names of the sites blocked on it. The full list, and how long we keep a report, is in the <a href="../../privacy.html">privacy policy</a>.</p>
 <h2 id="other-ways-to-reach-us">Other ways to reach us</h2>
 <ul>
 <li>Email us yourself at trywayward@gmail.com.</li>
 <li>Like Wayward? <strong>Settings</strong> &gt; <strong>Rate Wayward</strong> opens its page in the Play Store.</li>
-<li>An AI answer that was offensive or harmful: tap <strong>Report</strong> under it. That sends only the answer and the model's name.</li>
+<li>An AI answer that was offensive or harmful: tap <strong>Report</strong> under it. That report holds only the answer, the model's name and provider, and Wayward's version.</li>
 </ul><h2>More in Troubleshooting &amp; support</h2><ul class="pages"><li><a href="site-broken.html">Fix a site that looks broken or won&#x27;t work</a></li><li><a href="download-fails.html">When a download fails</a></li><li><a href="slow-pages.html">When pages are slow or scrolling stutters</a></li><li><a href="messages.html">What Wayward&#x27;s messages mean</a></li></ul>
 </main><script>(function(){var b=document.getElementById("theme"),r=document.documentElement;function show(){var d=r.getAttribute("data-theme")==="dark";b.setAttribute("aria-label",d?"Switch to light mode":"Switch to dark mode");b.title=d?"Light mode":"Dark mode"}b.addEventListener("click",function(){var d=r.getAttribute("data-theme")==="dark";if(d)r.removeAttribute("data-theme");else r.setAttribute("data-theme","dark");try{localStorage.setItem("theme",d?"light":"dark")}catch(e){}show()});show()})()</script></body></html>

@@ -42,7 +42,7 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <li>holding the Tabs button on the bar, then <strong>New private tab</strong>,</li>
 <li>on the Tabs screen, the mask on the bar. It opens a new private tab in a circle growing from the mask, or takes you to the empty private tab you already had open.</li>
 </ul>
-<p>Private tabs are locked behind your phone's unlock to start with: see "The private tabs lock" below.</p>
+<p>By default, private tabs are locked behind your phone's unlock: see "The private tabs lock" below.</p>
 <div class="shots"><figure><img src="../img/private-start.webp" width="720" height="1600" loading="lazy" alt="A new private tab: the indigo start page with the mask, what private tabs keep, the + tile, the line on what a private tab doesn&#x27;t hide, the filled Tabs button and the indigo strip behind the clock"></figure></div>
 <p>A private tab is easy to tell apart. Its start page is indigo, with the mask and <strong>Private tab</strong>, and says what's kept: <strong>No history. Cookies and site data clear when your last private tab or Wayward closes. Downloads, bookmarks and the shortcuts on this page stay.</strong> The strip behind the clock turns indigo too, and the Tabs button on the bar is filled in.</p>
 <p>The private start page has its own shortcuts, apart from your regular start page's. It starts with just the + tile. Tap it, or use <strong>Add to start page</strong> in a private tab's <strong>⋮</strong> menu, and the shortcut goes on the private start page only: it never shows on the regular start page, and the regular page's shortcuts and your most visited sites never show here. Hold a tile for <strong>Rename</strong> and <strong>Remove</strong>. The tiles are letters in the private colors: Wayward never asks a site for its icon from a private tab. They show as many as <strong>Settings</strong> &gt; <strong>Customize</strong> &gt; <strong>Shortcuts</strong> says, and each start page fills up on its own.</p>
@@ -56,7 +56,7 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <div class="shots"><figure><img src="../img/private-tabs-menu.webp" width="720" height="1600" loading="lazy" alt="The Tabs menu in Private tabs: &quot;Private tabs&quot; with the count, and Close all private tabs"></figure></div>
 <h2 id="move-a-page-between-private-and-regular">Move a page between private and regular</h2>
 <ul>
-<li>In a regular tab's menu on the Tabs screen (hold its card), <strong>Move to private tab</strong> asks <strong>Move to a private tab?</strong> first. The page reopens in a private tab, where you won't be signed in, and the regular tab's back history and saved copy are deleted.</li>
+<li>In a regular tab's menu on the Tabs screen (hold its card), <strong>Move to private tab</strong> asks <strong>Move to a private tab?</strong> first. The page reopens in a private tab, without your regular sign-ins (if you're signed in to that site in another private tab, you're signed in here too). The regular tab's back history and saved copy are deleted; pages it already added to your history stay there.</li>
 <li>In a private tab's menu, <strong>Move to Tabs</strong> asks <strong>Move to Tabs?</strong>. The page reopens in a regular tab, where it's saved in your history and the site can see your regular sign-ins and cookies.</li>
 </ul>
 <p>Tap <strong>Move</strong> to go ahead.</p>
@@ -66,7 +66,7 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <li>No history, and no suggestions from your search engine while you type.</li>
 <li>Holding a link opens it in private tabs only, and there's no <strong>Ask AI</strong>. The assistant doesn't work in private tabs at all.</li>
 <li>Screenshots and screen recording are blocked while private tabs are showing, unless you change <strong>Screenshots</strong> in <strong>Settings</strong> &gt; <strong>Shields &amp; Privacy</strong>.</li>
-<li>In your phone's recent apps, Wayward shows blurred while a private tab is open (or blank, with <strong>Hide in recent apps</strong> on, as it is to start with).</li>
+<li>In your phone's recent apps, Wayward shows blurred while a private tab is open (or blank, with <strong>Hide in recent apps</strong> on, as it is by default).</li>
 <li>Downloads from a private tab stay inside Wayward, marked with a mask, and a download that's still going carries on after you close your last private tab.</li>
 <li>Bookmarks you make in a private tab stay, with your other bookmarks. Shortcuts you add in a private tab stay too, on the private start page only.</li>
 <li>Closing one says <strong>Private tab closed</strong>, with <strong>Undo</strong>.</li>
@@ -75,7 +75,7 @@ input[type=search]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;
 <div class="shots"><figure><img src="../img/private-link-menu.webp" width="720" height="1600" loading="lazy" alt="Holding a link in a private tab: it opens in private tabs only, and there is no Ask AI"></figure></div>
 <div class="shots"><figure><img src="../img/private-undo-closed.webp" width="720" height="1600" loading="lazy" alt="A private tab closed: &quot;Private tab closed&quot; with Undo"></figure></div>
 <h2 id="the-private-tabs-lock">The private tabs lock</h2>
-<p><strong>Lock private tabs</strong> in <strong>Settings</strong> &gt; <strong>Tabs and History</strong> is on to start with, as long as your phone has a screen lock. While it's on, every way into private tabs asks for your fingerprint, face or PIN first, even when no private tab is open yet:</p>
+<p><strong>Lock private tabs</strong> in <strong>Settings</strong> &gt; <strong>Tabs and History</strong> is on by default, as long as your phone has a screen lock. While it's on, every way into private tabs asks for your fingerprint, face or PIN first, even when no private tab is open yet:</p>
 <ul>
 <li>the mask on the Tabs screen, and + on its private side, ask before the tab opens,</li>
 <li>the menu's <strong>New private tab</strong> and the start page's <strong>Private tab</strong> button open the tab behind the lock and ask there,</li>
